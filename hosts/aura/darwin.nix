@@ -5,10 +5,10 @@
   ...
 }: {
   imports = [
-    ../../modules/core
-    ../../modules/desktop/fonts.nix
-    ../../modules/programs/darwin-system.nix
-    ../../modules/programs/homebrew.nix
+    ../../modules/darwin/core
+    ../../modules/darwin/desktop/fonts.nix
+    ../../modules/darwin/programs/darwin-system.nix
+    ../../modules/darwin/programs/homebrew.nix
   ];
 
   users.users."${username}" = {
