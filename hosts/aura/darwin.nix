@@ -12,6 +12,6 @@
   ];
 
   users.users."${username}" = {
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 }

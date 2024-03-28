@@ -5,9 +5,9 @@
       ## FIRST LINE/ROW: Info & Status
       # First param ─┌
       [username]
-      format = " [╭─$user]($style) → "
-      style_user = "bold red"
-      style_root = "bold red"
+      format = " [╭─]($style) "
+      style_user = "bold fg:#ea9a97"
+      style_root = "bold fg:#3e8fb0"
       show_always = true
 
       [cmd_duration]
@@ -15,12 +15,12 @@
 
       # Prompt: param 2 └─
       [character]
-      success_symbol = " [╰──<><](bold red)"
-      error_symbol = " [╰─<×><](bold red)"
-      vimcmd_symbol = " [╰─N<><](bold red)"
-      vimcmd_replace_one_symbol = " [╰─R<><](bold red)"
-      vimcmd_replace_symbol = " [╰─R<><](bold red)"
-      vimcmd_visual_symbol = " [╰─V<><](bold red)"
+      success_symbol = " [╰─<><](bold fg:#ea9a97)"
+      error_symbol = " [╰<×><](bold fg:#ea9a97)"
+      vimcmd_symbol = " [╰N<><](bold fg:#ea9a97)"
+      vimcmd_replace_one_symbol = " [╰R<><](bold fg:#ea9a97)"
+      vimcmd_replace_symbol = " [╰R<><](bold fg:#ea9a97)"
+      vimcmd_visual_symbol = " [╰V<><](bold fg:#ea9a97)"
 
       [aws]
       symbol = "  "

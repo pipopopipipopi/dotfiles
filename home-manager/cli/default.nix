@@ -1,9 +1,6 @@
 {
-  pkgs,
-  ...
-}: {
   imports = [
-    ./zsh
+    # ./zsh
     ./fish
     ./neovim
     ./git

@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   system = {
     defaults = {
       menuExtraClock.Show24Hour = true;
@@ -11,4 +11,7 @@
     zsh.enable = true;
     fish.enable = true;
   };
+  environment.shells = [
+    pkgs.fish
+  ];
 }
