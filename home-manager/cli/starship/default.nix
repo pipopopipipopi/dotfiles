@@ -2,159 +2,39 @@
   programs.starship = {
     enable = true;
     settings = builtins.fromTOML ''
-      ## FIRST LINE/ROW: Info & Status
-      # First param ─┌
       [username]
-      format = " [╭─]($style) "
-      style_user = "bold fg:#ea9a97"
-      style_root = "bold fg:#3e8fb0"
-      show_always = true
+      disabled = true
+
+      [hostname]
+      disabled = true
+
+      [directory]
+      style = "bold fg:#ea9a97"
+      truncation_length = 5
+      truncate_to_repo = true
+      truncation_symbol = "…/"
+      read_only = "󰌾"
+      read_only_style = "fg:#eb6f92"
+
+      [character]
+      success_symbol = "[❯](fg:#9ccfd8)"
+      error_symbol = "[❯](fg:#eb6f92)"
+      vimcmd_symbol = "[❮️](fg:#ea9a97)"
+      vimcmd_replace_one_symbol = "[R](bold fg:#c4a7e7)"
+      vimcmd_replace_symbol = "[R](bold fg:#c4a7e7)"
+      vimcmd_visual_symbol = "[V](bold fg:#c4a7e7)"
+
+      [git_branch]
+      format = "[$symbol$branch(:$remote_branch)]($style) "
+      symbol = " "
+      style = "fg:#908caa"
+
+      [git_status]
+      format = "([$all_status$ahead_behind]($style) )"
+      style = "bold fg:#eb6f92"
 
       [cmd_duration]
       disabled = true
-
-      # Prompt: param 2 └─
-      [character]
-      success_symbol = " [╰─<><](bold fg:#ea9a97)"
-      error_symbol = " [╰<×><](bold fg:#ea9a97)"
-      vimcmd_symbol = " [╰N<><](bold fg:#ea9a97)"
-      vimcmd_replace_one_symbol = " [╰R<><](bold fg:#ea9a97)"
-      vimcmd_replace_symbol = " [╰R<><](bold fg:#ea9a97)"
-      vimcmd_visual_symbol = " [╰V<><](bold fg:#ea9a97)"
-
-      [aws]
-      symbol = "  "
-
-      [buf]
-      symbol = " "
-
-      [c]
-      symbol = " "
-
-      [conda]
-      symbol = " "
-
-      [dart]
-      symbol = " "
-
-      [directory]
-      read_only = " 󰌾"
-
-      [docker_context]
-      symbol = " "
-
-      [elixir]
-      symbol = " "
-
-      [elm]
-      symbol = " "
-
-      [fossil_branch]
-      symbol = " "
-
-      [git_branch]
-      symbol = " "
-
-      [golang]
-      symbol = " "
-
-      [guix_shell]
-      symbol = " "
-
-      [haskell]
-      symbol = " "
-
-      [haxe]
-      symbol = "⌘ "
-
-      [hg_branch]
-      symbol = " "
-
-      [java]
-      symbol = " "
-
-      [julia]
-      symbol = " "
-
-      [lua]
-      symbol = " "
-
-      [memory_usage]
-      symbol = " "
-
-      [meson]
-      symbol = "󰔷 "
-
-      [nim]
-      symbol = "󰆥 "
-
-      [nix_shell]
-      symbol = " "
-
-      [nodejs]
-      symbol = " "
-
-      [os.symbols]
-      Alpine = " "
-      Amazon = " "
-      Android = " "
-      Arch = " "
-      CentOS = " "
-      Debian = " "
-      DragonFly = " "
-      Emscripten = " "
-      EndeavourOS = " "
-      Fedora = " "
-      FreeBSD = " "
-      Garuda = "󰛓 "
-      Gentoo = " "
-      HardenedBSD = "󰞌 "
-      Illumos = " "
-      Linux = " "
-      Macos = " "
-      Manjaro = " "
-      Mariner = " "
-      MidnightBSD = " "
-      Mint = " "
-      NetBSD = " "
-      NixOS = " "
-      OpenBSD = " "
-      openSUSE = " "
-      OracleLinux = "󰌷 "
-      Pop = " "
-      Raspbian = " "
-      Redhat = " "
-      RedHatEnterprise = " "
-      Redox = " "
-      Solus = " "
-      SUSE = " "
-      Ubuntu = " "
-      Unknown = " "
-      Windows = "󰖳 "
-
-      [package]
-      symbol = "󰏗 "
-
-      [pijul_channel]
-      symbol = "🪺 "
-
-      [python]
-      symbol = " "
-
-      [rlang]
-      symbol = "󰟔 "
-
-      [ruby]
-      symbol = " "
-
-      [rust]
-      symbol = "🦀 "
-
-      [scala]
-      symbol = " "
-
-      [spack]
-      symbol = "🅢 "
     '';
   };
 }

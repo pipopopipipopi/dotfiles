@@ -5,7 +5,7 @@
 
     interactiveShellInit = ''
       function fish_greeting                                            
-        neofetch
+        # do nothing
       end
       
       function fish_user_key_bindings
