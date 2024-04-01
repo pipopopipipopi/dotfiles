@@ -9,8 +9,8 @@
           style=round
           width=6.0
           hidpi=off
-          "active_color=gradient(top_left=0xffeb6f92,bottom_right=0xfff6c177)"
-          "inactive_color=gradient(top_left=0xffe3cac5,bottom_right=0xffe3cac5)"
+          "active_color=gradient(top_left=0xffeb6f92,bottom_right=0xffeb6f92)"
+          "inactive_color=gradient(top_left=0xff6e6a86,bottom_right=0xff6e6a86)"
         )
 
         borders "''${options[@]}"
