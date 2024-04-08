@@ -24,6 +24,7 @@
       "zirixcz/vesktop/vesktop"
 
       "vivaldi"
+      "arc"
 
       "google-japanese-ime"
 
