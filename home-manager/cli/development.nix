@@ -7,6 +7,9 @@
     ## C
     gcc
 
+    ## Lisp
+    sbcl
+
     ## Python
     python312
 
