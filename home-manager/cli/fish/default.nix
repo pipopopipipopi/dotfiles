@@ -15,7 +15,12 @@
         fish_vi_key_bindings --no-erase
       end
 
-      fish_add_path /opt/homebrew/bin
+      switch (uname)
+        case Darwin
+          fish_add_path /opt/homebrew/bin /Users/pipopo/.nix-profile/bin /run/current-system/sw/bin /nix/var/nix/profiles/default/bin
+        case Linux
+        case '*'
+      end
     '';
 
     shellInit = ''
