@@ -13,7 +13,7 @@
       truncation_length = 5
       truncate_to_repo = true
       truncation_symbol = "…/"
-      read_only = "󰌾"
+      read_only = " 󰌾"
       read_only_style = "fg:#eb6f92"
 
       [character]
