@@ -11,6 +11,7 @@
     httpie
     ripgrep
     yazi
+    zoxide
 
     neofetch
   ];

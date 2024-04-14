@@ -21,6 +21,8 @@
         case Linux
         case '*'
       end
+
+      zoxide init fish | source
     '';
 
     shellInit = ''
