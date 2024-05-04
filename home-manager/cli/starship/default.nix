@@ -3,10 +3,17 @@
     enable = true;
     settings = builtins.fromTOML ''
       [username]
-      disabled = true
+      format = " [╭─$user]($style)@"
+      style_user = "bold red"
+      style_root = "bold red"
+      show_always = true
 
       [hostname]
-      disabled = true
+      format = "[$hostname]($style) in "
+      style = "bold red"
+      trim_at = "-"
+      ssh_only = false
+      disabled = false
 
       [directory]
       style = "bold fg:#ea9a97"
@@ -17,12 +24,12 @@
       read_only_style = "fg:#eb6f92"
 
       [character]
-      success_symbol = "[❯](fg:#9ccfd8)"
-      error_symbol = "[❯](fg:#eb6f92)"
-      vimcmd_symbol = "[❮️](fg:#ea9a97)"
-      vimcmd_replace_one_symbol = "[R](bold fg:#c4a7e7)"
-      vimcmd_replace_symbol = "[R](bold fg:#c4a7e7)"
-      vimcmd_visual_symbol = "[V](bold fg:#c4a7e7)"
+      success_symbol = " [╰─󰇥](bold red)"
+      error_symbol = " [╰─×](bold red)"
+      vimcmd_symbol = "[ ╰─N](bold red)"
+      vimcmd_replace_one_symbol = "[ ╰─R](bold red)"
+      vimcmd_replace_symbol = "[ ╰─R](bold red)"
+      vimcmd_visual_symbol = "[ ╰─V](bold red)"
 
       [git_branch]
       format = "[$symbol$branch(:$remote_branch)]($style) "
