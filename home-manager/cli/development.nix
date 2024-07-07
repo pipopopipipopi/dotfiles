@@ -15,5 +15,8 @@
 
     ## Rust
     rust-bin.stable.latest.default
+
+    # Tex
+    texlive.combined.scheme-full
   ];
 }
