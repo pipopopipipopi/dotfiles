@@ -1,8 +1,8 @@
 {
   cat = "bat";
-  ls = "eza --icons always --classify always";
-  la = "eza --icons always --classify always --all";
-  ll = "eza --icons always --classify always --all --long --git";
+  ls = "eza --icons always --classify always --group-directories-first";
+  la = "eza --icons always --classify always --all --group-directories-first";
+  ll = "eza --icons always --classify always --all --long --git --group-directories-first";
   tree = "eza --icons always --classify always --tree";
 
   ".." = "cd ..";
