@@ -20,9 +20,6 @@
     ];
 
     casks = [
-      # "discord"
-      "zirixcz/vesktop/vesktop"
-
       "vivaldi"
       "arc"
 
