@@ -40,7 +40,7 @@
       text = ''
         #!/bin/sh
 
-        sketchybar --set "$NAME" label="$(date '+%d/%m %H:%M')"
+        sketchybar --set "$NAME" label="$(date '+%m/%d %H:%M')"
       '';
     };
     front_app = {
