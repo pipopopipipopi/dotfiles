@@ -10,32 +10,33 @@
 
       sudo yabai --load-sa
 
-      yabai -m config external_bar               all:35:0     \
-                      mouse_follows_focus        off          \
-                      focus_follows_mouse        off          \
-                      window_zoom_persist        off          \
-                      window_placement           second_child \
-                      window_topmost             off          \
-                      window_shadow              float        \
-                      window_opacity             off          \
-                      window_opacity_duration    0.0          \
-                      active_window_opacity      1.0          \
-                      normal_window_opacity      1.0          \
-                      window_animation_duration  0.3          \
-                      insert_feedback_color      0xff9dd274   \
-                      split_ratio                0.50         \
-                      auto_balance               off          \
-                      mouse_modifier             fn           \
-                      mouse_action1              move         \
-                      mouse_action2              resize       \
-                      mouse_drop_action          swap         \
-                      menubar_opacity            0.0          \
-                      layout                     bsp          \
-                                                              \
-                      top_padding                6            \
-                      bottom_padding             6            \
-                      left_padding               6            \
-                      right_padding              6            \
+      yabai -m config external_bar               all:35:0       \
+                      window_animation_duration  0.4            \
+                      window_animation_easing    ease_out_quint \
+                      mouse_follows_focus        off            \
+                      focus_follows_mouse        off            \
+                      window_zoom_persist        off            \
+                      window_placement           second_child   \
+                      window_topmost             off            \
+                      window_shadow              float          \
+                      window_opacity             off            \
+                      window_opacity_duration    0.0            \
+                      active_window_opacity      1.0            \
+                      normal_window_opacity      1.0            \
+                      insert_feedback_color      0xff9dd274     \
+                      split_ratio                0.50           \
+                      auto_balance               off            \
+                      mouse_modifier             fn             \
+                      mouse_action1              move           \
+                      mouse_action2              resize         \
+                      mouse_drop_action          swap           \
+                      menubar_opacity            0.0            \
+                      layout                     bsp            \
+                                                                \
+                      top_padding                6              \
+                      bottom_padding             6              \
+                      left_padding               6              \
+                      right_padding              6              \
                       window_gap                 8
 
       yabai -m rule --add app="^System Settings$" manage=off
