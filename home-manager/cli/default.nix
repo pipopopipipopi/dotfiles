@@ -6,6 +6,7 @@
     ./git
     ./bat
     ./neofetch
+    ./yazi
 
     ./development.nix
     ./tools.nix
