@@ -25,7 +25,7 @@ inputs: let
       };
     };
 
-  mkHomeManagerConfiguration = {
+  mkNixosHomeManagerConfiguration = {
     system,
     username,
     overlays,
