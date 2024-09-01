@@ -16,6 +16,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
     pipopopipipopi-nvim = {
         url = "github:pipopopipipopi/pipopopipipopi.nvim";
         inputs.nixpkgs.follows = "nixpkgs";

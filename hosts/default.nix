@@ -54,7 +54,7 @@ inputs: let
             home = {
               inherit username;
               homeDirectory = "/home/${username}";
-              stateVersion = "23.11";
+              stateVersion = "24.05";
             };
             programs = {
               home-manager.enable = true;
@@ -103,7 +103,16 @@ inputs: let
         ];
     };
 in {
-  nixos = {};
+  nixos = {
+    lawine = mkNixosSystem {
+      system = "x86_64-linux";
+      hostname = "lawine";
+      username = "pipopo";
+      modules = [
+        ./lawine/nixos.nix
+      ];
+    };
+  };
 
   darwin = {
     # MacBook Air 2020 13.3-inch M1 8GB
@@ -118,6 +127,14 @@ in {
   };
 
   home-manager = {
+    "pipopo@lawine" = mkNixosHomeManagerConfiguration {
+      system = "x86_64-linux";
+      username = "pipopo";
+      overlays = [(import inputs.rust-overlay)];
+      modules = [
+        ./lawine/home-manager.nix
+      ];
+    };
     "pipopo@aura" = mkDarwinHomeManagerConfiguration {
       system = "aarch64-darwin";
       username = "pipopo";
