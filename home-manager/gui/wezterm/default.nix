@@ -12,6 +12,8 @@
       config.window_background_opacity = 0.77
       config.hide_tab_bar_if_only_one_tab = true
 
+      config.enable_wayland = false;
+
       config.use_ime = true
 
       if darwin then

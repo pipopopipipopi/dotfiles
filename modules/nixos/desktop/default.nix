@@ -1,3 +1,4 @@
+{pkgs, ...}:
 {
   imports = [
     ./fcitx5.nix
@@ -5,4 +6,8 @@
     ./security.nix
     ./sound.nix
   ];
+  programs = {
+    dconf.enable = true;
+  };
+  xdg.portal.enable = true;
 }
