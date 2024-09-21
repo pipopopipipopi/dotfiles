@@ -14,6 +14,8 @@
   home.packages =
     (with pkgs; [
       swww # wallpaper
+      wl-clipboard # clipboard manager
+
       waybar
     ]);
 }
