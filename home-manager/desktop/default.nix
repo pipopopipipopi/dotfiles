@@ -4,6 +4,7 @@
     ./settings.nix
     ./keybinds.nix
     ./rofi.nix
+    ./waybar.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -13,5 +14,6 @@
   home.packages =
     (with pkgs; [
       swww # wallpaper
+      waybar
     ]);
 }

@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    rofi
+    rofi-wayland
   ];
+  home.file.".config/rofi/config.rasi".text = ''
+  '';
 }

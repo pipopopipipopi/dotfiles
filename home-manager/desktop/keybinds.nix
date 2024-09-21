@@ -2,12 +2,15 @@
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     "$subMod" = "ALT";
+    "$term" = "wezterm";
+    "$browser" = "zen";
     bind = [
-      "$mainMod, Return, exec, wezterm"
+      "$mainMod, Return, exec, $term"
+      "$mainMod , b, exec, $browser"
       "$mainMod , q, killactive"
 
       # launcher
-      "$mainMod, s, exec, rofi -show drun"
+      "$mainMod, SPACE, exec, rofi -show drun"
 
       # system
       "$mainMod, x, exec, systemctl suspend"

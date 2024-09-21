@@ -21,9 +21,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser = {
+      url = "github:MarceColl/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     pipopopipipopi-nvim = {
-        url = "github:pipopopipipopi/pipopopipipopi.nvim";
-        inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:pipopopipipopi/pipopopipipopi.nvim";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     rust-overlay.url = "github:oxalica/rust-overlay";

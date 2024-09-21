@@ -12,6 +12,11 @@
       "HDMI-A-1, 1920x1080@60, 1920x0, 1"
       "Unknown-1, disable"
     ];
+    workspace = [
+      "1, monitor:DP-1"
+      "2, monitor:DP-2"
+      "3, monitor:HDMI-A-1"
+    ];
     input.kb_layout = "us";
   };
 }

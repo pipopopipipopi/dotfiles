@@ -6,6 +6,8 @@
       "XMODIFIERS, @im=fcitx"
     ];
     exec-once = [
+      "swww init && swww img ~/Pictures/wallpapers/FIZ-ROT_01.webp"
+      "waybar"
       "fcitx5 -D"
       "discord --start-minimized"
     ];
@@ -32,6 +34,9 @@
         ignore_opacity = true;
         new_optimizations = true;
       };
+    };
+    misc = {
+      disable_hyprland_logo = true;
     };
   };
 }

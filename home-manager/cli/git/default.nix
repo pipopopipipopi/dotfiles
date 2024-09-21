@@ -7,4 +7,8 @@
       init.defaultBranch = "main";
     };
   };
+
+  programs.gh = {
+    enable = true;
+  };
 }
