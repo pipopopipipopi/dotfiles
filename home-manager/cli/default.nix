@@ -5,7 +5,7 @@
     ./neovim
     ./git
     ./bat
-    ./neofetch
+    ./fastfetch
     ./yazi
 
     ./development.nix

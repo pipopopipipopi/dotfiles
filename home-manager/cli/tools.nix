@@ -11,7 +11,5 @@
     httpie
     ripgrep
     zoxide
-
-    neofetch
   ];
 }
