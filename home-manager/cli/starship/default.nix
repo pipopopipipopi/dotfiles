@@ -24,7 +24,7 @@
       read_only_style = "fg:#eb6f92"
 
       [character]
-      success_symbol = " [╰─󰇥](bold red)"
+      success_symbol = " [╰─](bold red)"
       error_symbol = " [╰─×](bold red)"
       vimcmd_symbol = "[ ╰─N](bold red)"
       vimcmd_replace_one_symbol = "[ ╰─R](bold red)"

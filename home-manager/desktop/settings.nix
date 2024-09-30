@@ -7,7 +7,6 @@
     ];
     exec-once = [
       "swww init && swww img ~/Pictures/wallpapers/FIZ-ROT_01.webp"
-      "waybar"
       "fcitx5 -D"
       "discord --start-minimized"
     ];
