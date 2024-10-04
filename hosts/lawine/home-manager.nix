@@ -4,6 +4,7 @@
     ../../home-manager/common/gui
     ../../home-manager/nixos/browser
     ../../home-manager/nixos/desktop
+    ../../home-manager/nixos/nix.nix
   ];
   wayland.windowManager.hyprland.settings = {
     # https://wiki.hyprland.org/Nvidia/
