@@ -11,5 +11,6 @@
     httpie
     ripgrep
     zoxide
+    pywal
   ];
 }
