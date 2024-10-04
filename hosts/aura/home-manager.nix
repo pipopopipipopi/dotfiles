@@ -1,7 +1,7 @@
 {
   imports = [
-    ../../home-manager/cli
+    ../../home-manager/common/cli
+    ../../home-manager/common/gui
     ../../home-manager/darwin
-    ../../home-manager/gui
   ];
 }

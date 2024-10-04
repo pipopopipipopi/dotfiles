@@ -1,9 +1,9 @@
 {
   imports = [
-    ../../home-manager/cli
-    ../../home-manager/gui
-    ../../home-manager/gui/nixos
-    ../../home-manager/desktop
+    ../../home-manager/common/cli
+    ../../home-manager/common/gui
+    ../../home-manager/nixos/browser
+    ../../home-manager/nixos/desktop
   ];
   wayland.windowManager.hyprland.settings = {
     # https://wiki.hyprland.org/Nvidia/
