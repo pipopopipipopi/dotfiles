@@ -9,8 +9,10 @@
     fzf
     gitui
     httpie
+    jq
     ripgrep
     zoxide
+
     pywal
   ];
 }
