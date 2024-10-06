@@ -47,7 +47,7 @@
     homeConfigurations = (import ./hosts inputs).home-manager;
 
     devShells = forAllSystems (system: let
-      pkgs = import inputs.nixpkgs {inherit system;};
+      pkgs = inputs.nixpkgs.legacyPackages.${system};
       scripts = with pkgs; [
         (writeScriptBin "switch-nixos" ''
           sudo nixos-rebuild switch --flake ".#$@"
