@@ -13,8 +13,6 @@
       ../../modules/nixos/core
       ../../modules/nixos/desktop
       ../../modules/nixos/programs/shell.nix
-      #../../modules/nixos/programs/xserver.nix
-      #../../modules/nixos/programs/hyprland.nix
     ];
  
   boot = {

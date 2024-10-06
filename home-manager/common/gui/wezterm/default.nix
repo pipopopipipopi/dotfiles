@@ -13,11 +13,11 @@
 
       local config = {}
 
-      config.window_decorations = "RESIZE"
+      config.window_decorations = "NONE"
       config.window_background_opacity = 0.77
       config.hide_tab_bar_if_only_one_tab = true
 
-      config.enable_wayland = false;
+      config.enable_wayland = true;
 
       config.use_ime = true
 
