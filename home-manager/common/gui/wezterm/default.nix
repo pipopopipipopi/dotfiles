@@ -13,7 +13,6 @@
 
       local config = {}
 
-      config.window_decorations = "NONE"
       config.window_background_opacity = 0.77
       config.hide_tab_bar_if_only_one_tab = true
 
@@ -23,10 +22,13 @@
 
       if darwin then
         config.font_size = 16
+        config.window_decorations = "RESIZE"
       end
       if linux then
         config.font_size = 12
+        config.window_decorations = "NONE"
       end
+
       config.font = wezterm.font_with_fallback {
         { family = "Hack Nerd Font", weight = "Medium" },
         { family = "HackGen Console NF", weight = "Medium" },
