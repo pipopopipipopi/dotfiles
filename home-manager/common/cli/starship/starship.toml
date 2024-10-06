@@ -1,5 +1,3 @@
-# version: 1.0.0
-
 add_newline = true
 continuation_prompt = "[▸▹ ](dimmed white)"
 
@@ -10,7 +8,6 @@ $shlvl\
 $shell\
 $env_var\
 $jobs\
-$sudo\
 $username\
 $character"""
 
@@ -91,10 +88,9 @@ symbol = ' '
 
 [character]
 format = "$symbol "
-success_symbol = "[◎](bold italic bright-yellow)"
+success_symbol = "[◎](italic bright-yellow)"
 error_symbol = "[○](italic purple)"
 vimcmd_symbol = "[■](italic dimmed green)"
-# not supported in zsh
 vimcmd_replace_one_symbol = "◌"
 vimcmd_replace_symbol = "□"
 vimcmd_visual_symbol = "▼"
@@ -102,12 +98,6 @@ vimcmd_visual_symbol = "▼"
 [env_var.VIMSHELL]
 format = "[$env_value]($style)"
 style = 'green italic'
-
-[sudo]
-format = "[$symbol]($style)"
-style = "bold italic bright-purple"
-symbol = "⋈┈"
-disabled = false
 
 [username]
 style_user = "bright-yellow bold italic"
@@ -117,9 +107,9 @@ disabled = false
 show_always = false
 
 [directory]
-home_symbol = "⌂"
-truncation_length = 2
-truncation_symbol = "□ "
+home_symbol = "🌧"
+truncation_length = 4
+truncation_symbol = ""
 read_only = " ◈"
 use_os_path_sep = true
 style = "italic blue"
@@ -169,7 +159,7 @@ style = "italic dimmed yellow"
 
 [git_branch]
 format = " [$branch(:$remote_branch)]($style)"
-symbol = "[△](bold italic bright-blue)"
+symbol = "[△](italic bright-blue)"
 style = "italic bright-blue"
 truncation_symbol = "⋯"
 truncation_length = 11
@@ -184,16 +174,16 @@ ignore_submodules = true
 disabled = false
 
 [git_status]
-style = "bold italic bright-blue"
+style = "italic bright-blue"
 format = "([⎪$ahead_behind$staged$modified$untracked$renamed$deleted$conflicted$stashed⎥]($style))"
 conflicted = "[◪◦](italic bright-magenta)"
-ahead = "[▴│[${count}](bold white)│](italic green)"
-behind = "[▿│[${count}](bold white)│](italic red)"
+ahead = "[▴│[${count}](white)│](italic green)"
+behind = "[▿│[${count}](white)│](italic red)"
 diverged = "[◇ ▴┤[${ahead_count}](regular white)│▿┤[${behind_count}](regular white)│](italic bright-magenta)"
 untracked = "[◌◦](italic bright-yellow)"
 stashed = "[◃◈](italic white)"
 modified = "[●◦](italic yellow)"
-staged = "[▪┤[$count](bold white)│](italic bright-cyan)"
+staged = "[▪┤[$count](white)│](italic bright-cyan)"
 renamed = "[◎◦](italic bright-blue)"
 deleted = "[✕](italic red)"
 
