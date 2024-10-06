@@ -40,12 +40,6 @@ inputs: let
       };
       extraSpecialArgs = {
         inherit inputs username;
-        pkgs-stable = import inputs.nixpkgs-stable {
-          inherit system overlays;
-          config = {
-            allowUnfree = true;
-          };
-        };
       };
       modules =
         modules
@@ -79,12 +73,6 @@ inputs: let
       };
       extraSpecialArgs = {
         inherit inputs username;
-        pkgs-stable = import inputs.nixpkgs-stable {
-          inherit system overlays;
-          config = {
-            allowUnfree = true;
-          };
-        };
       };
       modules =
         modules
