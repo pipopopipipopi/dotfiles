@@ -26,6 +26,38 @@ config.font = wezterm.font_with_fallback {
     "Twitter Color Emoji",
 }
 
-config.color_scheme = "rose-pine-moon"
+-- config.color_scheme = "rose-pine-moon"
+
+config.colors = {
+    foreground = "#ece6e7",
+    background = "#281c24",
+    cursor_bg = "#ece6e7",
+    cursor_border = "#ece6e7",
+    cursor_fg = "#281c24",
+    selection_bg = "#B2CEE5",
+    selection_fg = "#ece6e7",
+
+    ansi = {
+        "#281c24",
+        "#E8C6BB",
+        "#ABB7C9",
+        "#D1BCC5",
+        "#B2CEE5",
+        "#D2CCD3",
+        "#ECD1CE",
+        "#ece6e7",
+    },
+
+    brights = {
+        "#a5a1a1",
+        "#E8C6BB",
+        "#ABB7C9",
+        "#D1BCC5",
+        "#B2CEE5",
+        "#D2CCD3",
+        "#ECD1CE",
+        "#ece6e7",
+    },
+}
 
 return config
