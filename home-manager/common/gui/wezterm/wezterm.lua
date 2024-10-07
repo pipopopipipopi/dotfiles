@@ -21,7 +21,7 @@ if linux then
 end
 
 config.font = wezterm.font_with_fallback {
-    { family = "JetBrainsMono Nerd Font", weight = "Medium" },
+    { family = "JetBrainsMono Nerd Font", weight = "Medium", harfbuzz_features = { "calt = 0", "clig = 0", "liga = 0" }, },
     { family = "HackGen Console NF", weight = "Medium" },
     "Twitter Color Emoji",
 }
