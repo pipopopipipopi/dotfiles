@@ -461,11 +461,11 @@
         "toggleterm_nvim": "toggleterm_nvim"
       },
       "locked": {
-        "lastModified": 1728191880,
-        "narHash": "sha256-c+SqeMDQ6yEUefdP6RANVOndvhG9nTEAa1znIv9KQPk=",
+        "lastModified": 1728307814,
+        "narHash": "sha256-gt98Sk0pazHr/PflySMy7hONOp67XD5nz4SYlfrtffc=",
         "owner": "pipopopipipopi",
         "repo": "pipopopipipopi.nvim",
-        "rev": "4d049e2719944e148ddf30bbcd66f4c9fa0757aa",
+        "rev": "99a2e4a0a5840a30b4b26b4aac0edb90b9d58c7e",
         "type": "github"
       },
       "original": {
