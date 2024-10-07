@@ -9,6 +9,7 @@
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
         noto-fonts-emoji
+        twitter-color-emoji
       ]);
     fontDir.enable = true;
     fontconfig = {
