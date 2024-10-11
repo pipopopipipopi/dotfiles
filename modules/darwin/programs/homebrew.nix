@@ -20,8 +20,10 @@
     ];
 
     casks = [
-      "vivaldi"
       "arc"
+      "zen-browser"
+
+      "obsidian"
 
       "google-japanese-ime"
 
