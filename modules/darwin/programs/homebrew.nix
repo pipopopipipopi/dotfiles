@@ -21,7 +21,6 @@
 
     casks = [
       "arc"
-      "zen-browser"
 
       "obsidian"
 
