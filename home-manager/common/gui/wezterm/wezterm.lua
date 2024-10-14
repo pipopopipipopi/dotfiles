@@ -7,17 +7,19 @@ local config = {}
 config.window_background_opacity = 0.77
 config.hide_tab_bar_if_only_one_tab = true
 
-config.enable_wayland = true;
-
 config.use_ime = true
 
 if darwin then
     config.font_size = 16
     config.window_decorations = "RESIZE"
+
+    config.macos_window_background_blur = 10
 end
 if linux then
     config.font_size = 12
     config.window_decorations = "NONE"
+
+    config.enable_wayland = true;
 end
 
 config.font = wezterm.font_with_fallback {
