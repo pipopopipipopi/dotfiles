@@ -8,7 +8,7 @@
     exec-once = [
       "swww init"
       "fcitx5 -D"
-      "vesktop --start-minimized"
+      "discord --start-minimized"
     ];
     input = {
       repeat_delay = 300;
