@@ -6,9 +6,9 @@
       "XMODIFIERS, @im=fcitx"
     ];
     exec-once = [
-      "swww init && swww img ~/Pictures/wallpapers/FIZ-ROT_01.webp"
+      "swww init"
       "fcitx5 -D"
-      "discord --start-minimized"
+      "vesktop --start-minimized"
     ];
     input = {
       repeat_delay = 300;
