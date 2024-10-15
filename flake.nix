@@ -49,13 +49,13 @@
     devShells = forAllSystems (system: let
       pkgs = inputs.nixpkgs.legacyPackages.${system};
       scripts = with pkgs; [
-        (writeScriptBin "switch-nixos" ''
+        (writeScriptBin "sw-nixos" ''
           sudo nixos-rebuild switch --flake ".#$@"
         '')
-        (writeScriptBin "switch-darwin" ''
+        (writeScriptBin "sw-darwin" ''
           darwin-rebuild switch --flake ".#$@"
         '')
-        (writeScriptBin "switch-home" ''
+        (writeScriptBin "sw-home" ''
           home-manager switch --flake ".#$@"
         '')
       ];
