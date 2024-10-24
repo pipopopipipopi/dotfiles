@@ -25,8 +25,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    pipopopipipopi-nvim = {
-      url = "github:pipopopipipopi/pipopopipipopi.nvim";
+    pipopo-nvim = {
+      url = "github:pipopopipipopi/pipopo-nvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

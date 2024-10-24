@@ -1,3 +1,3 @@
 { pkgs, inputs, ... }: {
-  home.packages = [ inputs.pipopopipipopi-nvim.packages.${pkgs.system}.default ];
+  home.packages = [ inputs.pipopo-nvim.packages.${pkgs.system}.default ];
 }
