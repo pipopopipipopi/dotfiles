@@ -390,11 +390,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1729780617,
-        "narHash": "sha256-zebqaPbfE5voXPPNN35Sx0nkHlZix+S8VQgidgZYKSA=",
+        "lastModified": 1729855056,
+        "narHash": "sha256-c+LctSZNw2xVT5A4cA51NkttyIF4tTHbT3GM7pQr9oA=",
         "owner": "pipopopipipopi",
         "repo": "pipopo-nvim",
-        "rev": "ebb46f6a484db0403ab2ba4a604c7154246f5255",
+        "rev": "438be257b0efc5b3e8257b3602614e3168a4112c",
         "type": "github"
       },
       "original": {
@@ -483,11 +483,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1727585736,
-        "narHash": "sha256-vEkcyKdFpfWbrtZlB5DCjNCmI2GudIJuHstWo3F9gL8=",
+        "lastModified": 1729006311,
+        "narHash": "sha256-1xtKJHu6CFnOhp4snof+WSTwcdPgwIaD6mBODP/cv3w=",
         "owner": "wez",
         "repo": "wezterm",
-        "rev": "a2f2c07a29f5c98f6736cde0c86b24887f9fd48a",
+        "rev": "9ddca7bde92090792dbcdc65c1e9897c362196d7",
         "type": "github"
       },
       "original": {
