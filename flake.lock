@@ -390,11 +390,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1729901581,
-        "narHash": "sha256-aVUKZWEYibhdQ0FdCiUxybXAWYaVOFFdJQ/5g3GDlvU=",
+        "lastModified": 1729902713,
+        "narHash": "sha256-ZQDQb8rHiRxkBzhrW/Op2YxvaJvasvxQ51czTw1ild8=",
         "owner": "pipopopipipopi",
         "repo": "pipopo-nvim",
-        "rev": "e820845025d87caa74a19c572105730984f03b36",
+        "rev": "04c4a9d597e71a142cd87a63211c3fb200fea7e4",
         "type": "github"
       },
       "original": {
