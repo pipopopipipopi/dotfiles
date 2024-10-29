@@ -272,11 +272,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1729147490,
-        "narHash": "sha256-F0/iQVbbIFctMPwK4JEd4fxVzNwaq7NnD5oen59S24s=",
+        "lastModified": 1730088025,
+        "narHash": "sha256-FIdIaN7f6karwtDV65VXTV8VThNrR63nwykfgXpm4p4=",
         "owner": "nix-community",
         "repo": "neovim-nightly-overlay",
-        "rev": "e2047498667aeb24e8493ff430a20cff713915f4",
+        "rev": "f35afbe60a4ff71fd65fec3839fc38943f961951",
         "type": "github"
       },
       "original": {
@@ -390,11 +390,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1730120256,
-        "narHash": "sha256-vS2LH3swL4WR8aLS15U0xySqeK2HA8tzXULU8XKyltU=",
+        "lastModified": 1730189653,
+        "narHash": "sha256-Gjea9fCp/EVcChEs3v04zNKG0pJ6g+ttIJkcroXPSTw=",
         "owner": "pipopopipipopi",
         "repo": "pipopo-nvim",
-        "rev": "50fbf71b047da803d21f3bcafcb0894508be7579",
+        "rev": "3218211f19034b877342d09ed052e432ed64c68a",
         "type": "github"
       },
       "original": {
