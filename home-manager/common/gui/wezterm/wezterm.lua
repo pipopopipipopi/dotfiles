@@ -28,37 +28,35 @@ config.font = wezterm.font_with_fallback {
     "Twitter Color Emoji",
 }
 
--- config.color_scheme = "rose-pine-moon"
-
 config.colors = {
-    foreground = "#ece6e7",
-    background = "#281c24",
-    cursor_bg = "#ece6e7",
-    cursor_border = "#ece6e7",
-    cursor_fg = "#281c24",
-    selection_bg = "#B2CEE5",
-    selection_fg = "#ece6e7",
+    foreground = "#d8cad0",
+    background = "#0f0c13",
+    cursor_bg = "#d8cad0",
+    cursor_fg = "#0f0c13",
+    cursor_border = "#d8cad0",
+    selection_fg = "#0f0c13",
+    selection_bg = "#6c708e",
 
     ansi = {
-        "#281c24",
-        "#E8C6BB",
-        "#ABB7C9",
-        "#D1BCC5",
-        "#B2CEE5",
-        "#D2CCD3",
-        "#ECD1CE",
-        "#ece6e7",
+        "#0f0c13", -- black
+        "#74425b", -- red
+        "#6f84a2", -- green
+        "#9ca787", -- yellow
+        "#3a6583", -- blue
+        "#997a8b", -- magenta
+        "#677095", -- cyan
+        "#d8cad0"  -- white
     },
 
     brights = {
-        "#a5a1a1",
-        "#E8C6BB",
-        "#ABB7C9",
-        "#D1BCC5",
-        "#B2CEE5",
-        "#D2CCD3",
-        "#ECD1CE",
-        "#ece6e7",
+        "#978d91",
+        "#94627b", -- red
+        "#8fa4c2", -- green
+        "#bcc7a7", -- yellow
+        "#5a85a3", -- blue
+        "#b99aab", -- magenta
+        "#8790a5", -- cyan
+        "#f8eaf0"  -- white
     },
 }
 
