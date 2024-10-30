@@ -1,7 +1,8 @@
 {
-   imports = [
-     ./borders.nix
-     ./sketchybar.nix
-     ./yabai.nix
-   ];
+  imports = [
+    ./tools.nix
+    ./borders.nix
+    ./sketchybar.nix
+    ./yabai.nix
+  ];
 }
