@@ -39,7 +39,7 @@ config.colors = {
 
     ansi = {
         "#0f0c13", -- black
-        "#74425b", -- red
+        "#84526b", -- red
         "#6f84a2", -- green
         "#9ca787", -- yellow
         "#3a6583", -- blue
@@ -50,7 +50,7 @@ config.colors = {
 
     brights = {
         "#978d91",
-        "#94627b", -- red
+        "#a4728b", -- red
         "#8fa4c2", -- green
         "#bcc7a7", -- yellow
         "#5a85a3", -- blue
