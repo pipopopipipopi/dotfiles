@@ -13,8 +13,8 @@
       yabai -m config external_bar               all:35:0       \
                       window_animation_duration  0.4            \
                       window_animation_easing    ease_out_quint \
-                      mouse_follows_focus        off            \
-                      focus_follows_mouse        off            \
+                      mouse_follows_focus        on             \
+                      focus_follows_mouse        autofocus      \
                       window_zoom_persist        off            \
                       window_placement           second_child   \
                       window_topmost             off            \
