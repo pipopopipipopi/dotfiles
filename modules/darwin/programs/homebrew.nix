@@ -27,6 +27,8 @@
       "google-japanese-ime"
 
       "raycast"
+
+      "microsoft-office"
     ];
   };
 }
