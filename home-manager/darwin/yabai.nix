@@ -50,16 +50,16 @@
     text = let yabai = "/opt/homebrew/bin/yabai"; in
       ''
         # Move focus windows
-        alt - j : ${yabai} -m window --focus west
-        alt - k : ${yabai} -m window --focus south
-        alt - l : ${yabai} -m window --focus north
-        alt - 0x29 : ${yabai} -m window --focus east
+        alt - t : ${yabai} -m window --focus west
+        alt - n : ${yabai} -m window --focus south
+        alt - s : ${yabai} -m window --focus north
+        alt - h : ${yabai} -m window --focus east
 
         # Moving windows
-        shift + alt - j : ${yabai} -m window --warp west
-        shift + alt - k : ${yabai} -m window --warp south
-        shift + alt - l : ${yabai} -m window --warp north
-        shift + alt - 0x29 : ${yabai} -m window --warp east
+        shift + alt - t : ${yabai} -m window --warp west
+        shift + alt - n : ${yabai} -m window --warp south
+        shift + alt - s : ${yabai} -m window --warp north
+        shift + alt - h : ${yabai} -m window --warp east
 
         # Change desktop
         alt - 1 : ${yabai} -m space --focus 1

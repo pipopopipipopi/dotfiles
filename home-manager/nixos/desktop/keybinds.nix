@@ -16,10 +16,10 @@
       "$mainMod, x, exec, systemctl suspend"
 
       # move focus
-      "$mainMod, j, movefocus, l"
-      "$mainMod, k, movefocus, d"
-      "$mainMod, l, movefocus, u"
-      "$mainMod, semicolon, movefocus, r"
+      "$mainMod, t, movefocus, l"
+      "$mainMod, n, movefocus, d"
+      "$mainMod, s, movefocus, u"
+      "$mainMod, h, movefocus, r"
       "$subMod, Tab, cyclenext"
       "$subMod SHIFT, Tab, cyclenext, prev"
     ];
