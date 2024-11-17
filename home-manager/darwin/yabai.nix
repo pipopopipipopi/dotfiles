@@ -30,7 +30,7 @@
                       mouse_action1              move           \
                       mouse_action2              resize         \
                       mouse_drop_action          swap           \
-                      menubar_opacity            1.0            \
+                      menubar_opacity            0.7            \
                       layout                     bsp            \
                                                                 \
                       top_padding                6              \
