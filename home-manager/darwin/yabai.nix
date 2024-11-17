@@ -10,7 +10,7 @@
 
       sudo yabai --load-sa
 
-      yabai -m config external_bar               all:35:0       \
+      yabai -m config external_bar               all:0:0        \
                       window_animation_duration  0.4            \
                       window_animation_easing    ease_out_quint \
                       mouse_follows_focus        on             \
@@ -30,7 +30,7 @@
                       mouse_action1              move           \
                       mouse_action2              resize         \
                       mouse_drop_action          swap           \
-                      menubar_opacity            0.0            \
+                      menubar_opacity            1.0            \
                       layout                     bsp            \
                                                                 \
                       top_padding                6              \
