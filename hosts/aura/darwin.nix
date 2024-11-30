@@ -12,7 +12,11 @@
     ../../modules/darwin/programs/homebrew.nix
   ];
 
-  users.users."${username}" = {
-    shell = pkgs.fish;
+  # users.users."${username}" = {
+  #   shell = pkgs.fish;
+  # };
+
+  environment.variables = {
+    SHELL = "/run/current-system/sw/bin/fish";
   };
 }

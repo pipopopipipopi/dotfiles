@@ -3,8 +3,6 @@
     enable = true;
     taps = [
       # default
-      "homebrew/cask-fonts"
-      "homebrew/cask-versions"
       "homebrew/services"
 
       # custom
@@ -20,10 +18,13 @@
 
     casks = [
       "arc"
+      "zen-browser"
 
       "obsidian"
 
-      "google-japanese-ime"
+      "aquaskk"
+
+      "karabiner-elements"
 
       "raycast"
 
