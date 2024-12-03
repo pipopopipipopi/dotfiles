@@ -8,11 +8,10 @@
       # custom
       "koekeishiya/formulae"
       "FelixKratz/formulae"
+      "nikitabobko/tap"
     ];
 
     brews = [
-      "skhd"
-      "yabai"
       "borders"
     ];
 
@@ -29,6 +28,8 @@
       "raycast"
 
       "microsoft-office"
+
+      "aerospace"
     ];
   };
 }
