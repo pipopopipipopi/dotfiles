@@ -7,6 +7,9 @@
     ## C
     gcc
 
+    ## Gleam
+    gleam
+
     ## Lisp
     sbcl
 
