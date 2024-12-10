@@ -4,5 +4,6 @@
     ./network.nix
     ./nix.nix
     ./security.nix
+    ./virtualisation.nix
   ];
 }
