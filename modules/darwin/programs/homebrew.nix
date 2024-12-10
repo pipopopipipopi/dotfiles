@@ -30,8 +30,6 @@
       "microsoft-office"
 
       "aerospace"
-
-      "zed"
     ];
   };
 }
