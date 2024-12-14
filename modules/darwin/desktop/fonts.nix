@@ -1,10 +1,8 @@
-{
-  pkgs,
-  ...
-}: {
+{ pkgs, ... }: {
   fonts = {
     packages = with pkgs; [
-      nerdfonts
+      nerd-fonts.hack
+      nerd-fonts.jetbrains-mono
       hackgen-nf-font
       twitter-color-emoji
     ];

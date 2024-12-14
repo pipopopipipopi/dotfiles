@@ -1,8 +1,5 @@
-{
-  pkgs,
-  ...
-}: {
+{ pkgs, ... }: {
   home.packages = with pkgs; [
-    anki-bin
+    colima
   ];
 }

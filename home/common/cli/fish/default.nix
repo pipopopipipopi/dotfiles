@@ -1,5 +1,5 @@
 {
-  imports = [ ../starship ];
+  imports = [ ../starship.nix ];
   programs.fish = {
     enable = true;
 

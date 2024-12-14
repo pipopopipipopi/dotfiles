@@ -1,22 +1,15 @@
-{
-  inputs,
-  pkgs,
-  username,
-  ...
-}: {
+{ pkgs, username, ... }: {
   imports = [
     ../../modules/darwin/core
-    ../../modules/darwin/desktop/fonts.nix
-    ../../modules/darwin/programs/darwin-system.nix
-    ../../modules/darwin/programs/shell.nix
-    ../../modules/darwin/programs/homebrew.nix
+    ../../modules/darwin/desktop
+    ../../modules/darwin/programs
   ];
 
-  # users.users."${username}" = {
-  #   shell = pkgs.fish;
-  # };
+  users.users."${username}" = {
+    shell = pkgs.fish;
+  };
 
   environment.variables = {
-    SHELL = "/run/current-system/sw/bin/fish";
+    EDITOR = "nvim";
   };
 }

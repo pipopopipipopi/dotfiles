@@ -19,7 +19,10 @@
     ## Rust
     rust-bin.stable.latest.default
 
-    # Tex
+    ## Tex
     texlive.combined.scheme-full
+
+    ## Typst
+    typst
   ];
 }

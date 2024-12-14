@@ -1,37 +1,23 @@
 {
   homebrew = {
     enable = true;
-    taps = [
-      # default
-      "homebrew/services"
 
-      # custom
-      "koekeishiya/formulae"
-      "FelixKratz/formulae"
-      "nikitabobko/tap"
-    ];
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+      cleanup = "zap";
+    };
+    
+    taps = [];
 
-    brews = [
-      "borders"
-    ];
+    brews = [];
 
     casks = [
-      "arc"
-      "zen-browser"
-
-      "obsidian"
-
       "aquaskk"
-
       "karabiner-elements"
-
-      "raycast"
-
       "microsoft-office"
-
-      "aerospace"
-
-      "zed"
+      "obsidian"
+      "zen-browser"
     ];
   };
 }

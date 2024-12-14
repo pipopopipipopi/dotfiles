@@ -1,8 +1,6 @@
 {
   imports = [
-    ./wezterm
-    ./discord
-
+    ./aerospace.nix
     ./tools.nix
   ];
 }
