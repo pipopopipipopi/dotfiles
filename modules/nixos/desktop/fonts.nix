@@ -1,10 +1,10 @@
-{ inputs, pkgs, ... }:
-{
+{ pkgs, ... }: {
   fonts = {
     packages =
       (with pkgs; [
-        nerdfonts
-	    hackgen-nf-font
+        nerd-fonts.hack
+        nerd-fonts.jetbrains-mono
+        hackgen-nf-font
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
