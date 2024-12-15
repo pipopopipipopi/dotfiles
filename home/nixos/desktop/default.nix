@@ -1,8 +1,8 @@
 { pkgs, ... }: {
   imports = [
+    ./anyrun.nix
     ./settings.nix
     ./keybinds.nix
-    ./rofi.nix
     ./waybar.nix
   ];
 
@@ -11,11 +11,10 @@
     xwayland.enable = true;
   };
 
-  home.packages =
-    (with pkgs; [
-      swww # wallpaper
-      wl-clipboard # clipboard manager
-
-      waybar
-    ]);
+  home.packages = with pkgs; [
+    anyrun
+    swww # wallpaper
+    wl-clipboard # clipboard manager
+    waybar
+  ];
 }
