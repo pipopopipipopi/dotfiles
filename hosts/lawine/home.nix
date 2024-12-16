@@ -37,7 +37,7 @@
     ];
     input.kb_layout = "us";
     cursor = {
-      no_hardware_cursors = 1;
+      no_hardware_cursors = true;
     };
   };
 }

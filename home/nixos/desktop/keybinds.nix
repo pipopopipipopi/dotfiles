@@ -10,7 +10,7 @@
       "$mainMod , q, killactive"
 
       # launcher
-      "$mainMod, SPACE, exec, rofi -show combi -modes combi -combi-modes \"window,drun,run\""
+      "$mainMod, SPACE, exec, anyrun"
 
       # system
       "$mainMod, x, exec, systemctl suspend"
