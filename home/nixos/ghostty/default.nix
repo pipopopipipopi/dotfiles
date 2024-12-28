@@ -3,5 +3,5 @@
     inputs.ghostty.packages.${pkgs.system}.default
   ];
 
-  imports = [./config.nix];
+  imports = [../../common/gui/ghostty.nix];
 }
