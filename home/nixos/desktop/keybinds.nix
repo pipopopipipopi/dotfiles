@@ -2,7 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     "$subMod" = "ALT";
-    "$term" = "wezterm";
+    "$term" = "ghostty";
     "$browser" = "zen";
     bind = [
       "$mainMod, Return, exec, $term"
