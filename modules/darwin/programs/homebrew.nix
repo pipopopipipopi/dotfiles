@@ -14,7 +14,6 @@
 
     casks = [
       "aquaskk"
-      "ghostty"
       "karabiner-elements"
       "microsoft-office"
       "obsidian"

@@ -1,71 +1,72 @@
 {
-  home.file.ghostty = {
-    target = ".config/ghostty/config";
-    text = ''
-      shell-integration = fish
+  programs.ghostty = {
+    enable = true;
 
-      font-family = JetBrainsMono Nerd Font Mono
-      font-style = Medium
-      font-size = 12
-      font-feature = -calt
-      font-feature = -liga
-      font-feature = -dlig
+    settings = {
+      shell-integration = "fish";
 
-      cursor-color = #d8cad0
-      cursor-text = #0f0c13
-      cursor-opacity = 1
-      cursor-style = block
-      cursor-style-blink = false
-      cursor-click-to-move = true
-      shell-integration-features = no-cursor
+      theme = "amewotaguru";
 
-      background-opacity = 0.77
+      font-family = "JetBrainsMono Nerd Font Mono";
+      font-style = "Medium";
+      font-size = 12;
+      font-feature = ["-liga" "-dlig" "-calt"];
 
-      window-decoration = false
-      macos-titlebar-style = hidden
-      macos-window-shadow = false
+      cursor-style = "block";
+      cursor-style-blink = false;
+      cursor-click-to-move = true;
+      shell-integration-features = "no-cursor";
 
-      window-padding-x = 6
-      window-padding-y = 4,6
+      background-opacity = 0.77;
 
-      keybind = ctrl+j=ignore
+      window-decoration = false;
+      macos-titlebar-style = "hidden";
+      macos-window-shadow = false;
 
-      foreground = #d8cad0
-      background = #0f0c13
-      selection-foreground = #0f0c13
-      selection-background = #6c708e
+      window-padding-x = 6;
+      window-padding-y = 6;
+      window-padding-balance = true;
 
-      # black
-      palette = 0=#0f0c13
-      palette = 8=#978d91
+      keybind = "ctrl+j=ignore";
 
-      # red
-      palette = 1=#84526b
-      palette = 9=#a4728b
+      resize-overlay = "never";
+    };
 
-      # green
-      palette = 2=#6f84a2
-      palette = 10=#8fa4c2
-
-      # yellow
-      palette = 3=#9ca787
-      palette = 11=#bcc7a7
-
-      # blue
-      palette = 4=#3a6583
-      palette = 12=#5a85a3
-
-      # magenta
-      palette = 5=#997a8b
-      palette = 13=#b99aab
-
-      # cyan
-      palette = 6=#677095
-      palette = 14=#8790a5
-
-      # white
-      palette = 7=#d8cad0
-      palette = 15=#f8eaf0
-    '';
+    themes = {
+      amewotaguru = {
+        background = "0f0c13";
+        foreground = "d8cad0";
+        cursor-color = "d8cad0";
+        cursor-text = "0f0c13";
+        palette = [
+          # black
+          "0=#0f0c13"
+          "8=#978d91"
+          # red
+          "1=#84526b"
+          "9=#a4728b"
+          # green
+          "2=#6f84a2"
+          "10=#8fa4c2"
+          # yellow
+          "3=#9ca787"
+          "11=#bcc7a7"
+          # blue
+          "4=#3a6583"
+          "12=#5a85a3"
+          # magenta
+          "5=#997a8b"
+          "13=#b99aab"
+          # cyan
+          "6=#677095"
+          "14=#8790a5"
+          # white
+          "7=#d8cad0"
+          "15=#f8eaf0"
+        ];
+        selection-background = "6c708e";
+        selection-foreground = "0f0c13";
+      };
+    };
   };
 }
