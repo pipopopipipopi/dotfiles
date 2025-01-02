@@ -7,7 +7,7 @@
 
       theme = "amewotaguru";
 
-      font-family = "JetBrainsMono Nerd Font Mono";
+      font-family = ["JetBrainsMono Nerd Font Mono" "HackGen Console NF" "Twitter Color Emoji"];
       font-style = "Medium";
       font-size = 12;
       font-feature = ["-liga" "-dlig" "-calt"];
@@ -16,6 +16,7 @@
       cursor-style-blink = false;
       cursor-click-to-move = true;
       shell-integration-features = "no-cursor";
+      mouse-hide-while-typing = true;
 
       background-opacity = 0.77;
 
