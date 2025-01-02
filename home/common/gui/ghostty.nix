@@ -2,12 +2,14 @@
   home.file.ghostty = {
     target = ".config/ghostty/config";
     text = ''
+      shell-integration = fish
+
       font-family = JetBrainsMono Nerd Font Mono
       font-style = Medium
       font-size = 12
-      font-feature = "-calt"
-      font-feature = "-clig"
-      font-feature = "-liga"
+      font-feature = -calt
+      font-feature = -liga
+      font-feature = -dlig
 
       cursor-color = #d8cad0
       cursor-text = #0f0c13
@@ -19,16 +21,18 @@
 
       background-opacity = 0.77
 
-      #gtk-titlebar = false
       window-decoration = false
       macos-titlebar-style = hidden
+
+      window-padding-x = 6
+      window-padding-y = 4
+
+      keybind = ctrl+j=ignore
 
       foreground = #d8cad0
       background = #0f0c13
       selection-foreground = #0f0c13
       selection-background = #6c708e
-
-      title = " "
 
       # black
       palette = 0=#0f0c13
