@@ -23,9 +23,10 @@
 
       window-decoration = false
       macos-titlebar-style = hidden
+      macos-window-shadow = false
 
       window-padding-x = 6
-      window-padding-y = 4
+      window-padding-y = 4,6
 
       keybind = ctrl+j=ignore
 
