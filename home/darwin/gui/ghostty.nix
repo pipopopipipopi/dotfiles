@@ -17,6 +17,7 @@
       cursor-style = block
       cursor-style-blink = false
       cursor-click-to-move = true
+      mouse-hide-while-typing = true
       shell-integration-features = no-cursor
       background-opacity = 0.77
       window-decoration = false
