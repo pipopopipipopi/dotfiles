@@ -8,7 +8,7 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    xwayland.enable = true;
+    #xwayland.enable = true;
   };
 
   home.packages = with pkgs; [
@@ -16,6 +16,15 @@
     swww # wallpaper
     wl-clipboard # clipboard manager
     waybar
-    hyprcursor
   ];
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    hyprcursor.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 24;
+    hyprcursor.size = 24;
+  };
 }
