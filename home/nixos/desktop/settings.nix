@@ -4,6 +4,8 @@
       "GTK_IM_MODULE, fcitx"
       "QT_IM_MODULE, fcitx"
       "XMODIFIERS, @im=fcitx"
+      "HYPRCURSOR_SIZE, 24"
+      "HYPRCURSOR_THEME, HyprBibataModernClassicSVG"
     ];
     exec-once = [
       "swww init"

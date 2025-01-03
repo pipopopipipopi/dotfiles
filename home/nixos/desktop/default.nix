@@ -16,5 +16,6 @@
     swww # wallpaper
     wl-clipboard # clipboard manager
     waybar
+    hyprcursor
   ];
 }
