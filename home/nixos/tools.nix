@@ -7,5 +7,6 @@
     obsidian
     vlc
     feh
+    waydroid
   ];
 }
