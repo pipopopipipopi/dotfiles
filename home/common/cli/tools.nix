@@ -9,6 +9,7 @@
     fd
     fzf
     gitui
+    gnumake
     httpie
     jq
     lazydocker
