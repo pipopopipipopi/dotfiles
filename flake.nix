@@ -2,41 +2,44 @@
   description = "configuration of pipopopipipopi";
 
   outputs = inputs:
-    let
-      allSystems = [
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = [
         "aarch64-linux"
         "x86_64-linux"
         "aarch64-darwin"
-        "x86_64-darwin"
       ];
-      forAllSystems = inputs.nixpkgs.lib.genAttrs allSystems;
-    in {
-      nixosConfigurations = (import ./hosts inputs).nixos;
-      darwinConfigurations = (import ./hosts inputs).darwin;
-      homeConfigurations = (import ./hosts inputs).home-manager;
 
-      devShells = forAllSystems (system: let
-        pkgs = inputs.nixpkgs.legacyPackages.${system};
-        scripts = with pkgs; [
-          (writeScriptBin "sw-nixos" ''
+      imports = [ ./hosts ];
+
+      perSystem = { config, pkgs, ... }: {
+        devShells = let
+          scripts = with pkgs; [
+            (writeScriptBin "sw-nixos" ''
             sudo nixos-rebuild switch --flake ".#$@"
-          '')
-          (writeScriptBin "sw-darwin" ''
+            '')
+            (writeScriptBin "sw-darwin" ''
             darwin-rebuild switch --flake ".#$@"
-          '')
-          (writeScriptBin "sw-home" ''
+            '')
+            (writeScriptBin "sw-home" ''
             home-manager switch --flake ".#$@"
-          '')
-        ];
-      in {
-        default = pkgs.mkShell {
-          packages = scripts;
+            '')
+          ];
+        in {
+          default = pkgs.mkShell {
+            packages = scripts;
+          };
         };
-      });
+      };
     };
+
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
 
     nix-darwin = {
       url = "github:lnl7/nix-darwin";
