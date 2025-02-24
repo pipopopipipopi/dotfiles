@@ -31,7 +31,7 @@
         NSAutomaticCapitalizationEnabled = false;
         NSAutomaticDashSubstitutionEnabled = false;
         NSAutomaticPeriodSubstitutionEnabled = false;
-        NSDocumentSaveNewDocumentoToCloud = false;
+        NSDocumentSaveNewDocumentsToCloud = false;
         "com.apple.keyboard.fnState" = true;
       };
     };

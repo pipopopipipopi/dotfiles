@@ -6,8 +6,14 @@
       options = "--delete-older-than 7d";
     };
     settings = {
-      experimental-features = [ "nix-command" "flakes" ];
-      trusted-users = [ "root" "@wheel" ];
+      experimental-features = [
+        "nix-command"
+        "flakes" 
+      ];
+      trusted-users = [
+        "root"
+        "@wheel" 
+      ];
       accept-flake-config = true;
 
       substituters = [
@@ -23,5 +29,4 @@
   };
   system.stateVersion = 5;
   nixpkgs.config.allowUnfree = true;
-  services.nix-daemon.enable = true;
 }
