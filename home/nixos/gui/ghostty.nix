@@ -2,7 +2,8 @@
   programs.ghostty = {
     enable = true;
 
-    package = inputs.ghostty.packages.${pkgs.system}.default;
+    package =
+      if pkgs.stdenv.isLinux then inputs.ghostty.packages.${pkgs.system}.default else pkgs.ghostty;
 
     settings = {
       shell-integration = "fish";
