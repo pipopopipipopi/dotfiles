@@ -2,9 +2,9 @@
   imports = [
     ../../home/common/cli
     ../../home/common/gui
-    ../../home/nixos
-    ../../home/nixos/browser
+    ../../home/nixos/cli
     ../../home/nixos/desktop
+    ../../home/nixos/gui
   ];
   programs.niri.settings.outputs = {
     "DP-1" = {

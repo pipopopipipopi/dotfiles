@@ -1,7 +1,7 @@
 {
   imports = [
-    ./nix.nix
-    ./tools.nix
+    ./browser
     ./ghostty.nix
+    ./tools.nix
   ];
 }

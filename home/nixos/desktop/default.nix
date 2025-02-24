@@ -1,16 +1,9 @@
 { pkgs, ... }: {
   imports = [
     ./anyrun.nix
-    ./settings.nix
-    ./keybinds.nix
     ./waybar.nix
     ./niri.nix
   ];
-
-  wayland.windowManager.hyprland = {
-    enable = true;
-    #xwayland.enable = true;
-  };
 
   home.packages = with pkgs; [
     anyrun
