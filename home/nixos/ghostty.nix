@@ -1,6 +1,8 @@
-{
+{ inputs, pkgs, ... }: {
   programs.ghostty = {
     enable = true;
+
+    package = inputs.ghostty.packages.${pkgs.system}.default;
 
     settings = {
       shell-integration = "fish";

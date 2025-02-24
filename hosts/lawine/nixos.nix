@@ -2,17 +2,18 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../../modules/nixos/core
-    ../../modules/nixos/desktop
-    ../../modules/nixos/programs/shell.nix
+    ../../configs/nixos/boot.nix
+    ../../configs/nixos/fcitx5.nix
+    ../../configs/nixos/fonts.nix
+    ../../configs/nixos/i18n.nix
+    ../../configs/nixos/network.nix
+    ../../configs/nixos/nix.nix
+    ../../configs/nixos/security.nix
+    ../../configs/nixos/shell.nix
+    ../../configs/nixos/sound.nix
+    ../../configs/nixos/virtualisation.nix
+    ../../configs/nixos/xdg.nix
   ];
- 
-  boot = {
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
-  };
 
   system.stateVersion = "24.05";
 
@@ -45,7 +46,7 @@
     settings = {
       default_session = {
         command = ''
-          ${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland
+          ${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Niri
         '';
         user = username;
       };

@@ -6,6 +6,45 @@
     ../../home/nixos/browser
     ../../home/nixos/desktop
   ];
+  programs.niri.settings.outputs = {
+    "DP-1" = {
+      scale = 1.0;
+      mode = {
+        width = 1920;
+        height = 1080;
+        refresh = null;
+      };
+      position = {
+        x = -1080;
+        y = -480;
+      };
+      transform.rotation = 90;
+    };
+    "DP-2" = {
+      scale = 1.0;
+      mode = {
+        width = 1920;
+        height = 1080;
+        refresh = null;
+      };
+      position = {
+        x = 0;
+        y = 0;
+      };
+    };
+    "HDMI-A-1" = {
+      scale = 1.0;
+      mode = {
+        width = 1920;
+        height = 1080;
+        refresh = null;
+      };
+      position = {
+        x = 1920;
+        y = 0;
+      };
+    };
+  };
   wayland.windowManager.hyprland.settings = {
     # https://wiki.hyprland.org/Nvidia/
     env = [

@@ -47,7 +47,7 @@ Shared modules
 
 ```nix
 nix develop
-switch-nixos "<hostname>"
+sw-nixos "<hostname>"
 reboot
 ```
 
@@ -55,12 +55,12 @@ reboot
 
 ```nix
 nix develop
-switch-darwin "<hostname>"
+sw-darwin "<hostname>"
 ```
 
 #### home-manager
 
 ```nix
 nix develop
-switch-home "<username>@<hostname>"
+sw-home "<username>@<hostname>"
 ```
