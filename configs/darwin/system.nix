@@ -27,7 +27,7 @@
 
       NSGlobalDomain = {
         AppleInterfaceStyle = "Dark";
-        ApplePressAndHoldEnabled = true;
+        ApplePressAndHoldEnabled = false;
         NSAutomaticCapitalizationEnabled = false;
         NSAutomaticDashSubstitutionEnabled = false;
         NSAutomaticPeriodSubstitutionEnabled = false;
