@@ -37,7 +37,6 @@
     open = true;
     nvidiaSettings = true;
     modesetting.enable = true;
-    # package = config.boot.kernelPackages.nvidiaPackages.stable;
     prime.nvidiaBusId = "PCI:10:0:0";
   };
 
@@ -46,7 +45,7 @@
     settings = {
       default_session = {
         command = ''
-          ${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Niri
+          ${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember
         '';
         user = username;
       };
