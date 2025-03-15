@@ -1,4 +1,4 @@
-theme = "base16_transparent"
+theme = "rose_pine_moon_transparent"
 
 [editor]
 line-number = "relative"
@@ -30,8 +30,7 @@ hidden = false
 [keys.insert]
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "normal_mode"]
-t = { t = "normal_mode" }
-j = { t = "normal_mode" }
+"C-[" = ["collapse_selection", "normal_mode"]
 
 [keys.select]
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
