@@ -1,6 +1,7 @@
 {
   imports = [
     ./fish
+    ./helix
     ./yazi
     ./bat.nix
     ./development.nix
