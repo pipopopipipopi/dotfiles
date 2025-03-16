@@ -19,6 +19,9 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
+[editor.lsp]
+display-inlay-hints = true
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
@@ -28,7 +31,6 @@ select = "underline"
 hidden = false
 
 [keys.insert]
-# Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "normal_mode"]
 "C-[" = ["collapse_selection", "normal_mode"]
 

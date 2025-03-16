@@ -12,7 +12,7 @@
   environment = {
     shells = [ pkgs.fish ];
     variables = {
-      EDITOR = "nvim";
+      EDITOR = "hx";
     };
   };
 }

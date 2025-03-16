@@ -1,0 +1,24 @@
+[[language]]
+name = "latex"
+language-servers = [ "texlab" ]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman" ]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "nix"
+language-servers = [ "nil" ]
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "rust"
+language-servers = [ "rust-analyzer" ]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "typst"
+language-servers = [ "tinymist" ]
+indent = { tab-width = 4, unit = "    " }
