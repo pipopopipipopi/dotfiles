@@ -5,6 +5,7 @@
     ../../configs/nixos/boot.nix
     ../../configs/nixos/fcitx5.nix
     ../../configs/nixos/fonts.nix
+    ../../configs/nixos/gnome-services.nix
     ../../configs/nixos/i18n.nix
     ../../configs/nixos/network.nix
     ../../configs/nixos/nix.nix
