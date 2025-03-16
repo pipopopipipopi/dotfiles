@@ -1,12 +1,11 @@
 { pkgs, ... }: {
   imports = [
-    ./anyrun.nix
+    ./anyrun
     ./waybar.nix
     ./niri.nix
   ];
 
   home.packages = with pkgs; [
-    anyrun
     swww # wallpaper
     wl-clipboard # clipboard manager
     waybar
