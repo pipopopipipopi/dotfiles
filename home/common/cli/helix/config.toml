@@ -30,6 +30,10 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""
+
 [keys.insert]
 esc = ["collapse_selection", "normal_mode"]
 "C-[" = ["collapse_selection", "normal_mode"]
