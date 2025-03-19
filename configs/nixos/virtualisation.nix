@@ -7,6 +7,5 @@
         setSocketVariable = true;
       };
     };
-    waydroid.enable = true;
   };
 }
