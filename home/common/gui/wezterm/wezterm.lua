@@ -12,6 +12,7 @@ config.use_ime = true
 if darwin then
     config.font_size = 16
     config.window_decorations = "RESIZE"
+    config.macos_forward_to_ime_modifier_mask = "SHIFT|CTRL"
 end
 if linux then
     config.font_size = 11
