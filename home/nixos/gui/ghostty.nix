@@ -10,7 +10,7 @@
       theme = "amewotaguru";
 
       # font-family = ["JetBrainsMono Nerd Font Mono" "HackGen Console NF" "Twitter Color Emoji"];
-      font-family = ["UDEV Gothic NF Regular" "Twitter Color Emoji"];
+      font-family = ["" "UDEV Gothic NF Regular" "Twitter Color Emoji"];
       font-style = "Medium";
       font-size = 12;
       font-feature = ["-liga" "-dlig" "-calt"];
