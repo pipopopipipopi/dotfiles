@@ -11,17 +11,17 @@
 
       imports = [ ./hosts ];
 
-      perSystem = { config, pkgs, ... }: {
+      perSystem = { pkgs, ... }: {
         devShells = let
           scripts = with pkgs; [
             (writeScriptBin "sw-nixos" ''
-            sudo nixos-rebuild switch --flake ".#$@"
+              sudo nixos-rebuild switch --flake ".#$@"
             '')
             (writeScriptBin "sw-darwin" ''
-            darwin-rebuild switch --flake ".#$@"
+              darwin-rebuild switch --flake ".#$@"
             '')
             (writeScriptBin "sw-home" ''
-            home-manager switch --flake ".#$@"
+              home-manager switch --flake ".#$@"
             '')
           ];
         in {
