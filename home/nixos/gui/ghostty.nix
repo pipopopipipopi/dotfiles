@@ -14,6 +14,7 @@
       font-style = "Medium";
       font-size = 12;
       font-feature = ["-liga" "-dlig" "-calt"];
+      adjust-cell-width = "10%";
 
       cursor-style = "block";
       cursor-style-blink = false;
