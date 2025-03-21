@@ -4,6 +4,7 @@
     ./helix
     ./starship
     ./yazi
+    ./zellij
     ./bat.nix
     ./development.nix
     ./fastfetch.nix
