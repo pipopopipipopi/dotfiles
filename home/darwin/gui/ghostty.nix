@@ -3,8 +3,8 @@
     target = ".config/ghostty/config";
     text = ''
       shell-integration = fish
-      font-family = ""
-      font-family = UDEV Gothic NF Regular
+      font-family = JetBrainsMono Nerd Font Mono
+      font-family = HackGen Console NF
       font-family = Twitter Color Emoji
       font-style = Medium
       font-size = 16

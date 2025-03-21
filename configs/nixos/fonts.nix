@@ -2,7 +2,8 @@
   fonts = {
     packages =
       (with pkgs; [
-        udev-gothic-nf
+        nerd-fonts.jetbrains-mono
+        hackgen-nf-font
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
@@ -21,7 +22,7 @@
           "Noto Color Emoji"
         ];
         monospace = [
-          "UDEV Gothic NF"
+          "JetBrainsMono Nerd Font"
           "Noto Color Emoji"
         ];
         emoji = [ "Noto Color Emoji" ];

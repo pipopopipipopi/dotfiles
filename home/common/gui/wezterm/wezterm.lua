@@ -12,13 +12,10 @@ config.use_ime = true
 if darwin then
     config.font_size = 16
     config.window_decorations = "RESIZE"
-
-    config.macos_window_background_blur = 3
 end
 if linux then
-    config.font_size = 12
+    config.font_size = 11
     config.window_decorations = "NONE"
-
     config.enable_wayland = true;
 end
 
