@@ -74,7 +74,7 @@
         }
       ];
       binds = with config.lib.niri.actions; {
-        "Mod+Return".action = spawn "ghostty";
+        "Mod+Return".action = spawn "wezterm";
         "Mod+B".action = spawn "zen";
         "Mod+Space".action = spawn "anyrun";
 
