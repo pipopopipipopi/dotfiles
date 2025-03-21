@@ -1,10 +1,7 @@
 { pkgs, ... }: {
   fonts = {
     packages = with pkgs; [
-      nerd-fonts.hack
-      nerd-fonts.jetbrains-mono
-      nerd-fonts.symbols-only
-      hackgen-nf-font
+      udev-gothic-nf
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif

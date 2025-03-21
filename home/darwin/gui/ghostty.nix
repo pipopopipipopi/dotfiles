@@ -4,9 +4,7 @@
     text = ''
       shell-integration = fish
       font-family = ""
-      # font-family = JetBrainsMono Nerd Font Mono
-      # font-family = Symbols Nerd Font Mono
-      font-family = HackGen Console NF
+      font-family = UDEV Gothic NF
       font-family = Twitter Color Emoji
       font-style = Medium
       font-size = 16
