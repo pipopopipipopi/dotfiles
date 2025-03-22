@@ -1,4 +1,4 @@
-{ pkgs, username, ... }: {
+{ pkgs, username, config, ... }: {
   imports = [
     ./hardware-configuration.nix
 
@@ -29,16 +29,17 @@
     ];
   };
 
-  services.xserver = {
-    videoDrivers = ["nvidia"];
-  };
+  # services.xserver = {
+  #   videoDrivers = ["nvidia"];
+  # };
 
   hardware.graphics.enable = true;
   hardware.nvidia = {
-    open = true;
-    nvidiaSettings = true;
-    modesetting.enable = true;
-    prime.nvidiaBusId = "PCI:10:0:0";
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    # open = true;
+    # nvidiaSettings = true;
+    # modesetting.enable = true;
+    # prime.nvidiaBusId = "PCI:10:0:0";
   };
 
   services.greetd = {
