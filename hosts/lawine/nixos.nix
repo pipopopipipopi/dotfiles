@@ -29,16 +29,18 @@
     ];
   };
 
-  # services.xserver = {
-  #   videoDrivers = ["nvidia"];
-  # };
+  services.xserver = {
+    videoDrivers = ["nvidia"];
+  };
 
   hardware.graphics.enable = true;
   hardware.nvidia = {
     package = config.boot.kernelPackages.nvidiaPackages.beta;
-    # open = true;
-    # nvidiaSettings = true;
-    # modesetting.enable = true;
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    open = true;
+    nvidiaSettings = true;
     # prime.nvidiaBusId = "PCI:10:0:0";
   };
 
