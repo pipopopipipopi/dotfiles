@@ -1,8 +1,9 @@
 { pkgs, ... }: {
   imports = [
     ./anyrun
-    ./waybar.nix
     ./niri.nix
+    ./waybar.nix
+    ./xdg.nix
   ];
 
   home.packages = with pkgs; [
