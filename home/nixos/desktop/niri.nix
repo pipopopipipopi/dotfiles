@@ -19,6 +19,7 @@
       };
       spawn-at-startup = [
         { command = ["swww" "init"]; }
+        { command = ["swaync"]; }
         { command = ["fcitx" "-D"]; }
         { command = ["vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"]; }
       ];
