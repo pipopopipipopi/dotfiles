@@ -5,5 +5,6 @@
     loupe
     pwvucontrol
     celluloid
+    amberol
   ];
 }
