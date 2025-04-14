@@ -19,6 +19,9 @@
     ## Rust
     rust-bin.stable.latest.default
 
+    ## Steel
+    steel
+
     ## Tex
     texlive.combined.scheme-full
 
