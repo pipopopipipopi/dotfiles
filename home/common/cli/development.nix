@@ -7,10 +7,13 @@
     ## C
     gcc
 
+    ## Clojure
+    clojure
+
     ## Gleam
     gleam
 
-    ## Lisp
+    ## Common Lisp
     sbcl
 
     ## Python
