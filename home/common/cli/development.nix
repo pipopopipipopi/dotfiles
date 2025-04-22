@@ -13,6 +13,9 @@
     ## Gleam
     gleam
 
+    ## Hy
+    hy
+
     ## Common Lisp
     sbcl
 
