@@ -20,5 +20,6 @@
     zoxide
 
     pywal
+    matugen
   ];
 }
