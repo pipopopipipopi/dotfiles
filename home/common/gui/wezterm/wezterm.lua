@@ -9,6 +9,8 @@ config.hide_tab_bar_if_only_one_tab = true
 
 config.use_ime = true
 
+config.check_for_updates = false
+
 if darwin then
     config.font_size = 16
     config.window_decorations = "RESIZE"
