@@ -10,7 +10,6 @@
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
         applications
         shell
-        symbols
         translate
       ];
 
@@ -20,19 +19,19 @@
       closeOnClick = true;
     };
 
-    extraCss = builtins.readFile (./. + "/style-dark.css");
+    extraCss = builtins.readFile ./style-dark.css;
 
     extraConfigFiles = {
       "applications.ron".text = ''
         Config(
           desktop_actions: false,
-          max_entries: 5,
+          max_entries: 10,
         )
       '';
 
       "shell.ron".text = ''
         Config(
-          prefix: ">"
+          prefix: ":"
         )
       '';
     };
