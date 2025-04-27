@@ -2,7 +2,15 @@
   programs.ghostty = {
     enable = true;
 
-    package = inputs.ghostty.packages.${pkgs.system}.default;
+    package =
+      if pkgs.stdenv.isLinux then
+        inputs.ghostty.packages.${pkgs.system}.default
+      else if pkgs.stdenv.isDarwin then
+        pkgs.brewCasks.ghostty
+      else
+        throw "unsupported system ${pkgs.stdenv.hostPlathome.system}";
+
+    installBatSyntax = false;
 
     settings = {
       shell-integration = "fish";
@@ -12,7 +20,8 @@
       font-family = ["JetBrainsMono Nerd Font Mono" "HackGen Console NF" "Twitter Color Emoji"];
       # font-family = ["" "UDEV Gothic NF Regular" "Twitter Color Emoji"];
       font-style = "Medium";
-      font-size = 12;
+      font-size = 
+        if pkgs.stdenv.isLinux then 12 else 16;
       font-feature = ["-liga" "-dlig" "-calt"];
 
       cursor-style = "block";

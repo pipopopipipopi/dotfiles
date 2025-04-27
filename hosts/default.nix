@@ -30,7 +30,7 @@
       "pipopo@aura" = self.lib.makeHomeManagerConfig {
         system = "aarch64-darwin";
         username = "pipopo";
-        overlays = [ inputs.fenix.overlays.default ];
+        overlays = [ inputs.fenix.overlays.default inputs.brew-nix.overlays.default ];
         modules = [ ./aura/home.nix ];
       };
     };
