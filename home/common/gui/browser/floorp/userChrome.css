@@ -82,12 +82,10 @@ tab.tabbrowser-tab *{
 
 /*------------------------------------------------*/
 /* Remove the all tab and new tab button */
-/*
 #alltabs-button,
 #tabs-newtab-button {
   display: none !important;
 }
-*/
 
 /*------------------------------------------------*/
 /* Remove the 3 dots from Alt Key */

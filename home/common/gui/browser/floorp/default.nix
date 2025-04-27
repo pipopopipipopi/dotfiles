@@ -1,6 +1,11 @@
 {
   programs.floorp = {
     enable = true;
+    policies = {
+      AppAutoUpdate = false;
+      BackgroundAppUpdate = false;
+      DisableAppUpdate = true;
+    };
     profiles = {
       default = {
         id = 0;
