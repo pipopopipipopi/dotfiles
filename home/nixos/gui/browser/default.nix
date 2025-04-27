@@ -1,3 +1,13 @@
-{ pkgs, inputs, ... }: {
-  home.packages = [ inputs.zen-browser.packages.${pkgs.system}.default ];
+{ inputs, ... }: {
+  imports = [
+    inputs.zen-browser.homeModules.beta
+  ];
+
+  programs.zen-browser = {
+    enable = true;
+    policies = {
+      DisableAppUpdate = true;
+      TranslateEnabled = false;
+    };
+  };
 }
