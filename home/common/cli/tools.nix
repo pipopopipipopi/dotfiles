@@ -19,7 +19,7 @@
     zip
     zoxide
 
-    pywal
+    hellwal
     matugen
   ];
 }
