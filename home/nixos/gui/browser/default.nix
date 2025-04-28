@@ -1,6 +1,6 @@
 { inputs, ... }: {
   imports = [
-    inputs.zen-browser.homeModules.default
+    inputs.zen-browser.homeModules.twilight
   ];
 
   programs.zen-browser = {

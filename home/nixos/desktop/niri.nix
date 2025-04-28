@@ -76,7 +76,8 @@
       ];
       binds = with config.lib.niri.actions; {
         "Mod+Return".action = spawn "wezterm";
-        "Mod+B".action = spawn "floorp";
+        # "Mod+B".action = spawn "floorp";
+        "Mod+B".action = spawn "zen-twilight";
         "Mod+Space".action = spawn "anyrun";
 
         "Mod+Q".action = close-window;
