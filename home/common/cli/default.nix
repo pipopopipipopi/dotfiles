@@ -2,6 +2,7 @@
   imports = [
     ./fish
     ./helix
+    ./hellwal
     ./starship
     ./yazi
     ./zellij
