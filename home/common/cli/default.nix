@@ -3,6 +3,7 @@
     ./fish
     ./helix
     ./hellwal
+    ./matugen
     ./starship
     ./yazi
     ./zellij

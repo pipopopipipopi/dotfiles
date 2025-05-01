@@ -28,36 +28,38 @@ config.font = wezterm.font_with_fallback {
     "Twitter Color Emoji",
 }
 
-config.colors = {
-    foreground = "#d8cad0",
-    background = "#0f0c13",
-    cursor_bg = "#d8cad0",
-    cursor_fg = "#0f0c13",
-    cursor_border = "#d8cad0",
-    selection_fg = "#0f0c13",
-    selection_bg = "#6c708e",
+-- config.colors = {
+--     foreground = "#d8cad0",
+--     background = "#0f0c13",
+--     cursor_bg = "#d8cad0",
+--     cursor_fg = "#0f0c13",
+--     cursor_border = "#d8cad0",
+--     selection_fg = "#0f0c13",
+--     selection_bg = "#6c708e",
 
-    ansi = {
-        "#0f0c13", -- black
-        "#84526b", -- red
-        "#6f84a2", -- green
-        "#9ca787", -- yellow
-        "#3a6583", -- blue
-        "#997a8b", -- magenta
-        "#677095", -- cyan
-        "#d8cad0"  -- white
-    },
+--     ansi = {
+--         "#0f0c13", -- black
+--         "#84526b", -- red
+--         "#6f84a2", -- green
+--         "#9ca787", -- yellow
+--         "#3a6583", -- blue
+--         "#997a8b", -- magenta
+--         "#677095", -- cyan
+--         "#d8cad0"  -- white
+--     },
 
-    brights = {
-        "#978d91",
-        "#a4728b", -- red
-        "#8fa4c2", -- green
-        "#bcc7a7", -- yellow
-        "#5a85a3", -- blue
-        "#b99aab", -- magenta
-        "#8790a5", -- cyan
-        "#f8eaf0"  -- white
-    },
-}
+--     brights = {
+--         "#978d91",
+--         "#a4728b", -- red
+--         "#8fa4c2", -- green
+--         "#bcc7a7", -- yellow
+--         "#5a85a3", -- blue
+--         "#b99aab", -- magenta
+--         "#8790a5", -- cyan
+--         "#f8eaf0"  -- white
+--     },
+-- }
+
+config.color_scheme = "matugen"
 
 return config
