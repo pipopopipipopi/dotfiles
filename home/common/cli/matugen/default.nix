@@ -7,4 +7,5 @@
       ./darwin_config.toml;
   xdg.configFile."matugen/templates/wezterm.toml".source = ./wezterm.toml;
   xdg.configFile."matugen/templates/fish.theme".source = ./fish.theme;
+  xdg.configFile."matugen/templates/helix.toml".source = ./helix.toml;
 }

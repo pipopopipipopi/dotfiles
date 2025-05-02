@@ -1,4 +1,5 @@
-theme = "rose_pine_moon_transparent"
+# theme = "rose_pine_moon_transparent"
+theme = "helix"
 
 [editor]
 line-number = "relative"
