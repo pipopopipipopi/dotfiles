@@ -2,6 +2,8 @@ local wezterm = require "wezterm"
 local darwin = wezterm.target_triple:find("darwin")
 local linux = wezterm.target_triple:find("linux")
 
+wezterm.add_to_config_reload_watch_list(wezterm.config_dir .. "/colors/matugen.toml")
+
 local config = {}
 
 config.window_background_opacity = 0.77
@@ -10,6 +12,8 @@ config.hide_tab_bar_if_only_one_tab = true
 config.use_ime = true
 
 config.check_for_updates = false
+
+config.automatically_reload_config = true
 
 if darwin then
     config.font_size = 16
