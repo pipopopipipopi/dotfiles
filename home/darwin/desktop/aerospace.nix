@@ -21,10 +21,10 @@
         outer.right =      10;
       };
       mode.main.binding = {
-        alt-t = "focus left";
-        alt-n = "focus down";
-        alt-s = "focus up";
-        alt-h = "focus right";
+        alt-j = "focus left";
+        alt-k = "focus down";
+        alt-l = "focus up";
+        alt-semicolon = "focus right";
 
         alt-1 = "workspace 1";
         alt-2 = "workspace 2";
@@ -47,10 +47,10 @@
         alt-shift-9 = "move-node-to-workspace 9";
       };
       mode.service.binding = {
-        alt-shift-t = ["join-with left" "mode main"];
-        alt-shift-n = ["join-with down" "mode main"];
-        alt-shift-s = ["join-with up" "mode main"];
-        alt-shift-h = ["join-with right" "mode main"];
+        alt-shift-j = ["join-with left" "mode main"];
+        alt-shift-k = ["join-with down" "mode main"];
+        alt-shift-l = ["join-with up" "mode main"];
+        alt-shift-semicolon = ["join-with right" "mode main"];
       };
     };
   };
