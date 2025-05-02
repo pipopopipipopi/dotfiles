@@ -19,7 +19,6 @@
     zip
     zoxide
 
-    hellwal
     matugen
   ];
 }
