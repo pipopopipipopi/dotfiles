@@ -21,10 +21,18 @@
         outer.right =      10;
       };
       mode.main.binding = {
+        alt-q = "close";
+        alt-f = "fullscreen";
+
         alt-j = "focus left";
         alt-k = "focus down";
         alt-l = "focus up";
         alt-semicolon = "focus right";
+
+        alt-shift-j = "move left";
+        alt-shift-k = "move down";
+        alt-shift-l = "move up";
+        alt-shift-semicolon = "move right";
 
         alt-1 = "workspace 1";
         alt-2 = "workspace 2";
@@ -45,12 +53,6 @@
         alt-shift-7 = "move-node-to-workspace 7";
         alt-shift-8 = "move-node-to-workspace 8";
         alt-shift-9 = "move-node-to-workspace 9";
-      };
-      mode.service.binding = {
-        alt-shift-j = ["join-with left" "mode main"];
-        alt-shift-k = ["join-with down" "mode main"];
-        alt-shift-l = ["join-with up" "mode main"];
-        alt-shift-semicolon = ["join-with right" "mode main"];
       };
     };
   };
