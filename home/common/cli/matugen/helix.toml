@@ -1,25 +1,20 @@
 # INTERFACE
 # These scopes are used for theming the editor interface.
 
-# "ui.background" = { bg = "bg1" } # Default background color.
-"ui.background" = {} # Default background color.
-"ui.background.separator" = {} # Default background color.
-"ui.window" = { fg = "bg0" } # Window border between splits.
-"ui.gutter" = { fg = "fg3" } # Left gutter for diagnostics and breakpoints.
+"ui.background" = { bg = "bg1" } # Default background color.
+"ui.window" = { fg = "bg0" } # Window border between splits. "ui.gutter" = { fg = "fg3" } # Left gutter for diagnostics and breakpoints.
 
 "ui.text" = { fg = "fg1" } # Default text color.
-"ui.text.directory" = { fg = "blue" } # Directory names in prompt completion.
+"ui.text.directory" = { fg = "blue-bright" } # Directory names in prompt completion.
 "ui.text.focus" = { bg = "sel1", fg = "fg1" } # Selection highlight in buffer-picker or file-picker.
 "ui.text.info" = { fg = "fg2", bg = "sel0" } # Info popup contents (space mode menu).
 
 "ui.cursor" = { bg = "fg3", fg = "bg1" } # Fallback cursor colour, non-primary cursors when there are multiple (shift-c).
 "ui.cursor.primary" = { bg = "fg1", fg = "bg1" } # The primary cursor when there are multiple (shift-c).
-
 "ui.cursor.match" = { fg = "yellow", modifiers = ["bold"] } # The matching parentheses of that under the cursor.
- 
-# "ui.selection" = { bg = "bg4" } # All currently selected text.
-"ui.selection" = { bg = "fg3", fg = "bg1" } # All currently selected text.
-"ui.selection.primary" = { bg = "sel1" } # The primary selection when there are mutiple.
+
+"ui.selection" = { bg = "bg4" } # All currently selected text.
+"ui.selection.primary" = { bg = "sel1" } # The primary selection when there are multiple.
 "ui.cursorline.primary" = { bg = "bg3" } # The line of the primary cursor (if cursorline is enabled)
 # "ui.cursorline.secondary" = { } #	The lines of any other cursors (if cursorline is enabled)
 # "ui.cursorcolumn.primary" = { } #	The column of the primary cursor (if cursorcolumn is enabled)
@@ -41,11 +36,9 @@
 "ui.statusline.insert" = { bg = "green", fg = "bg0", modifiers = ["bold"] } # Statusline mode during insert mode (only if editor.color-modes is enabled)
 "ui.statusline.select" = { bg = "magenta", fg = "bg0", modifiers = ["bold"] } # Statusline mode during select mode (only if editor.color-modes is enabled)
 
-# "ui.bufferline" = { fg = "fg3", bg = "bg2", underline = { style = "line" } }
-"ui.bufferline" = { fg = "fg3" }
+"ui.bufferline" = { fg = "fg3", bg = "bg2", underline = { style = "line" } }
 "ui.bufferline.active" = { fg = "fg2", bg = "bg4" }
-# "ui.bufferline.background" = { bg = "bg0" }
-"ui.bufferline.background" = {}
+"ui.bufferline.background" = { bg = "bg0" }
 
 "ui.help" = { bg = "sel0", fg = "fg1" } # Description box for commands.
 
@@ -63,7 +56,7 @@
 "markup.bold" = { fg = "orange", modifiers = ["bold"] }
 "markup.italic" = { fg = "pink" }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link" = { fg = "yellow", modifiers = ["bold"] }
+"markup.link" = { fg = "yellow-bright", modifiers = ["bold"] }
 "markup.quote" = { fg = "blue" }
 
 
@@ -88,21 +81,21 @@
 "attribute" = { fg = "yellow" } # Class attributes, html tag attributes.
 
 "type" = { fg = "yellow" } # Variable type, like integer or string, including program defined classes, structs etc..
-"type.builtin" = { fg = "cyan" } # Primitive types of the language (string, int, float).
-"type.enum.variant" = { fg = "orange" }
+"type.builtin" = { fg = "cyan-bright" } # Primitive types of the language (string, int, float).
+"type.enum.variant" = { fg = "orange-bright" }
 
 "constructor" = { fg = "magenta" } # Constructor method for a class or struct.
 
-"constant" = { fg = "orange" } # Constant value
-"constant.builtin" = { fg = "orange" } # Special constants like `true`, `false`, `none`, etc.
+"constant" = { fg = "orange-bright" } # Constant value
+"constant.builtin" = { fg = "orange-bright" } # Special constants like `true`, `false`, `none`, etc.
 "constant.builtin.boolean" = { fg = "orange" } # True or False.
 "constant.character" = { fg = "green" } # Constant of character type.
-"constant.character.escape" = { fg = "yellow", modifiers = ["bold"] } # escape codes like \n.
+"constant.character.escape" = { fg = "yellow-bright", modifiers = ["bold"] } # escape codes like \n.
 "constant.numeric"  = { fg = "orange" } # constant integer or float value.
 
 "string" = { fg = "green" } # String literal.
-"string.regexp" = { fg = "yellow" } # Regular expression literal.
-"string.special" = { fg = "yellow", modifiers = ["bold"] } # Strings containing a path, URL, etc.
+"string.regexp" = { fg = "yellow-bright" } # Regular expression literal.
+"string.special" = { fg = "yellow-bright", modifiers = ["bold"] } # Strings containing a path, URL, etc.
 "string.special.url" = { fg = "cyan", modifiers = ["bold"] } # String containing a web URL.
 
 "comment" = { fg = "comment" } # This is a comment.
@@ -110,10 +103,10 @@
 
 "variable" = { fg = "white" }  # Variable names.
 "variable.builtin" = { fg = "red" } # Language reserved variables: `this`, `self`, `super`, etc.
-"variable.parameter" = { fg = "cyan" } # Function parameters.
+"variable.parameter" = { fg = "cyan-bright" } # Function parameters.
 "variable.other.member" = { fg = "fg2" } # Fields of composite data types (e.g. structs, unions).
 
-"label" = { fg = "magenta" } # lifetimes - Loop labels, among other things.
+"label" = { fg = "magenta-bright" } # lifetimes - Loop labels, among other things.
 
 "punctuation" = { fg = "fg2" } # Any punctuation symbol.
 # "punctuation.delimiter" = { fg = "fg2" } # Commas, colons or other delimiter depending on the language.
@@ -122,13 +115,13 @@
 
 "keyword" = { fg = "magenta" } # Language reserved keywords.
 "keyword.control" = { fg = "pink" } # Control keywords.
-"keyword.control.conditional" = { fg = "magenta" } # `if`, `else`, `elif`.
-"keyword.control.repeat" = { fg = "magenta" } # `for`, `while`, `loop`.
-"keyword.control.import" = { fg = "pink" } # `import`, `export` `use`.
+"keyword.control.conditional" = { fg = "magenta-bright" } # `if`, `else`, `elif`.
+"keyword.control.repeat" = { fg = "magenta-bright" } # `for`, `while`, `loop`.
+"keyword.control.import" = { fg = "pink-bright" } # `import`, `export` `use`.
 "keyword.control.return" = { fg = "magenta" } # `return` in most languages.
 "keyword.control.exception" = { fg = "magenta" } # `try`, `catch`, `raise`/`throw` and related.
 "keyword.operator" = { fg = "fg2", modifiers = ["bold"] } # 'or', 'and', 'in'.
-"keyword.directive" = { fg = "pink" } # Preprocessor directives (#if in C...).
+"keyword.directive" = { fg = "pink-bright" } # Preprocessor directives (#if in C...).
 "keyword.function" = { fg = "red" } # The keyword to define a function: 'def', 'fun', 'fn'.
 "keyword.storage" = { fg = "magenta" } # Keywords describing how things are stored
 "keyword.storage.type" = { fg = "magenta" } #  The type of something, class, function, var, let, etc.
@@ -136,15 +129,15 @@
 
 "operator" = {  fg = "fg2" } # Logical, mathematical, and other operators.
 
-"function" = { fg = "blue" }
+"function" = { fg = "blue-bright" }
 "function.builtin" = { fg = "red" }
 "function.macro" = { fg = "red" }
-# "function.special" = { fg = "blue" } # Preprocessor function in C.
-# "function.method" = { fg = "blue" } # Class / Struct methods.
+# "function.special" = { fg = "blue-bright" } # Preprocessor function in C.
+# "function.method" = { fg = "blue-bright" } # Class / Struct methods.
 
-"tag" = { fg = "blue" } # As in <body> for html, css tags.
+"tag" = { fg = "blue-bright" } # As in <body> for html, css tags.
 
-"namespace" = { fg = "cyan" } # Namespace or module identifier.
+"namespace" = { fg = "cyan-bright" } # Namespace or module identifier.
 
 
 # Diff ==============================
@@ -157,26 +150,36 @@
 
 # color palette
 [palette]
-black          = "{{ colors.surface.default.hex }}"
-red            = "{{ colors.error.default.hex }}"
-green          = "{{ colors.primary.default.hex }}"
-yellow         = "{{ colors.tertiary.default.hex }}"
-blue           = "{{ colors.on_primary_container.default.hex }}"
-magenta        = "{{ colors.on_secondary_container.default.hex }}"
-cyan           = "{{ colors.primary.default.hex }}"
-white          = "{{ colors.on_surface.default.hex }}"
-orange         = "{{ colors.tertiary_container.default.hex }}"
-pink           = "{{ colors.error_container.default.hex }}"
-comment        = "{{ colors.outline.default.hex }}"
+black           = "{{ colors.surface_dim.default.hex }}"
+red             = "{{ colors.error.default.hex }}"
+red-dim         = "{{ colors.error_container.default.hex }}"
+green           = "{{ colors.tertiary.default.hex }}"
+green-dim       = "{{ colors.tertiary_container.default.hex }}"
+yellow          = "{{ colors.secondary.default.hex }}"
+yellow-bright   = "{{ colors.secondary_fixed_dim.default.hex }}"
+blue            = "{{ colors.primary.default.hex }}"
+blue-bright     = "{{ colors.primary_fixed_dim.default.hex }}"
+blue-dim        = "{{ colors.primary_container.default.hex }}"
+magenta         = "{{ colors.secondary.default.hex }}"
+magenta-bright  = "{{ colors.secondary_fixed_dim.default.hex }}"
+cyan            = "{{ colors.tertiary.default.hex }}"
+cyan-bright     = "{{ colors.tertiary_fixed_dim.default.hex }}"
+cyan-dim        = "{{ colors.tertiary_container.default.hex }}"
+white           = "{{ colors.on_surface.default.hex }}"
+orange          = "{{ colors.tertiary.default.hex }}"
+orange-bright   = "{{ colors.tertiary_fixed_dim.default.hex }}"
+pink            = "{{ colors.primary.default.hex }}"
+pink-bright     = "{{ colors.primary_fixed_dim.default.hex }}"
+comment         = "{{ colors.on_surface_variant.default.hex }}"
 # spec
-bg0            = "{{ colors.background.default.hex }}" # Dark bg (status line and float)
-bg1            = "{{ colors.surface.default.hex }}" # Default bg
-bg2            = "{{ colors.surface_container.default.hex }}" # Lighter bg (colorcolm folds)
-bg3            = "{{ colors.surface_container_high.default.hex }}" # Lighter bg (cursor line)
-bg4            = "{{ colors.surface_container_low.default.hex }}" # Conceal, border fg
-fg0            = "{{ colors.on_surface.default.hex }}" # Lighter fg
-fg1            = "{{ colors.inverse_surface.default.hex }}" # Default fg
-fg2            = "{{ colors.inverse_surface.default.hex }}" # Darker fg (status line)
-fg3            = "{{ colors.inverse_surface.default.hex }}" # Darker fg (line numbers, fold columns)
-sel0           = "{{ colors.surface.default.hex }}" # Popup bg, visual selection bg
-sel1           = "{{ colors.surface.default.hex }}" # Popup sel bg, search bg
+bg0             = "{{ colors.surface_dim.default.hex }}" # Dark bg (status line and float)
+bg1             = "{{ colors.surface.default.hex }}" # Default bg
+bg2             = "{{ colors.surface_container_low.default.hex }}" # Lighter bg (colorcolm folds)
+bg3             = "{{ colors.surface_container.default.hex }}" # Lighter bg (cursor line)
+bg4             = "{{ colors.surface_container_high.default.hex }}" # Conceal, border fg
+fg0             = "{{ colors.on_surface.default.hex }}" # Lighter fg
+fg1             = "{{ colors.on_surface.default.hex }}" # Default fg
+fg2             = "{{ colors.on_surface_variant.default.hex }}" # Darker fg (status line)
+fg3             = "{{ colors.outline_variant.default.hex }}" # Darker fg (line numbers, fold columns)
+sel0            = "{{ colors.surface_container_highest.default.hex }}" # Popup bg, visual selection bg
+sel1            = "{{ colors.surface_tint.default.hex }}" # Popup sel bg, search bg
