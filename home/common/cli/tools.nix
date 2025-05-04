@@ -8,7 +8,6 @@
     eza
     fd
     fzf
-    gitui
     gnumake
     gnutar
     httpie

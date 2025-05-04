@@ -1,6 +1,7 @@
 {
   imports = [
     ./fish
+    ./gitui
     ./helix
     ./matugen
     ./nushell
