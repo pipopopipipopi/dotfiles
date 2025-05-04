@@ -15,6 +15,7 @@
     jq
     lazydocker
     ripgrep
+    unar
     unzip
     zip
     zoxide
