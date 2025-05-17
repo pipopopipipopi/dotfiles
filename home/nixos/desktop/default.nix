@@ -11,6 +11,8 @@
     swww # wallpaper
     wl-clipboard # clipboard manager
     waybar
+    grim
+    slurp
   ];
 
   home.pointerCursor = {
