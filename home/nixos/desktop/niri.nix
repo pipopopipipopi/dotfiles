@@ -46,8 +46,8 @@
         border = {
           enable = true;
           width = 2;
-          active.color = "#888888";
-          inactive.color = "#222222";
+          active.color = "#bbbbbb";
+          inactive.color = "#111111";
         };
         focus-ring.enable = false;
         gaps = 5;
