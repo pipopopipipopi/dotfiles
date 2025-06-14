@@ -17,8 +17,7 @@
 
       theme = "amewotaguru";
 
-      font-family = ["JetBrainsMono Nerd Font Mono" "HackGen Console NF" "Twitter Color Emoji"];
-      # font-family = ["" "UDEV Gothic NF Regular" "Twitter Color Emoji"];
+      font-family = ["JetBrainsMono Nerd Font" "HackGen Console NF" "Twitter Color Emoji"];
       font-style = "Medium";
       font-size = 
         if pkgs.stdenv.isLinux then 12 else 16;
