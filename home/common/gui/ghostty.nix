@@ -15,7 +15,7 @@
     settings = {
       shell-integration = "fish";
 
-      theme = "amewotaguru";
+      theme = "matugen";
 
       font-family = ["JetBrainsMono Nerd Font" "HackGen Console NF" "Twitter Color Emoji"];
       font-style = "Medium";
@@ -42,43 +42,6 @@
       keybind = "ctrl+j=ignore";
 
       resize-overlay = "never";
-    };
-
-    themes = {
-      amewotaguru = {
-        background = "0f0c13";
-        foreground = "d8cad0";
-        cursor-color = "d8cad0";
-        cursor-text = "0f0c13";
-        palette = [
-          # black
-          "0=#0f0c13"
-          "8=#978d91"
-          # red
-          "1=#84526b"
-          "9=#a4728b"
-          # green
-          "2=#6f84a2"
-          "10=#8fa4c2"
-          # yellow
-          "3=#9ca787"
-          "11=#bcc7a7"
-          # blue
-          "4=#3a6583"
-          "12=#5a85a3"
-          # magenta
-          "5=#997a8b"
-          "13=#b99aab"
-          # cyan
-          "6=#677095"
-          "14=#8790a5"
-          # white
-          "7=#d8cad0"
-          "15=#f8eaf0"
-        ];
-        selection-background = "6c708e";
-        selection-foreground = "0f0c13";
-      };
     };
   };
 }

@@ -6,6 +6,7 @@
     else
       ./darwin_config.toml;
   xdg.configFile."matugen/templates/wezterm.toml".source = ./wezterm.toml;
+  xdg.configFile."matugen/templates/ghostty".source = ./ghostty;
   xdg.configFile."matugen/templates/fish.theme".source = ./fish.theme;
   xdg.configFile."matugen/templates/yazi.toml".source = ./yazi.toml;
 }
