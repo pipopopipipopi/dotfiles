@@ -4,6 +4,7 @@
     ./wezterm
     ./ghostty.nix
     ./tools.nix
-    ./vesktop.nix
+    # ./vesktop.nix
+    ./nixcord.nix
   ];
 }

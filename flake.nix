@@ -87,6 +87,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+    };
+
     pipopo-nvim = {
       url = "github:pipopopipipopi/pipopo-nvim";
       inputs.nixpkgs.follows = "nixpkgs";
