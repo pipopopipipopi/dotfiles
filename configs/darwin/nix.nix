@@ -1,4 +1,4 @@
-{
+{ username, ... }: {
   nix = {
     gc = {
       automatic = true;
@@ -28,5 +28,6 @@
     optimise.automatic = true;
   };
   system.stateVersion = 5;
+  system.primaryUser = "${username}";
   nixpkgs.config.allowUnfree = true;
 }
