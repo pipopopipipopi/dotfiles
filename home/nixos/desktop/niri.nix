@@ -38,7 +38,7 @@
           accel-speed = 1.0;
         };
         focus-follows-mouse.enable = true;
-        warp-mouse-to-focus = true;
+        warp-mouse-to-focus.enable = true;
       };
       cursor = {
         size = 24;
