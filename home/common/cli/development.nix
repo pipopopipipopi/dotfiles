@@ -29,7 +29,7 @@
     steel
 
     ## Tex
-    texlive.combined.scheme-full
+    # texliveMedium
 
     ## Typst
     typst
