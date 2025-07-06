@@ -10,6 +10,9 @@
     ## Clojure
     clojure
 
+    ## Erlang
+    erlang
+
     ## Gleam
     gleam
 
