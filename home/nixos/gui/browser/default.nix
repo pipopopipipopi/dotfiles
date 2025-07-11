@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ inputs, ... }: {
   imports = [
     inputs.zen-browser.homeModules.twilight
   ];
@@ -10,8 +10,4 @@
       TranslateEnabled = false;
     };
   };
-
-  home.packages = with pkgs; [
-    tor-browser
-  ];
 }
