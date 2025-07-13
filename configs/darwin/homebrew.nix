@@ -14,10 +14,7 @@
 
     casks = [
       "aquaskk"
-      "karabiner-elements"
       "microsoft-office"
-      "obsidian"
-      "zen-browser"
     ];
   };
 }
