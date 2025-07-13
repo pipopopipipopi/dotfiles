@@ -51,10 +51,6 @@
         command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd niri-session";
         user = username;
       };
-      initial_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd niri-session";
-        user = username;
-      };
     };
   };
 }
