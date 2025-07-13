@@ -22,7 +22,7 @@
         { command = ["swww-daemon"]; }
         { command = ["swaync"]; }
         { command = ["fcitx" "-D"]; }
-        { command = ["vesktop" "--start-minimized"]; }
+        { command = ["vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"]; }
       ];
       input = {
         keyboard = {
