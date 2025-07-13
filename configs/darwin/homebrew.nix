@@ -13,7 +13,8 @@
     brews = [];
 
     casks = [
-      "aquaskk"
+      "karabiner-elements"
+      "macskk"
       "microsoft-office"
     ];
   };
