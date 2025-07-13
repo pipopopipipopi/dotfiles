@@ -6,10 +6,10 @@ line-number = "relative"
 mouse = true
 middle-click-paste = false
 auto-format = false
-# auto-info = false
 true-color = true
 bufferline = "always"
 color-modes = true
+end-of-line-diagnostics = "hint"
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "read-only-indicator"]
@@ -20,7 +20,7 @@ mode.select = "SELECT"
 
 [editor.lsp]
 display-messages = true
-display-inlay-hints = true
+display-progress-messages = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -33,6 +33,9 @@ hidden = false
 [editor.soft-wrap]
 enable = true
 wrap-indicator = ""
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
 
 [keys.insert]
 esc = ["collapse_selection", "normal_mode"]

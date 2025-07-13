@@ -14,7 +14,7 @@
     };
     extraPackages = with pkgs; [
       # latex
-      texlab
+      # texlab
 
       # markdown
       marksman
