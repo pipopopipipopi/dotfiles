@@ -43,6 +43,7 @@
         "general.autoScroll" = true;
         "general.smoothScroll" = true;
         "general.smoothScroll.msdPhysics.enabled" = true;
+        "network.prefetch-next" = false;
         "sidebar.verticalTabs" = true;
       };
     };
