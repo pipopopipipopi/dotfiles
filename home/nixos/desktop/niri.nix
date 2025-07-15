@@ -79,7 +79,8 @@
         "Mod+Return".action = spawn "wezterm";
         # "Mod+Return".action = spawn "ghostty";
         # "Mod+B".action = spawn "floorp";
-        "Mod+B".action = spawn "zen-twilight";
+        # "Mod+B".action = spawn "zen-twilight";
+        "Mod+B".action = spawn "firefox";
         "Mod+Space".action = spawn "anyrun";
 
         "Mod+Q".action = close-window;

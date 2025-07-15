@@ -11,6 +11,7 @@
       name = "pipopo";
       path = "pipopo.default";
       search = {
+        force = true;
         default = "ddg";
         privateDefault = "ddg";
         engines = {
