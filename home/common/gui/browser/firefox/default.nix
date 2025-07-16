@@ -19,20 +19,59 @@
           ddg.metaData.alias = "dd";
           bing.metaData.hidden = true;
           wikipedia.metaData.hidden = true;
+          startpage = {
+            name = "Startpage";
+            urls = [{
+              template = "https://www.startpage.com/sp/search";
+              params = [
+                { name = "query"; value = "{searchTerms}"; }
+              ];
+            }];
+            definedAliases = [ "sp" ];
+          };
           youtube = {
             name = "YouTube";
-            urls = [{ templates = "https://www.youtube.com/results?search_query={searchTerms}"; }];
+            urls = [{
+              template = "https://www.youtube.com/results";
+              params = [
+                { name = "search_query"; value = "{searchTerms}"; }
+              ];
+            }];
             definedAliases = [ "yt" ];
           };
           github = {
             name = "GitHub";
-            urls = [{ templates = "https://github.com/search?q={searchTerms}&type=repositories"; }];
+            urls = [{
+              template = "https://github.com/search";
+              params = [
+                { name = "type"; value = "repositories"; }
+                { name = "q"; value = "{searchTerms}"; }
+              ];
+            }];
             definedAliases = [ "gh" ];
           };
           nix-packages = {
             name = "Nix Packages";
-            urls = [{ templates = "https://search.nixos.org/packages?channel=unstable&type=packages&query={searchTerms}"; }];
+            urls = [{
+              template = "https://search.nixos.org/packages";
+              params = [
+                { name = "channel"; value = "unstable"; }
+                { name = "type"; value = "packages"; }
+                { name = "query"; value = "{searchTerms}"; }
+              ];
+            }];
             definedAliases = [ "nixpkgs" ];
+          };
+          home-manager = {
+            name = "Home Manager";
+            urls = [{
+              template = "https://home-manager-options.extranix.com";
+              params = [
+                { name = "release"; value = "master"; }
+                { name = "query"; value = "{searchTerms}"; }
+              ];
+            }];
+            definedAliases = [ "hm" ];
           };
         };
       };
