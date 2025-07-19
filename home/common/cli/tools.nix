@@ -8,7 +8,6 @@
     eza
     fd
     fzf
-    gemini-cli
     gnumake
     gnutar
     httpie
