@@ -14,6 +14,5 @@
     ./git.nix
     ./neovim.nix
     ./tools.nix
-    ./gemini-cli
   ];
 }
