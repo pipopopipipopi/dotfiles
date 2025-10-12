@@ -18,7 +18,5 @@
     unzip
     zip
     zoxide
-
-    matugen
   ];
 }

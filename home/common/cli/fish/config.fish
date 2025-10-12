@@ -16,6 +16,4 @@ switch (uname)
     case '*'
 end
 
-fish_config theme choose "matugen"
-
 zoxide init fish | source

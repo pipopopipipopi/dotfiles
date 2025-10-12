@@ -3,7 +3,6 @@
     ./fish
     ./gitui
     ./helix
-    ./matugen
     ./nushell
     ./starship
     ./yazi
