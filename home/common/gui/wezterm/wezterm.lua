@@ -64,6 +64,6 @@ config.font = wezterm.font_with_fallback {
 --     },
 -- }
 
-config.color_scheme = "rose-pine-moon"
+config.color_scheme = "rose-pine"
 
 return config
