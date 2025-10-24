@@ -6,5 +6,6 @@
     pwvucontrol
     celluloid
     amberol
+    eyedropper
   ];
 }
