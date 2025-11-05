@@ -1,4 +1,8 @@
 let
   colors = import ./halloween.nix;
-in
-  import ./templates/wezterm.nix { inherit colors; }
+in {
+  imports = [
+    (import ./templates/wezterm.nix { inherit colors; })
+    (import ./templates/fish.nix { inherit colors; })
+  ];
+}
