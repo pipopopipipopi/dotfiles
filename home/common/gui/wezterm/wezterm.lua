@@ -64,38 +64,38 @@ config.font = wezterm.font_with_fallback {
 --     },
 -- }
 
-config.colors = {
-    foreground = "#f1dbd7",
-    background = "#362e38",
-    cursor_fg = "#f1dbd7",
-    cursor_bg = "#7e6e87",
-    cursor_border = "#7e6e87",
-    selection_fg = "#f1dbd7",
-    selection_bg = "#7e6e87",
+-- config.colors = {
+--     foreground = "#f1dbd7",
+--     background = "#362e38",
+--     cursor_fg = "#f1dbd7",
+--     cursor_bg = "#7e6e87",
+--     cursor_border = "#7e6e87",
+--     selection_fg = "#f1dbd7",
+--     selection_bg = "#7e6e87",
 
-    ansi = {
-        "#201c22", -- black
-        "#da352f", -- red
-        "#dc6919", -- green
-        "#e3a71e", -- yellow
-        "#866fae", -- blue
-        "#e07082", -- magenta
-        "#d8792c", -- cyan
-        "#f1dbd7"  -- white
-    },
+--     ansi = {
+--         "#201c22", -- black
+--         "#da352f", -- red
+--         "#dc6919", -- green
+--         "#e3a71e", -- yellow
+--         "#866fae", -- blue
+--         "#e07082", -- magenta
+--         "#d8792c", -- cyan
+--         "#f1dbd7"  -- white
+--     },
 
-    brights = {
-        "#9b8fa3", -- black
-        "#e05652", -- red
-        "#e1793d", -- green
-        "#ebc05c", -- yellow
-        "#9c89bd", -- blue
-        "#e99ba8", -- magenta
-        "#eb8b47", -- cyan
-        "#faf1f0"  -- white
-    },
-}
+--     brights = {
+--         "#9b8fa3", -- black
+--         "#e05652", -- red
+--         "#e1793d", -- green
+--         "#ebc05c", -- yellow
+--         "#9c89bd", -- blue
+--         "#e99ba8", -- magenta
+--         "#eb8b47", -- cyan
+--         "#faf1f0"  -- white
+--     },
+-- }
 
--- config.color_scheme = "rose-pine"
+config.color_scheme = "my_theme"
 
 return config
