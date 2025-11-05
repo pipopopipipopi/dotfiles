@@ -1,5 +1,6 @@
 {
   imports = [
+    ../../home/themes
     ../../home/common/cli
     ../../home/common/gui
     ../../home/darwin/cli
