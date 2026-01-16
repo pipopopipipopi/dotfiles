@@ -1,7 +1,7 @@
 {
   fg = "#fef8eb";
   bg = "#221a23";
-  sub_bg = "#4c3e51";
+  sub_bg = "#826a8a";
 
   black = "#392c3a";
   red = "#c6465b";
