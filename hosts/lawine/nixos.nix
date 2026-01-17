@@ -49,7 +49,7 @@
         user = "${username}";
       };
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --remember --remember-user-session --time --cmd ${pkgs.niri}/bin/niri-session";
+        command = "${pkgs.tuigreet}/bin/tuigreet --remember --remember-user-session --time --cmd ${pkgs.niri}/bin/niri-session";
         user = "greeter";
       };
     };

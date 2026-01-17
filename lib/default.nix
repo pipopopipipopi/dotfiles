@@ -48,7 +48,7 @@ inputs: {
             { pkgs, ... }: {
               home = {
                 inherit username;
-                homeDirectory = if pkgs.stdenv.isLinux then "/home/${username}" else "/Users/${username}";
+                homeDirectory = if pkgs.stdenv.hostPlatform.isLinux then "/home/${username}" else "/Users/${username}";
                 stateVersion = "25.05";
               };
               programs = {

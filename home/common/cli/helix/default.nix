@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }: {
   programs.helix = {
     enable = true;
-    package = inputs.helix.packages.${pkgs.system}.default;
+    package = inputs.helix.packages.${pkgs.stdenv.hostPlatform.system}.default;
     defaultEditor = true;
     settings = (builtins.fromTOML (builtins.readFile ./config.toml));
     languages = (builtins.fromTOML (builtins.readFile ./languages.toml));
