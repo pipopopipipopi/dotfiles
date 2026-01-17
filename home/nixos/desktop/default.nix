@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   imports = [
     ./anyrun
+    ./fuzzel
     ./niri
     ./fcitx5.nix
     ./swaync
