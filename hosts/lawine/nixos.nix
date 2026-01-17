@@ -8,6 +8,7 @@
     ../../configs/nixos/gnome-services.nix
     ../../configs/nixos/i18n.nix
     ../../configs/nixos/network.nix
+    ../../configs/nixos/niri.nix
     ../../configs/nixos/nix.nix
     ../../configs/nixos/security.nix
     ../../configs/nixos/shell.nix

@@ -1,0 +1,94 @@
+include "outputs.kdl"
+
+input {
+    keyboard {
+        xkb {
+            layout ""
+            model ""
+            rules ""
+            variant ""
+        }
+        repeat-delay 300
+        repeat-rate 30
+        track-layout "global"
+    }
+    touchpad {
+        tap
+        natural-scroll
+    }
+    mouse {
+        accel-speed 1.000000
+        accel-profile "flat"
+    }
+    trackball {
+        accel-speed 1.000000
+        accel-profile "flat"
+    }
+    warp-mouse-to-focus
+    focus-follows-mouse
+}
+screenshot-path "~/Pictures/Screenshots/Screenshot-from-%Y-%m-%d-%H-%M-%S.png"
+layout {
+    gaps 5
+    struts {
+        left 0
+        right 0
+        top 0
+        bottom 0
+    }
+    focus-ring { off; }
+    border {
+        width 2
+        active-color "#bbbbbb"
+        inactive-color "#111111"
+    }
+    default-column-width
+    center-focused-column "never"
+}
+cursor {
+    xcursor-theme "default"
+    xcursor-size 24
+}
+hotkey-overlay { skip-at-startup; }
+environment {
+    "CLUTTER_BACKEND" "wayland"
+    DISPLAY ":0"
+    "ELECTRON_OZONE_PLATFORM_HINT" "wayland"
+    "GDK_BACKEND" "wayland"
+    "GTK_IM_MODULE" "fcitx"
+    "QT_IM_MODULE" "fcitx"
+    "QT_QPA_PLATFORM" "wayland"
+    "SDL_VIDEODRIVER" "wayland"
+    "XDG_SESSION_TYPE" "wayland"
+    XMODIFIERS "@im=fcitx"
+}
+binds {
+    Mod+B { spawn "firefox"; }
+    Mod+F { maximize-column; }
+    Mod+H { focus-column-or-monitor-right; }
+    Mod+N { focus-window-or-workspace-down; }
+    Mod+Q { close-window; }
+    Mod+Return { spawn "wezterm"; }
+    Mod+S { focus-window-or-workspace-up; }
+    Mod+Shift+F { fullscreen-window; }
+    Mod+Shift+H { move-column-right-or-to-monitor-right; }
+    Mod+Shift+N { move-column-to-workspace-down; }
+    Mod+Shift+S { move-column-to-workspace-up; }
+    Mod+Shift+T { move-column-left-or-to-monitor-left; }
+    Mod+Space { spawn "anyrun"; }
+    Mod+T { focus-column-or-monitor-left; }
+}
+spawn-at-startup "swww-daemon"
+spawn-at-startup "swaync"
+spawn-at-startup "fcitx" "-D"
+spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"
+window-rule {
+    draw-border-with-background false
+    geometry-corner-radius 10.000000 10.000000 10.000000 10.000000
+    clip-to-geometry true
+}
+window-rule {
+    match title="^Picture-in-Picture$"
+    match title="^Discord Popout$"
+    open-floating true
+}

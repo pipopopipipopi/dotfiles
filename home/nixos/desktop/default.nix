@@ -1,9 +1,10 @@
 { pkgs, ... }: {
   imports = [
     ./anyrun
+    ./niri
     ./fcitx5.nix
     ./swaync
-    ./niri.nix
+    # ./niri.nix
     ./waybar.nix
     ./xdg.nix
   ];
