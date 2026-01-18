@@ -7,17 +7,17 @@
       settingsVersion = 0;
       bar = {
         position = "top";
-        monitors = [ ];
+        # monitors = [ ];
         density = "default";
         showOutline = false;
         showCapsule = true;
         capsuleOpacity = 1;
-        backgroundOpacity = 0.93;
+        backgroundOpacity = 1.0;
         useSeparateOpacity = false;
-        floating = false;
-        marginVertical = 4;
-        marginHorizontal = 4;
-        outerCorners = true;
+        floating = true;
+        marginVertical = 5;
+        marginHorizontal = 5;
+        outerCorners = false;
         exclusive = true;
         hideOnOverview = false;
         widgets = {
@@ -55,9 +55,6 @@
             }
             {
               id = "Volume";
-            }
-            {
-              id = "Brightness";
             }
             {
               id = "ControlCenter";
@@ -138,7 +135,7 @@
       wallpaper = {
         enabled = true;
         overviewEnabled = false;
-        directory = "";
+        # directory = "";
         monitorDirectories = [ ];
         enableMultiMonitorDirectories = false;
         recursiveSearch = false;
@@ -151,7 +148,7 @@
         wallpaperChangeMode = "random";
         randomIntervalSec = 300;
         transitionDuration = 1500;
-        transitionType = "none";
+        transitionType = "fade";
         transitionEdgeSmoothness = 0.05;
         panelPosition = "follow_bar";
         hideWallpaperFilenames = false;
