@@ -81,8 +81,8 @@ binds {
     Mod+Shift+N { move-column-to-workspace-down; }
     Mod+Shift+S { move-column-to-workspace-up; }
     Mod+Shift+T { move-column-left-or-to-monitor-left; }
-    // Mod+Space { spawn "fuzzel"; }
-    Mod+Space { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+Space { spawn "fuzzel"; }
+    // Mod+Space { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+T { focus-column-or-monitor-left; }
     Mod+Shift+DELETE { quit; }
 }
