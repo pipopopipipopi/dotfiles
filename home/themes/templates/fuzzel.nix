@@ -3,14 +3,14 @@
     [colors]
     background=${colors.bg}c4
     text=${colors.fg}ff
-    prompt=${colors.blue}ff
-    placeholder=${colors.magenta}ff
+    prompt=${colors.fg}ff
+    placeholder=${colors.fg}ff
     input=${colors.fg}ff
-    match=${colors.green}ff
-    selection=${colors.yellow}ff
-    selection-text=${colors.sub_bg}ff
-    selection-match=${colors.sub_bg}ff
+    match=${colors.blue}ff
+    selection=${colors.magenta}ff
+    selection-text=${colors.fg}ff
+    selection-match=${colors.cyan}ff
     counter=${colors.white}ff
-    border=${colors.magenta}ff
+    border=${colors.sub_bg}c4
   '';
 }
