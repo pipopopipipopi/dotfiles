@@ -17,17 +17,19 @@ input {
         natural-scroll
     }
     mouse {
-        accel-speed 1.000000
+        accel-speed 1.0
         accel-profile "flat"
     }
     trackball {
-        accel-speed 1.000000
+        accel-speed 1.0
         accel-profile "flat"
     }
     warp-mouse-to-focus
     focus-follows-mouse
 }
+
 screenshot-path "~/Pictures/Screenshots/Screenshot-from-%Y-%m-%d-%H-%M-%S.png"
+
 layout {
     gaps 5
     struts {
@@ -45,11 +47,14 @@ layout {
     default-column-width
     center-focused-column "never"
 }
+
 cursor {
     xcursor-theme "default"
     xcursor-size 24
 }
+
 hotkey-overlay { skip-at-startup; }
+
 environment {
     "CLUTTER_BACKEND" "wayland"
     DISPLAY ":0"
@@ -62,6 +67,7 @@ environment {
     "XDG_SESSION_TYPE" "wayland"
     XMODIFIERS "@im=fcitx"
 }
+
 binds {
     Mod+B { spawn "firefox"; }
     Mod+F { maximize-column; }
@@ -80,14 +86,16 @@ binds {
     Mod+T { focus-column-or-monitor-left; }
     Mod+Shift+DELETE { quit; }
 }
+
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swaync"
 spawn-at-startup "fcitx" "-D"
 spawn-at-startup "noctalia-shell"
 spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"
+
 window-rule {
     draw-border-with-background false
-    geometry-corner-radius 10.000000 10.000000 10.000000 10.000000
+    geometry-corner-radius 10.0 10.0 10.0 10.0
     clip-to-geometry true
 }
 window-rule {
