@@ -3,5 +3,17 @@
 
   programs.noctalia-shell = {
     enable = true;
+    settings = {
+      general = {
+        animationDisabled = true;
+        enableShadows = false;
+      };
+      wallpaper = {
+        transitionType = "none";
+      };
+      dock = {
+        enable = false;
+      };
+    };
   };
 }
