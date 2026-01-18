@@ -82,14 +82,12 @@ binds {
     Mod+Shift+S { move-column-to-workspace-up; }
     Mod+Shift+T { move-column-left-or-to-monitor-left; }
     Mod+Space { spawn "fuzzel"; }
-    // Mod+Space { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+T { focus-column-or-monitor-left; }
     Mod+Shift+DELETE { quit; }
 }
 
-// spawn-at-startup "swww-daemon"
+spawn-at-startup "swww-daemon"
 spawn-at-startup "fcitx" "-D"
-spawn-at-startup "noctalia-shell"
 spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"
 
 window-rule {
