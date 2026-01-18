@@ -64,7 +64,7 @@
       };
       general = {
         avatarImage = "";
-        dimmerOpacity = 0.2;
+        dimmerOpacity = 0.0;
         showScreenCorners = false;
         forceBlackScreenCorners = false;
         scaleRatio = 1;
@@ -93,7 +93,7 @@
         fontDefaultScale = 1;
         fontFixedScale = 1;
         tooltipsEnabled = true;
-        panelBackgroundOpacity = 0.93;
+        panelBackgroundOpacity = 1.0;
         panelsAttachedToBar = true;
         settingsPanelMode = "attached";
         wifiDetailsViewMode = "grid";
