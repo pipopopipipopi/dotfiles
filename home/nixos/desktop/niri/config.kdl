@@ -86,7 +86,8 @@ binds {
     Mod+Shift+DELETE { quit; }
 }
 
-spawn-at-startup "swww-daemon"
+// spawn-at-startup "swww-daemon"
+spawn-at-startup "awww-daemon"
 spawn-at-startup "fcitx" "-D"
 spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"
 

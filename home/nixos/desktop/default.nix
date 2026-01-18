@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   imports = [
     ./anyrun
     ./fuzzel
@@ -15,7 +15,10 @@
     waybar
     grim
     slurp
-  ];
+  ]
+  ++ (with inputs; [
+    awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
+  ]);
 
   home.pointerCursor = {
     gtk.enable = true;
