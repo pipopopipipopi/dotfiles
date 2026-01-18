@@ -4,6 +4,7 @@
     ./fuzzel
     ./niri
     ./fcitx5.nix
+    ./noctalia.nix
     ./swaync
     # ./niri.nix
     ./waybar.nix

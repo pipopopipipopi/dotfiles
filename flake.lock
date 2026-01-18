@@ -466,6 +466,26 @@
         "type": "github"
       }
     },
+    "noctalia": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1768706450,
+        "narHash": "sha256-dj6Q/aGbEPm/cs165zbdmzL7xaNQfIqP7SIhHUy3Wok=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
+        "rev": "dd7fc137ca2ac8f6da325302bfb0b1287f1a84b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
+        "type": "github"
+      }
+    },
     "pipopo-nvim": {
       "inputs": {
         "flake-parts": "flake-parts_4",
@@ -500,6 +520,7 @@
         "nix-darwin": "nix-darwin",
         "nixcord": "nixcord",
         "nixpkgs": "nixpkgs_3",
+        "noctalia": "noctalia",
         "pipopo-nvim": "pipopo-nvim",
         "wezterm": "wezterm",
         "zen-browser": "zen-browser"
