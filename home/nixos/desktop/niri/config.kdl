@@ -83,6 +83,7 @@ binds {
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swaync"
 spawn-at-startup "fcitx" "-D"
+spawn-at-startup "noctalia-shell"
 spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"
 window-rule {
     draw-border-with-background false
