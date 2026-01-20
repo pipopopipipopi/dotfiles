@@ -16,7 +16,7 @@
 
       plugins = {
         callTimer.enable = true;
-        clearURLs.enable = true;
+        ClearURLs.enable = true;
         crashHandler.enable = true;
         ctrlEnterSend = {
           enable = true;
