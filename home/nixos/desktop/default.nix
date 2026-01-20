@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: {
   imports = [
     ./anyrun
+    ./eww
     ./fuzzel
     ./niri
     ./fcitx5.nix
