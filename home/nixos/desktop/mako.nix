@@ -6,5 +6,8 @@
       font = "JetBrainsMono Nerd Font 10";
       icons = true;
     };
+    extraConfig = ''
+      include=~/.config/mako/colors
+    '';
   };
 }
