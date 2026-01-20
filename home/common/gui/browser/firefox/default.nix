@@ -78,10 +78,13 @@
       settings = {
         "app.update.enable" = false;
         "browser.tabs.closeWindowWithLastTab" = false;
+        "browser.sessionstore.interval" = 60000;
         "browser.shell.checkDefaultBrowser" = false;
+        "browser.tabs.unloadOnLowMemory" = true;
         "general.autoScroll" = true;
         "general.smoothScroll" = true;
         "general.smoothScroll.msdPhysics.enabled" = true;
+        "gfx.webrender.all" = true;
         "network.prefetch-next" = false;
         "sidebar.verticalTabs" = true;
       };
