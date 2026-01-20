@@ -4,6 +4,7 @@
     ./fuzzel
     ./niri
     ./fcitx5.nix
+    ./mako.nix
     # ./niri.nix
     ./waybar.nix
     ./xdg.nix
