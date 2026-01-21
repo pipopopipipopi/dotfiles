@@ -1,4 +1,8 @@
 [[language]]
+name = "kdl"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "latex"
 language-servers = [ "texlab" ]
 indent = { tab-width = 4, unit = "    " }
@@ -22,3 +26,7 @@ indent = { tab-width = 4, unit = "    " }
 name = "typst"
 language-servers = [ "tinymist" ]
 indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "yuck"
+indent = { tab-width = 2, unit = "  " }
