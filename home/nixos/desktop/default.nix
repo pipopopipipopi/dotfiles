@@ -6,13 +6,11 @@
     ./niri
     ./fcitx5.nix
     ./mako.nix
-    # ./niri.nix
     ./waybar.nix
     ./xdg.nix
   ];
 
   home.packages = with pkgs; [
-    swww # wallpaper
     wl-clipboard # clipboard manager
     waybar
     grim
