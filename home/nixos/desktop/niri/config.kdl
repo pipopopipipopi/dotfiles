@@ -1,6 +1,51 @@
 include "outputs.kdl"
 include "colors.kdl"
 
+environment {
+    "CLUTTER_BACKEND" "wayland"
+    DISPLAY ":0"
+    "ELECTRON_OZONE_PLATFORM_HINT" "wayland"
+    "GDK_BACKEND" "wayland"
+    "GTK_IM_MODULE" "fcitx"
+    "QT_IM_MODULE" "fcitx"
+    "QT_QPA_PLATFORM" "wayland"
+    "SDL_VIDEODRIVER" "wayland"
+    "XDG_SESSION_TYPE" "wayland"
+    XMODIFIERS "@im=fcitx"
+}
+
+// spawn-at-startup "swww-daemon"
+spawn-at-startup "awww-daemon"
+spawn-at-startup "fcitx" "-D"
+spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"
+
+binds {
+    Mod+Space { spawn "fuzzel"; }
+    Mod+B { spawn "firefox"; }
+    Mod+Return { spawn "wezterm"; }
+
+    Mod+Shift+DELETE { quit; }
+
+    Mod+F { maximize-column; }
+    Mod+Shift+F { fullscreen-window; }
+    Mod+V { toggle-window-floating; }
+    Mod+Q { close-window; }
+
+    Mod+T { focus-column-or-monitor-left; }
+    Mod+N { focus-window-or-workspace-down; }
+    Mod+S { focus-window-or-workspace-up; }
+    Mod+H { focus-column-or-monitor-right; }
+
+    Mod+Shift+T { move-column-left-or-to-monitor-left; }
+    Mod+Shift+N { move-column-to-workspace-down; }
+    Mod+Shift+S { move-column-to-workspace-up; }
+    Mod+Shift+H { move-column-right-or-to-monitor-right; }
+
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+
+}
+
 input {
     keyboard {
         xkb {
@@ -53,42 +98,6 @@ cursor {
 }
 
 hotkey-overlay { skip-at-startup; }
-
-environment {
-    "CLUTTER_BACKEND" "wayland"
-    DISPLAY ":0"
-    "ELECTRON_OZONE_PLATFORM_HINT" "wayland"
-    "GDK_BACKEND" "wayland"
-    "GTK_IM_MODULE" "fcitx"
-    "QT_IM_MODULE" "fcitx"
-    "QT_QPA_PLATFORM" "wayland"
-    "SDL_VIDEODRIVER" "wayland"
-    "XDG_SESSION_TYPE" "wayland"
-    XMODIFIERS "@im=fcitx"
-}
-
-binds {
-    Mod+B { spawn "firefox"; }
-    Mod+F { maximize-column; }
-    Mod+H { focus-column-or-monitor-right; }
-    Mod+N { focus-window-or-workspace-down; }
-    Mod+Q { close-window; }
-    Mod+Return { spawn "wezterm"; }
-    Mod+S { focus-window-or-workspace-up; }
-    Mod+Shift+F { fullscreen-window; }
-    Mod+Shift+H { move-column-right-or-to-monitor-right; }
-    Mod+Shift+N { move-column-to-workspace-down; }
-    Mod+Shift+S { move-column-to-workspace-up; }
-    Mod+Shift+T { move-column-left-or-to-monitor-left; }
-    Mod+Space { spawn "fuzzel"; }
-    Mod+T { focus-column-or-monitor-left; }
-    Mod+Shift+DELETE { quit; }
-}
-
-// spawn-at-startup "swww-daemon"
-spawn-at-startup "awww-daemon"
-spawn-at-startup "fcitx" "-D"
-spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--enable-wayland-ime" "--wayland-text-input-version=3"
 
 window-rule {
     draw-border-with-background false
