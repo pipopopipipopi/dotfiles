@@ -1,12 +1,15 @@
 let
-  # colors = import ./palettes/halloween.nix;
-  colors = import ./palettes/uitopia.nix;
+  # palette = "halloween";
+  palette = "uitopia";
 in {
+  _module.args.colors = import ./palettes/${palette}.nix;
+
   imports = [
-    (import ./templates/fish.nix { inherit colors; })
-    (import ./templates/fuzzel.nix { inherit colors; })
-    (import ./templates/helix.nix { inherit colors; })
-    (import ./templates/mako.nix { inherit colors; })
-    (import ./templates/wezterm.nix { inherit colors; })
+    ./templates/fish.nix
+    ./templates/fuzzel.nix
+    ./templates/helix.nix
+    ./templates/mako.nix
+    ./templates/niri.nix
+    ./templates/wezterm.nix
   ];
 }

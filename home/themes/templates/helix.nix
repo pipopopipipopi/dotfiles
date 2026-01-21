@@ -1,4 +1,4 @@
-{ colors }: {
+{ colors, ... }: {
   xdg.configFile."helix/themes/my_theme.toml".text = ''
     # --- Syntax Elements ---
     "attribute" = "${colors.blue}"

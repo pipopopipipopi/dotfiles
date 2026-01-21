@@ -1,4 +1,4 @@
-{ colors }:
+{ colors, ... }:
 let
   format = c: builtins.replaceStrings ["#"] [""] c;
 in {

@@ -1,4 +1,4 @@
-{ colors }: {
+{ colors, ... }: {
   xdg.configFile."wezterm/colors/colors.toml".text = ''
     [colors]
     foreground = "${colors.fg}"

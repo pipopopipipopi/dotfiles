@@ -1,4 +1,4 @@
-{ colors }: {
+{ lib, pkgs, colors, ... }: lib.mkIf pkgs.stdenv.hostPlatform.isLinux {
   xdg.configFile."fuzzel/colors.ini".text = ''
     [colors]
     background=${colors.bg}c4

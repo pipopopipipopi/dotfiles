@@ -1,4 +1,5 @@
 include "outputs.kdl"
+include "colors.kdl"
 
 input {
     keyboard {
@@ -41,8 +42,6 @@ layout {
     focus-ring { off; }
     border {
         width 2
-        active-color "#bbbbbb"
-        inactive-color "#111111"
     }
     default-column-width
     center-focused-column "never"
