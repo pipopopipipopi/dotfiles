@@ -2,7 +2,7 @@
   programs.aerospace = {
     enable = true;
     launchd.enable = true;
-    userSettings = {
+    settings = {
       after-login-command = [];
       after-startup-command = [];
       start-at-login = true;
