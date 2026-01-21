@@ -1,6 +1,6 @@
 let
-  # colors = import ./halloween.nix;
-  colors = import ./uitopia.nix;
+  # colors = import ./palettes/halloween.nix;
+  colors = import ./palettes/uitopia.nix;
 in {
   imports = [
     (import ./templates/fish.nix { inherit colors; })
