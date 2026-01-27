@@ -22,6 +22,9 @@
       # nix
       nil
 
+      # python
+      ty
+
       # rust
       rust-analyzer
 

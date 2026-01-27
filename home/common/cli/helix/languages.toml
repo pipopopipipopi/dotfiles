@@ -18,6 +18,11 @@ language-servers = [ "nil" ]
 indent = { tab-width = 2, unit = "  " }
 
 [[language]]
+name = "python"
+language-servers = [ "ty" ]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "rust"
 language-servers = [ "rust-analyzer" ]
 indent = { tab-width = 4, unit = "    " }
