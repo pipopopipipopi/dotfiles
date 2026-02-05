@@ -1,6 +1,10 @@
 let
+  ## dark
   # palette = "halloween";
-  palette = "uitopia";
+  # palette = "uitopia";
+   
+  ## light
+  palette = "coffee";
 in {
   _module.args.colors = import ./palettes/${palette}.nix;
 
