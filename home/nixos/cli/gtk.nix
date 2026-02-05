@@ -2,6 +2,7 @@
   home.packages = [ pkgs.dconf ];
   gtk = {
     enable = true;
+    colorScheme = "light";
     iconTheme = {
       name = "WhiteSur";
       package = pkgs.whitesur-icon-theme.override {
