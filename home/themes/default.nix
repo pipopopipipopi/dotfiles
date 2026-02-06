@@ -2,9 +2,11 @@ let
   ## dark
   # palette = "halloween";
   # palette = "uitopia";
+  # palette = "arcana_shadow_dark";
    
   ## light
-  palette = "coffee";
+  # palette = "coffee";
+  palette = "arcana_shadow_light";
 in {
   _module.args.colors = import ./palettes/${palette}.nix;
 
