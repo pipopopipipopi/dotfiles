@@ -12,8 +12,8 @@ in {
     fish_color_error ${format colors.magenta}
     fish_color_param ${format colors.bright_yellow}
     fish_color_comment ${format colors.bright_black}
-    fish_color_selection --background=${format colors.bright_black} --reverse
-    fish_color_search_match --background=${format colors.bg}
+    fish_color_selection --background=${format colors.sub_bg}
+    fish_color_search_match --background=${format colors.sub_bg}
     fish_color_operator ${format colors.fg}
     fish_color_escape ${format colors.blue}
     fish_color_autosuggestion ${format colors.bright_black}
@@ -34,7 +34,7 @@ in {
     fish_pager_color_prefix ${format colors.blue}
     fish_pager_color_completion ${format colors.bright_blue}
     fish_pager_color_description ${format colors.bright_black}
-    fish_pager_color_selected_background --background=${format colors.bright_black}
+    fish_pager_color_selected_background --background=${format colors.sub_bg}
     fish_pager_color_selected_prefix ${format colors.yellow}
     fish_pager_color_selected_completion ${format colors.fg}
     fish_pager_color_selected_description ${format colors.fg}
