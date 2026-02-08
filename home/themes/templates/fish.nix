@@ -10,7 +10,7 @@ in {
     fish_color_redirection ${format colors.cyan}
     fish_color_end ${format colors.fg}
     fish_color_error ${format colors.magenta}
-    fish_color_param ${format colors.bright_yellow}
+    fish_color_param ${format colors.fg}
     fish_color_comment ${format colors.bright_black}
     fish_color_selection --background=${format colors.sub_bg}
     fish_color_search_match --background=${format colors.sub_bg}

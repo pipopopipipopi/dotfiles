@@ -14,8 +14,8 @@
 
   bright_black = "#434343";
   bright_red = "#cb4042";
-  bright_green = "#6c6a2d";
-  bright_yellow = "#9b6e23";
+  bright_green = "#b1b479";
+  bright_yellow = "#c1693c";
   bright_blue = "#0d5661";
   bright_magenta = "#8e354a";
   bright_cyan = "#838a2d";

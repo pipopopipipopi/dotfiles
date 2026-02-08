@@ -7,9 +7,9 @@
     placeholder=${colors.fg}ff
     input=${colors.fg}ff
     match=${colors.blue}ff
-    selection=${colors.magenta}ff
+    selection=${colors.sub_bg}ff
     selection-text=${colors.fg}ff
-    selection-match=${colors.cyan}ff
+    selection-match=${colors.magenta}ff
     counter=${colors.white}ff
     border=${colors.sub_bg}c4
   '';
