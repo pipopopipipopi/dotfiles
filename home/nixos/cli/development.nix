@@ -3,6 +3,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    texliveFull
+    # texliveFull
   ];
 }
