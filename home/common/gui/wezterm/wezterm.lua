@@ -6,7 +6,8 @@ wezterm.add_to_config_reload_watch_list(wezterm.config_dir .. "/colors/matugen.t
 
 local config = {}
 
-config.window_background_opacity = 0.8
+-- config.window_background_opacity = 0.8
+config.window_background_opacity = 1.0
 config.hide_tab_bar_if_only_one_tab = true
 
 config.use_ime = true
