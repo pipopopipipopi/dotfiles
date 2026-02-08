@@ -6,7 +6,8 @@ let
    
   ## light
   # palette = "coffee";
-  palette = "arcana_shadow_light";
+  # palette = "arcana_shadow_light";
+  palette = "washi";
 in {
   _module.args.colors = import ./palettes/${palette}.nix;
 
