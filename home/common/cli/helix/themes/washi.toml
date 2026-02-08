@@ -1,0 +1,110 @@
+# --- Syntax Elements ---
+"attribute" = "uguisu"
+"type" = "uguisu"
+"type.enum.variant" = "uguisu"
+"constructor" = "kitsune"
+
+"constant" = "kitsune"
+"constant.character" = "kitsune"
+"constant.character.escape" = "kitsune"
+
+"string" = "kitsune"
+"string.regexp" = "ai"
+"string.special" = "kitsune"
+"string.special.symbol" = "akabeni"
+
+"comment" = { fg = "keshizumi", modifiers = ["italic"] }
+
+"variable" = "sumi"
+"variable.parameter" = { fg = "ai", modifiers = ["italic"] }
+"variable.builtin" = "akabeni"
+"variable.other.member" = "suoh"
+
+"label" = "ai"
+
+"punctuation" = "kuro"
+"punctuation.special" = "suoh"
+
+"keyword" = "suoh"
+"keyword.control.conditional" = { fg = "suoh", modifiers = ["italic"] }
+
+"operator" = "ai"
+
+"function" = "kaba"
+"function.macro" = "kaba"
+
+"tag" = "uguisu"
+"namespace" = { fg = "entan", modifiers = ["italic"] }
+
+"special" = "kitsune"
+
+# --- Markup ---
+"markup.heading.1" = "akabeni"
+"markup.heading.2" = "uguisu"
+"markup.heading.3" = "kaba"
+"markup.heading.4" = "kitsune"
+"markup.heading.5" = "suoh"
+"markup.heading.6" = "ai"
+
+"markup.list" = "uguisu"
+"markup.bold" = { fg = "uguisu", modifiers = ["bold"] }
+"markup.italic" = { fg = "suoh", modifiers = ["italic"] }
+"markup.link.url" = { fg = "kaba", modifiers = ["italic", "underlined"] }
+"markup.link.text" = "kaba"
+"markup.quote" = "kuro"
+
+# --- Diff ---
+"diff.plus" = "kitsune"
+"diff.minus" = "akabeni"
+"diff.delta" = "uguisu"
+
+# --- UI Elements ---
+"ui.background" = {}
+# "ui.background" = { bg = "shironeri" }
+
+"ui.linenr" = { fg = "kuro" }
+"ui.linenr.selected" = { fg = "kaba" }
+
+"ui.statusline" = { fg = "sumi", bg = "mushikuri" }
+"ui.statusline.inactive" = { fg = "kuro", bg = "shironeri" }
+
+"ui.popup" = { fg = "sumi", bg = "mushikuri" }
+"ui.menu" = { fg = "sumi", bg = "mushikuri" }
+"ui.menu.selected" = { fg = "kitsune", bg = "shironeri", modifiers = ["bold"] }
+
+"ui.cursor" = { fg = "shironeri", bg = "kikujin" }
+"ui.cursor.primary" = { fg = "shironeri", bg = "koke" }
+
+"ui.selection" = { bg = "mushikuri" }
+
+# --- Diagnostics ---
+"diagnostic.error" = { fg = "akabeni", underline = { color = "akabeni", style = "curl" } }
+"diagnostic.warning" = { fg = "uguisu", underline = { color = "uguisu", style = "curl" } }
+"diagnostic.info" = { fg = "kaba", underline = { color = "kaba", style = "curl" } }
+"diagnostic.hint" = { fg = "ai", underline = { color = "ai", style = "curl" } }
+
+# --- Fallbacks ---
+error = "akabeni"
+warning = "uguisu"
+info = "kaba"
+hint = "ai"
+
+# --- Palettes ---
+[palette]
+sumi = "#1c1c1c"
+keshizumi = "#434343"
+shironeri = "#fcfaf2"
+mushikuri = "#d9cd90"
+
+kuro = "#080808" 
+akabeni = "#cb4042" 
+uguisu = "#6c6a2d" 
+kitsune = "#9b6e23" 
+ai = "#0d5661" 
+suoh = "#8e354a" 
+gofun = "#fffffb" 
+
+kaba = "#c1693c" 
+koke = "#838a2d" 
+kikujin = "#b1b479" 
+entan = "#b75455" 

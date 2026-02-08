@@ -11,6 +11,7 @@
         "ui.background" = {};
         "ui.background.separator" = {};
       };
+      washi = (builtins.fromTOML (builtins.readFile ./themes/washi.toml));
     };
     extraPackages = with pkgs; [
       # latex

@@ -1,5 +1,6 @@
 # theme = "rose_pine_moon_transparent"
-theme = "my_theme"
+# theme = "my_theme"
+theme = "washi"
 
 [editor]
 line-number = "relative"
