@@ -73,6 +73,7 @@
 "ui.menu.selected" = { fg = "kitsune", bg = "shironeri", modifiers = ["bold"] }
 
 "ui.cursor" = { fg = "shironeri", bg = "kikujin" }
+"ui.cursor.match" = { bg = "mushikuri" }
 "ui.cursor.primary" = { fg = "shironeri", bg = "koke" }
 
 "ui.selection" = { bg = "mushikuri" }
