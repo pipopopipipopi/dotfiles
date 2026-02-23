@@ -3,6 +3,7 @@
   ...
 }: {
   home.packages = with pkgs; [
+    basalt
     bottom
     docker
     eza

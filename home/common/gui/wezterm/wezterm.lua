@@ -99,4 +99,10 @@ config.font = wezterm.font_with_fallback {
 
 config.color_scheme = "my_theme"
 
+config.cell_widths = {
+    { first = 0x2190, last = 0x21e7, width = 1 },
+    { first = 0x2500, last = 0x25ff, width = 1 },
+    { first = 0x1d306, last = 0x1d356, width = 1 },
+}
+
 return config
