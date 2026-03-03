@@ -1,6 +1,6 @@
 {
   imports = [
-    ./browser
+    # ./browser
     ./tools.nix
   ];
 }

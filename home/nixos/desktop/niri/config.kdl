@@ -21,7 +21,8 @@ spawn-at-startup "vesktop" "--start-minimized" "--ozone-platform=wayland" "--ena
 
 binds {
     Mod+Space { spawn "fuzzel"; }
-    Mod+B { spawn "firefox"; }
+    // Mod+B { spawn "firefox"; }
+    Mod+B { spawn "zen-twilight"; }
     Mod+Return { spawn "wezterm"; }
 
     Mod+Shift+DELETE { quit; }
