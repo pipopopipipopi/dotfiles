@@ -41,6 +41,8 @@
     # prime.nvidiaBusId = "PCI:10:0:0";
   };
 
+  programs.nix-ld.enable = true;
+
   services.greetd = {
     enable = true;
     settings = {
