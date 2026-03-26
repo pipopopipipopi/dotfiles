@@ -7,5 +7,6 @@
     celluloid
     amberol
     eyedropper
+    kicad
   ];
 }
