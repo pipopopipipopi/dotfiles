@@ -12,7 +12,7 @@
       default-root-container-layout = "tiles";
       default-root-container-orientation = "auto";
       on-focused-monitor-changed = ["move-mouse monitor-lazy-center"];
-      automatically-unhide-macos-hidden-apps = false;
+      automatically-unhide-macos-hidden-apps = true;
       gaps = {
         inner.horizontal = 10;
         inner.vertical =   10;
@@ -24,6 +24,7 @@
       mode.main.binding = {
         alt-q = "close";
         alt-f = "fullscreen";
+        alt-v = "layout floating tiling";
 
         alt-j = "focus left";
         alt-k = "focus down";
@@ -54,7 +55,17 @@
         alt-shift-7 = "move-node-to-workspace 7";
         alt-shift-8 = "move-node-to-workspace 8";
         alt-shift-9 = "move-node-to-workspace 9";
+
+        alt-minus = "resize width -10";
+        alt-equal = "resize width +10";
       };
+      on-window-detected = [
+        {
+          "if".app-id = "app.zen-browser.zen";
+          "if".window-title-regex-substring = "Picture-in-Picture";
+          run = ["layout floating"];
+        }
+      ];
     };
   };
 }
