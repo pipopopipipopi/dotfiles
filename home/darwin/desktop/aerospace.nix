@@ -56,8 +56,8 @@
         alt-shift-8 = "move-node-to-workspace 8";
         alt-shift-9 = "move-node-to-workspace 9";
 
-        alt-minus = "resize width -10";
-        alt-equal = "resize width +10";
+        alt-minus = "resize width -50";
+        alt-equal = "resize width +50";
       };
       on-window-detected = [
         {
