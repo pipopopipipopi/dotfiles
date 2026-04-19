@@ -3,7 +3,6 @@
     ./fish
     ./gitui
     ./helix
-    ./nushell
     ./starship
     ./yazi
     ./zellij
