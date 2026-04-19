@@ -9,6 +9,33 @@
       DisableAppUpdate = true;
       DisableTelemetry = true;
       TranslateEnabled = false;
+
+      Preferences = {
+        "browser.tabs.unloadOnLowMemory" = {
+          Value = true;
+        };
+        "browser.sessionstore.interval" = {
+          Value = 60000;
+        };
+        "browser.cache.disk.enable" = {
+          Value = false;
+        };
+        "browser.cache.memory.enable" = {
+          Value = true;
+        };
+        "browser.cache.memory.capacity" = {
+          Value = 131072;
+        };
+        "browser.cache.memory.max_entry_size" = {
+          Value = 20480;
+        };
+        "javascript.options.mem.gc_allocation_threshold_mb" = {
+          Value = 10;
+        };
+        "javascript.options.mem.gc_high_frequency_heap_growth_max" = {
+          Value = 150;
+        };
+      };
     };
     profiles."default" = {
       isDefault = true;
