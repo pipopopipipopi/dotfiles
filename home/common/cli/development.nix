@@ -7,34 +7,16 @@
     ## C
     gcc
 
-    ## Clojure
-    clojure
-
-    ## Erlang
-    erlang
-
-    ## Gleam
-    gleam
-
-    ## Hy
-    hy
-
     ## Common Lisp
-    sbcl
-
-    ## Python
-    python312
+    # sbcl
 
     ## Rust
-    fenix.stable.toolchain
+    # fenix.stable.toolchain
 
     ## Steel
     steel
 
-    ## Tex
-    # texliveMedium
-
     ## Typst
-    typst
+    # typst
   ];
 }
