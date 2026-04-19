@@ -12,6 +12,7 @@
     kdePackages.dolphin
     kdePackages.okular
     kdePackages.gwenview
-    haruna
+    qview
+    mpv
   ];
 }
