@@ -8,5 +8,10 @@
     amberol
     eyedropper
     kicad
+
+    kdePackages.dolphin
+    kdePackages.okular
+    kdePackages.gwenview
+    haruna
   ];
 }
