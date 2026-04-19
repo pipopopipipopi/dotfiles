@@ -1,17 +1,16 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     obsidian
-    nautilus
-    loupe
+    # nautilus
+    # loupe
     pwvucontrol
-    celluloid
-    amberol
-    eyedropper
+    # celluloid
+    # amberol
+    # eyedropper
     kicad
 
     kdePackages.dolphin
     kdePackages.okular
-    kdePackages.gwenview
     qview
     mpv
   ];
