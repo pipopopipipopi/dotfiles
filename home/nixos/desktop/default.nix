@@ -1,6 +1,5 @@
 { inputs, pkgs, ... }: {
   imports = [
-    ./anyrun
     ./eww
     ./fuzzel
     ./niri
