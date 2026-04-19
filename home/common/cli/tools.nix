@@ -3,9 +3,9 @@
   ...
 }: {
   home.packages = with pkgs; [
-    basalt
     bottom
     docker
+    dust
     eza
     fd
     fzf
