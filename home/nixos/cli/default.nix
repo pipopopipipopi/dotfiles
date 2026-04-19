@@ -3,5 +3,6 @@
     ./development.nix
     ./tools.nix
     ./gtk.nix
+    ./qt.nix
   ];
 }
