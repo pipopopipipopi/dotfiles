@@ -6,8 +6,8 @@
 
     kvantum = {
       enable = true;
-      themes = with pkgs; [ whitesur-kde ];
-      settings.General.theme = "WhiteSur";
+      themes = with pkgs; [ utterly-nord-plasma ];
+      settings.General.theme = "Utterly-Nord-Light-Solid";
     };
   };
 }
