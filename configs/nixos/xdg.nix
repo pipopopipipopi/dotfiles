@@ -5,8 +5,8 @@
       xdg-desktop-portal-wlr
       kdePackages.xdg-desktop-portal-kde
       xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
     ];
-    # config.common.default = "*";
     config = {
       common = {
         default = [ "kde" "gtk" ];

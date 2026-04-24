@@ -3,7 +3,7 @@
     obsidian
     # nautilus
     # loupe
-    pwvucontrol
+    # pwvucontrol
     # celluloid
     # amberol
     # eyedropper
