@@ -92,7 +92,8 @@ layout {
     border {
         width 2
     }
-    default-column-width
+    shadow { off; }
+    default-column-width { proportion 0.5; }
     center-focused-column "never"
 }
 
@@ -103,9 +104,12 @@ cursor {
 
 hotkey-overlay { skip-at-startup; }
 
+prefer-no-csd
+
 window-rule {
     draw-border-with-background false
-    geometry-corner-radius 10.0 10.0 10.0 10.0
+    // geometry-corner-radius 10.0 10.0 10.0 10.0
+    geometry-corner-radius 0
     clip-to-geometry true
 }
 window-rule {
