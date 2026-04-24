@@ -17,6 +17,7 @@
     ripgrep
     unar
     unzip
+    wallust
     zip
     zoxide
   ];
