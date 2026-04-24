@@ -35,6 +35,9 @@
         "javascript.options.mem.gc_high_frequency_heap_growth_max" = {
           Value = 150;
         };
+        "widget.use-xdg-desktop-portal.file-picker" = {
+          Value = 1;
+        };
       };
     };
     profiles."default" = {
