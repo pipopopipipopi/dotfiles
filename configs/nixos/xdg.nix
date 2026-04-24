@@ -1,11 +1,11 @@
 { pkgs, ... }: {
   xdg.portal = {
     enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-wlr
-      pkgs.kdePackages.xdg-desktop-portal-kde
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-gnome
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-wlr
+      kdePackages.xdg-desktop-portal-kde
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
     ];
     # config.common.default = "*";
     config = {
