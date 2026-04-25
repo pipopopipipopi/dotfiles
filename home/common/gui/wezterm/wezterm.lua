@@ -2,7 +2,7 @@ local wezterm = require "wezterm"
 local darwin = wezterm.target_triple:find("darwin")
 local linux = wezterm.target_triple:find("linux")
 
-wezterm.add_to_config_reload_watch_list(wezterm.config_dir .. "/colors/matugen.toml")
+wezterm.add_to_config_reload_watch_list(wezterm.config_dir .. "/colors/matugen_theme.toml")
 
 local config = {}
 
@@ -97,7 +97,8 @@ config.font = wezterm.font_with_fallback {
 --     },
 -- }
 
-config.color_scheme = "my_theme"
+-- config.color_scheme = "my_theme"
+config.color_scheme = "matugen_theme"
 
 config.cell_widths = {
     { first = 0x2190, last = 0x21e7, width = 1 },

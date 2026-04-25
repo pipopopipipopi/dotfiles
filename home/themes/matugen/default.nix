@@ -43,7 +43,7 @@ in {
 
     [templates.wezterm]
     input_path = '${templates}/matugen_wezterm.toml'
-    output_path = '~/.config/wezterm/colors/matugen.toml'
+    output_path = '~/.config/wezterm/colors/matugen_theme.toml'
 
     # [templates.yazi]
     # input_path = '${templates}/matugen_yazi.toml'
