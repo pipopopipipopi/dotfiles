@@ -1,10 +1,8 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs, lib, ... }:
 let
   templates = ./templates;
-in {
-  home.packages = with pkgs; [ inputs.matugen.packages.${system}.default ];
 
-  xdg.configFile."matugen/config.toml".text = ''
+  common = ''
     [config]
     version_check = false
     fallback_color = "#d62828"
@@ -12,17 +10,24 @@ in {
     caching = false
     contrast = 0.3
 
-    [config.wallpaper]
-    set = true
-    command = "awww img {{ image }}"
-
-    [templates.fuzzel]
-    input_path = '${templates}/matugen_fuzzel.ini'
-    output_path = '~/.config/fuzzel/colors.ini'
-
     [templates.helix]
     input_path = '${templates}/matugen_helix.toml'
     output_path = '~/.config/helix/themes/matugen_theme.toml'
+
+    [templates.wezterm]
+    input_path = '${templates}/matugen_wezterm.toml'
+    output_path = '~/.config/wezterm/colors/matugen_theme.toml'
+
+    [templates.yazi]
+    input_path = '${templates}/matugen_yazi.toml'
+    output_path = '~/.config/yazi/theme.toml'
+
+  '';
+
+  linux = ''
+    [templates.fuzzel]
+    input_path = '${templates}/matugen_fuzzel.ini'
+    output_path = '~/.config/fuzzel/colors.ini'
 
     [templates.mako]
     input_path = '${templates}/matugen_mako'
@@ -41,12 +46,21 @@ in {
     input_path = '${templates}/matugen_qtct.conf'
     output_path = '~/.config/qt6ct/colors/matugen_theme.conf'
 
-    [templates.wezterm]
-    input_path = '${templates}/matugen_wezterm.toml'
-    output_path = '~/.config/wezterm/colors/matugen_theme.toml'
-
-    [templates.yazi]
-    input_path = '${templates}/matugen_yazi.toml'
-    output_path = '~/.config/yazi/theme.toml'
+    [config.wallpaper]
+    set = true
+    command = "awww img {{ image }}"
   '';
+
+  darwin = ''
+    [config.wallpaper]
+    set = true
+    command = "desktoppr {{ image }}"
+  '';
+in {
+  home.packages = with pkgs; [ inputs.matugen.packages.${system}.default ];
+
+  xdg.configFile."matugen/config.toml".text =
+    common
+    + lib.optionalString pkgs.stdenv.hostPlatform.isLinux linux
+    + lib.optionalString pkgs.stdenv.hostPlatform.isDarwin darwin;
 }
