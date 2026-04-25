@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let
   templates = ./templates;
 in {
-  home.packages = with pkgs; [ matugen ];
+  home.packages = with pkgs; [ inputs.matugen.packages.${system}.default ];
 
   xdg.configFile."matugen/config.toml".text = ''
     [config]
@@ -10,7 +10,7 @@ in {
     fallback_color = "#d62828"
     prefer = "closest-to-fallback"
     caching = false
-    contrast = 0.0
+    contrast = 0.3
 
     [config.wallpaper]
     set = true
