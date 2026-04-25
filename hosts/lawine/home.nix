@@ -1,6 +1,7 @@
 {
   imports = [
     ../../home/themes
+    ../../home/themes/matugen
     ../../home/common/cli
     ../../home/common/gui
     ../../home/nixos/cli
