@@ -57,7 +57,7 @@ let
     command = "desktoppr {{ image }}"
   '';
 in {
-  home.packages = with pkgs; [ inputs.matugen.packages.${system}.default ];
+  home.packages =  if pkgs.stdenv.isLinux then [ inputs.matugen.packages.${pkgs.system}.default ] else [ pkgs.matugen ];
 
   xdg.configFile."matugen/config.toml".text =
     common
