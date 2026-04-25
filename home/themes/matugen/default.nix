@@ -16,22 +16,22 @@ in {
     set = true
     command = "awww img {{ image }}"
 
-    # [templates.fuzzel]
-    # input_path = '${templates}/matugen_fuzzel.ini'
-    # output_path = '~/.config/fuzzel/colors.ini'
+    [templates.fuzzel]
+    input_path = '${templates}/matugen_fuzzel.ini'
+    output_path = '~/.config/fuzzel/colors.ini'
 
     [templates.helix]
     input_path = '${templates}/matugen_helix.toml'
     output_path = '~/.config/helix/themes/matugen_theme.toml'
 
-    # [templates.mako]
-    # input_path = '${templates}/matugen_mako'
-    # output_path = '~/.config/mako/colors'
-    # # post_hook = 'makoctl reload'
+    [templates.mako]
+    input_path = '${templates}/matugen_mako'
+    output_path = '~/.config/mako/colors'
+    # post_hook = 'makoctl reload'
 
-    # [templates.niri]
-    # input_path = '${templates}/matugen_niri.kdl'
-    # output_path = '~/.config/niri/colors.kdl'
+    [templates.niri]
+    input_path = '${templates}/matugen_niri.kdl'
+    output_path = '~/.config/niri/colors.kdl'
 
     [templates.qt5ct]
     input_path = '${templates}/matugen_qtct.conf'
@@ -45,8 +45,8 @@ in {
     input_path = '${templates}/matugen_wezterm.toml'
     output_path = '~/.config/wezterm/colors/matugen_theme.toml'
 
-    # [templates.yazi]
-    # input_path = '${templates}/matugen_yazi.toml'
-    # output_path = '~/.config/yazi/theme.toml'
+    [templates.yazi]
+    input_path = '${templates}/matugen_yazi.toml'
+    output_path = '~/.config/yazi/theme.toml'
   '';
 }
