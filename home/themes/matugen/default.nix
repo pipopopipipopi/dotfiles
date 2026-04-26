@@ -8,7 +8,7 @@ let
     fallback_color = "#d62828"
     prefer = "closest-to-fallback"
     caching = false
-    contrast = 0.3
+    contrast = 0.13
 
     [templates.helix]
     input_path = '${templates}/matugen_helix.toml'
@@ -57,7 +57,7 @@ let
     command = "desktoppr {{ image }}"
   '';
 in {
-  home.packages =  if pkgs.stdenv.isLinux then [ inputs.matugen.packages.${pkgs.system}.default ] else [ pkgs.matugen ];
+  home.packages =  if pkgs.stdenv.hostPlatform.isLinux then [ inputs.matugen.packages.${pkgs.stdenv.hostPlatform.system}.default ] else [ pkgs.matugen ];
 
   xdg.configFile."matugen/config.toml".text =
     common
