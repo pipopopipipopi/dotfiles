@@ -10,6 +10,10 @@ let
     caching = false
     contrast = 0.13
 
+    [templates.fish]
+    input_path = '${templates}/matugen_fish.theme'
+    output_path = '~/.config/fish/themes/matugen_theme.theme'
+
     [templates.helix]
     input_path = '${templates}/matugen_helix.toml'
     output_path = '~/.config/helix/themes/matugen_theme.toml'
