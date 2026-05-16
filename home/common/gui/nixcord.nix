@@ -18,11 +18,11 @@
         callTimer.enable = true;
         ClearURLs.enable = true;
         crashHandler.enable = true;
-        ctrlEnterSend = {
-          enable = true;
-          submitRule = "ctrl+enter";
-          sendMessageInTheMiddleOfACodeBlock = true;
-        };
+        # ctrlEnterSend = {
+        #   enable = true;
+        #   submitRule = "ctrl+enter";
+        #   sendMessageInTheMiddleOfACodeBlock = true;
+        # };
         fakeNitro.enable = true;
         gifPaste.enable = true;
         memberCount.enable = true;
