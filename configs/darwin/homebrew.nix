@@ -16,6 +16,7 @@
       "karabiner-elements"
       "macskk"
       "microsoft-office"
+      "ltspice"
     ];
   };
 }
