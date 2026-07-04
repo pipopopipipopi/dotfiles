@@ -1,6 +1,6 @@
 { inputs, pkgs, ... }: {
   imports = [
-    ./eww
+    # ./eww
     ./fuzzel
     ./niri
     ./fcitx5.nix

@@ -40,7 +40,7 @@
           CallTimer = {
             enabled = true;
           };
-          ClearURLs = {
+          clearUrls = {
             enabled = true;
           };
           CrashHandler = {
