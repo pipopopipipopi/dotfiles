@@ -11,6 +11,7 @@
     httpie
     jq
     lazydocker
+    nh
     ripgrep
     unar
     unzip
