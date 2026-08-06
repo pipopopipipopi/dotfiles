@@ -11,25 +11,25 @@
 
       imports = [ ./hosts ];
 
-      perSystem = { pkgs, ... }: {
-        devShells = let
-          scripts = with pkgs; [
-            (writeScriptBin "sw-nixos" ''
-              sudo nixos-rebuild switch --flake ".#$@"
-            '')
-            (writeScriptBin "sw-darwin" ''
-              darwin-rebuild switch --flake ".#$@"
-            '')
-            (writeScriptBin "sw-home" ''
-              home-manager switch --flake ".#$@"
-            '')
-          ];
-        in {
-          default = pkgs.mkShell {
-            packages = scripts;
-          };
-        };
-      };
+      # perSystem = { pkgs, ... }: {
+      #   devShells = let
+      #     scripts = with pkgs; [
+      #       (writeScriptBin "sw-nixos" ''
+      #         sudo nixos-rebuild switch --flake ".#$@"
+      #       '')
+      #       (writeScriptBin "sw-darwin" ''
+      #         darwin-rebuild switch --flake ".#$@"
+      #       '')
+      #       (writeScriptBin "sw-home" ''
+      #         home-manager switch --flake ".#$@"
+      #       '')
+      #     ];
+      #   in {
+      #     default = pkgs.mkShell {
+      #       packages = scripts;
+      #     };
+      #   };
+      # };
     };
 
 
