@@ -24,13 +24,13 @@
       "pipopo@lawine" = self.lib.makeHomeManagerConfig {
         system = "x86_64-linux";
         username = "pipopo";
-        overlays = [ inputs.fenix.overlays.default ];
+        overlays = [];
         modules = [ ./lawine/home.nix ];
       };
       "pipopo@aura" = self.lib.makeHomeManagerConfig {
         system = "aarch64-darwin";
         username = "pipopo";
-        overlays = [ inputs.fenix.overlays.default inputs.brew-nix.overlays.default ];
+        overlays = [ inputs.brew-nix.overlays.default ];
         modules = [ ./aura/home.nix ];
       };
     };

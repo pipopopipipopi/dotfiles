@@ -82,10 +82,5 @@
     matugen = {
       url = "github:/InioX/Matugen";
     };
-
-    fenix = {
-      url = "github:nix-community/fenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 }
