@@ -46,8 +46,7 @@ Shared modules
 #### nixos modules
 
 ```nix
-nix develop
-sw-nixos "<hostname>"
+nh os switch .
 reboot
 ```
 
@@ -55,12 +54,11 @@ reboot
 
 ```nix
 nix develop
-sw-darwin "<hostname>"
+nh darwin switch .
 ```
 
 #### home-manager
 
 ```nix
-nix develop
-sw-home "<username>@<hostname>"
+nh home switch .
 ```
