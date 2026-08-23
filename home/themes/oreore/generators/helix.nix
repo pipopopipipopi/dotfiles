@@ -39,7 +39,13 @@ in
   "label" = "${p.name}"
   "module" = "${p.name}"
 
-  "markup.heading" = "${p.accent-0}"
+  # "markup.heading" = { fg = "${p.accent-0}", modifiers = [ "bold" ] }
+  "markup.heading.1" = { fg = "${p.accent-0}", modifiers = [ "bold" ] }
+  "markup.heading.2" = { fg = "${p.accent-1}", modifiers = [ "bold" ] }
+  "markup.heading.3" = "${p.accent-2}"
+  "markup.heading.4" = "${p.accent-3}"
+  "markup.heading.5" = "${p.accent-0}"
+  "markup.heading.6" = "${p.accent-1}"
   "markup.list" = "${p.accent-1}"
   "markup.bold" = { fg = "${p.accent-3}", modifiers = ["bold"] }
   "markup.italic" = { fg = "${p.accent-1}", modifiers = ["italic"] }
