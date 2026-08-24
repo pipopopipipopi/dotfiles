@@ -6,9 +6,15 @@
         palette = themes.ef-light.palette;
       };
     };
+    yuyake = {
+      palette = import ./themes/yuyake/palette.nix;
+      palette-mapping = import ./themes/yuyake/palette-mapping.nix {
+        palette = themes.yuyake.palette;
+      };
+    };
   };
 
-  theme = themes.ef-light;
+  theme = themes.yuyake;
 
   apps = {
     helix = {

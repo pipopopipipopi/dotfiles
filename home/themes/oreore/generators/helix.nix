@@ -64,7 +64,8 @@ in
   "info" = { fg = "${p.info}" }
   "hint" = { fg = "${p.fg-dim}" }
 
-  "ui.background" = { bg = "${p.bg-main}" }
+  # "ui.background" = { bg = "${p.bg-main}" }
+  "ui.background" = {}
   "ui.linenr" = { fg = "${p.fg-dim}" }
   "ui.linenr.selected" = { fg = "${p.accent-3}" }
   "ui.cursorline" = { bg = "${p.bg-hl-line}" }
