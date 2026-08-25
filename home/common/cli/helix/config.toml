@@ -1,7 +1,8 @@
 # theme = "rose_pine_moon_transparent"
 # theme = "my_theme"
 # theme = "washi"
-theme = "matugen_theme"
+# theme = "matugen_theme"
+theme = "oreore"
 
 [editor]
 line-number = "relative"
