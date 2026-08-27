@@ -1,5 +1,6 @@
 # fish_config theme choose "my_theme"
-fish_config theme choose "matugen_theme"
+# fish_config theme choose "matugen_theme"
+fish_config theme choose "oreore"
 
 # set fish_color_normal f1dbd7
 # set fish_color_command 9c89bd

@@ -17,6 +17,10 @@
   theme = themes.yuyake;
 
   apps = {
+    fish = {
+      path = "fish/themes/oreore.theme";
+      text = import ./generators/fish.nix { inherit theme; };
+    };
     helix = {
       path = "helix/themes/oreore.toml";
       text = import ./generators/helix.nix { inherit theme; };
