@@ -1,20 +1,12 @@
 { lib, ... }: let
-  themes = {
-    ef-light = {
-      palette = import ./themes/ef-light/palette.nix;
-      palette-mapping = import ./themes/ef-light/palette-mapping.nix {
-        palette = themes.ef-light.palette;
-      };
-    };
-    yuyake = {
-      palette = import ./themes/yuyake/palette.nix;
-      palette-mapping = import ./themes/yuyake/palette-mapping.nix {
-        palette = themes.yuyake.palette;
-      };
-    };
-  };
+  themeName = "yuyake";
 
-  theme = themes.yuyake;
+  theme =
+    let
+      palette = import ./themes/${themeName}/palette.nix;
+    in {
+      palette-mapping = import ./themes/${themeName}/palette-mapping.nix { inherit palette; };
+    };
 
   apps = {
     fish = {
