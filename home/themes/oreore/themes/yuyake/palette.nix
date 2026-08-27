@@ -33,10 +33,10 @@
   blue-cooler = "#585f9c";
   blue-faint = "#817a9a";
 
-  magenta = "#bf56a3";
-  magenta-warmer = "#c95f91";
+  magenta = "#a14772";
+  magenta-warmer = "#ad3660";
   magenta-cooler = "#8a6da6";
-  magenta-faint = "#9c718b";
+  magenta-faint = "#824b6c";
 
   cyan = "#607887";
   cyan-warmer = "#6e728b";
