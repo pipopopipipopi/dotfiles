@@ -11,6 +11,7 @@
     ../../configs/nixos/nix.nix
     ../../configs/nixos/security.nix
     ../../configs/nixos/shell.nix
+    # ../../configs/nixos/shojiwm.nix
     ../../configs/nixos/sound.nix
     ../../configs/nixos/virtualisation.nix
     ../../configs/nixos/xdg.nix

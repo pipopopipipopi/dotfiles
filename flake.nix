@@ -46,6 +46,11 @@
       inputs.brew-api.follows = "brew-api";
     };
 
+    # shojiwm = {
+    #   url = "github:bea4dev/ShojiWM";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
     awww = {
       url = "git+https://codeberg.org/LGFae/awww";
       inputs.nixpkgs.follows = "nixpkgs";
