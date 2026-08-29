@@ -531,6 +531,7 @@
         "nixcord": "nixcord",
         "nixpkgs": "nixpkgs_4",
         "pipopo-nvim": "pipopo-nvim",
+        "shojiwm": "shojiwm",
         "wezterm": "wezterm",
         "zen-browser": "zen-browser"
       }
@@ -595,6 +596,26 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "shojiwm": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1787925559,
+        "narHash": "sha256-REDm1327Z4YW1Xw2CFgOI6J6F5suR2XLnBAD26anBM4=",
+        "owner": "bea4dev",
+        "repo": "ShojiWM",
+        "rev": "1de4b73b7e5a21dc1103ef209024874900c22fb1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bea4dev",
+        "repo": "ShojiWM",
         "type": "github"
       }
     },
