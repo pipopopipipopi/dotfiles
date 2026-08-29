@@ -1,4 +1,4 @@
-{ pkgs, username, config, ... }: {
+{ pkgs, lib, username, config, ... }: {
   imports = [
     ./hardware-configuration.nix
 
@@ -46,13 +46,17 @@
   services.greetd = {
     enable = true;
     settings = {
-      initial_session = {
-        command = "${pkgs.niri}/bin/niri-session";
-        user = "${username}";
-      };
+      # initial_session = {
+      #   command = "${pkgs.niri}/bin/niri-session";
+      #   user = "${username}";
+      # };
+      # default_session = {
+      #   command = "${pkgs.tuigreet}/bin/tuigreet --remember --remember-user-session --time --cmd ${pkgs.niri}/bin/niri-session";
+      #   user = "greeter";
+      # };
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --remember --remember-user-session --time --cmd ${pkgs.niri}/bin/niri-session";
-        user = "greeter";
+        command = "${lib.getExe pkgs.tuigreet} --remember --time --cmd ${lib.getExe config.programs.niri.package}";
+        user = username;
       };
     };
   };
