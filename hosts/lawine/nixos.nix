@@ -43,6 +43,30 @@
 
   programs.nix-ld.enable = true;
 
+  # services.greetd =
+  # let
+  #   minimumConfig = pkgs.writeText "minimum-config.kdl" ''
+  #     hotkey-overlay {
+  #       skip-at-startup
+  #     }
+  #     // https://github.com/rharish101/ReGreet?tab=readme-ov-file#startup-delays
+  #     environment {
+  #       GTK_USE_PORTAL "0"
+  #       GDK_DEBUG "no-portals"
+  #     }
+  #     spawn-sh-at-startup "${lib.getExe config.programs.regreet.package}; niri msg action quit --skip-confirmation"
+  #   '';
+  # in
+  # {
+  #   enable = true;
+  #   settings = {
+  #     default_session = {
+  #       command = "dbus-run-session ${lib.getExe config.programs.niri.package} --config ${minimumConfig}";
+  #       user = "greeter";
+  #     };
+  #   };
+  # };
+  
   services.greetd = {
     enable = true;
     settings = {
@@ -55,8 +79,9 @@
       #   user = "greeter";
       # };
       default_session = {
-        command = "${lib.getExe pkgs.tuigreet} --remember --time --cmd ${lib.getExe config.programs.niri.package}";
-        user = username;
+        # command = "${lib.getExe pkgs.tuigreet} --remember --remember-user-session --time --cmd ${config.programs.niri.package}/bin/niri-session";
+        command = "${lib.getExe pkgs.tuigreet} --time --remember --remember-user-session";
+        user = "greeter";
       };
     };
   };
