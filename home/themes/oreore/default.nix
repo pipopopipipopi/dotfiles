@@ -21,6 +21,10 @@
       path = "wezterm/colors/colors.toml";
       text = import ./generators/wezterm.nix { inherit theme; };
     };
+    yazi = {
+      path = "yazi/theme.toml";
+      text = import ./generators/yazi.nix { inherit theme; };
+    };
   };
 in {
   # xdg.configFile.${apps.wezterm.path}.text = apps.wezterm.text;
