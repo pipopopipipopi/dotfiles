@@ -29,7 +29,7 @@ binds {
     Mod+B { spawn "zen-twilight"; }
     Mod+Return { spawn "wezterm"; }
 
-    Mod+Shift+DELETE { quit; }
+    Mod+Shift+Q { quit; }
 
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
