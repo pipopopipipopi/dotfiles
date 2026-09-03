@@ -31,7 +31,7 @@ binds {
 
     Mod+Shift+Q { quit; }
 
-    Mod+F { maximize-column; }
+    Mod+M { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+V { toggle-window-floating; }
     Mod+Q { close-window; }
@@ -59,8 +59,8 @@ input {
             rules ""
             variant ""
         }
-        repeat-delay 300
-        repeat-rate 30
+        repeat-delay 250
+        repeat-rate 40
         track-layout "global"
     }
     touchpad {
