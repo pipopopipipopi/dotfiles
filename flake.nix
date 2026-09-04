@@ -46,8 +46,13 @@
       inputs.brew-api.follows = "brew-api";
     };
 
+    # shojiwm = {
+    #   url = "github:bea4dev/ShojiWM";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     shojiwm = {
-      url = "github:bea4dev/ShojiWM";
+      # url = "github:pipopopipipopi/ShojiWM";
+      url = "github:pipopopipipopi/ShojiWM/pointer-warp";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

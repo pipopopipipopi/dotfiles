@@ -592,15 +592,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1788451543,
-        "narHash": "sha256-8zV+tjcv5mnHiFO5EuHVZIfyw4Toy1OyK5mqDbXwsK8=",
-        "owner": "bea4dev",
+        "lastModified": 1788525101,
+        "narHash": "sha256-kNWJKbgY1B0Jk5XygJLVIeWJqk2B3kkwdCoaLOXVIM8=",
+        "owner": "pipopopipipopi",
         "repo": "ShojiWM",
-        "rev": "661a35838f953e3725b7328ab0e2f566b5f3c196",
+        "rev": "07d29c9216d06a20690402a653569efa03c7be98",
         "type": "github"
       },
       "original": {
-        "owner": "bea4dev",
+        "owner": "pipopopipipopi",
+        "ref": "pointer-warp",
         "repo": "ShojiWM",
         "type": "github"
       }
