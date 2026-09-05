@@ -22,6 +22,7 @@
         transform "normal"
         position x=0 y=0
         mode "1920x1080"
+        focus-at-startup
     }
     output "HDMI-A-1" {
         scale 1.000000
