@@ -592,11 +592,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788590522,
-        "narHash": "sha256-KTk1kKsqfm9saqiExnpEvkFmLbQYCeKL7cXQZDUIVIU=",
+        "lastModified": 1788918467,
+        "narHash": "sha256-O0phV0vOpCoE/fbCI4WP/32ySCC6P3sckjIc/oeoPl8=",
         "owner": "pipopopipipopi",
         "repo": "ShojiWM",
-        "rev": "a86c46b2f148bfebe21cdaa8347758d5508218bc",
+        "rev": "2af0c17947f010e42f9f79b5ee27ad156a0599f4",
         "type": "github"
       },
       "original": {
