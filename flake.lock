@@ -585,23 +585,22 @@
         "type": "github"
       }
     },
-    "shojiwm": {
+      "shojiwm": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1789423246,
-        "narHash": "sha256-SZEni1kPpPheMYvAxVGaCS1mfyMjk/Tr0Ogm0cg6tQ4=",
-        "owner": "pipopopipipopi",
+        "lastModified": 1789656384,
+        "narHash": "sha256-RSMQMXgbVO/BCSMifsliMrrvOWM7k/S2i6KLybQ3NdA=",
+        "owner": "bea4dev",
         "repo": "ShojiWM",
-        "rev": "3af227596b8faef52d1690000544aac7298c946f",
+        "rev": "0df28115f8aadf886083c6b91e60af65edcf2bdf",
         "type": "github"
       },
       "original": {
-        "owner": "pipopopipipopi",
-        "ref": "pointer-warp",
+        "owner": "bea4dev",
         "repo": "ShojiWM",
         "type": "github"
       }
