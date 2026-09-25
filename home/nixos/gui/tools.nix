@@ -13,5 +13,7 @@
     kdePackages.okular
     qview
     mpv
+
+    krita
   ];
 }
