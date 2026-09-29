@@ -15,6 +15,7 @@
     ripgrep
     unar
     unzip
+    usbtree
     wallust
     zip
     zoxide
