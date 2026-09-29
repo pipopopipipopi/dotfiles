@@ -17,6 +17,7 @@
       "macskk"
       "microsoft-office"
       "ltspice"
+      "virtualbox"
     ];
   };
 }
