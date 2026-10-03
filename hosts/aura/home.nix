@@ -7,6 +7,7 @@
     ../../home/common/gui
     ../../home/darwin/cli
     ../../home/darwin/gui
-    ../../home/darwin/desktop/aerospace.nix
+    ../../home/darwin/desktop/rift
+    # ../../home/darwin/desktop/aerospace.nix
   ];
 }
