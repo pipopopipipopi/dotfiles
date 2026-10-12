@@ -1,4 +1,9 @@
 [[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server" ]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "kdl"
 indent = { tab-width = 4, unit = "    " }
 
