@@ -604,11 +604,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791288859,
-        "narHash": "sha256-Jah5DBL9Mv4W22YhLpTSuVtLaAzIUm55DM+F3sg2O+w=",
+        "lastModified": 1791702924,
+        "narHash": "sha256-uPQU1+EH1rXqHqJfh986bbU0MS6uJlwQrSC8FHbl9iA=",
         "owner": "bea4dev",
         "repo": "ShojiWM",
-        "rev": "1dd7b5ea87a629a3a1db9ca373ce4ef70dbfca1a",
+        "rev": "13c8eca5753b027e118ab051d941ff4208e65507",
         "type": "github"
       },
       "original": {
