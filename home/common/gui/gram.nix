@@ -1,0 +1,5 @@
+{
+  programs.gram = {
+    enable = true;
+  };
+}
