@@ -15,5 +15,10 @@
     mpv
 
     krita
+
+    # 学習制御
+    scilab-bin
+    maxima
+    wxmaxima
   ];
 }
