@@ -10,7 +10,9 @@
     
     taps = [];
 
-    brews = [];
+    brews = [
+      "wxmaxima"
+    ];
 
     casks = [
       "karabiner-elements"
@@ -18,6 +20,9 @@
       "microsoft-office"
       "ltspice"
       "virtualbox"
+
+      "scilab"
+      "temurin@8"
     ];
   };
 }
