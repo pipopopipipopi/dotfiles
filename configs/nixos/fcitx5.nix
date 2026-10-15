@@ -4,6 +4,7 @@
     type = "fcitx5";
     fcitx5.addons = with pkgs; [
       fcitx5-skk
+      kdePackages.fcitx5-skk-qt
     ];
     fcitx5.waylandFrontend = true;
   };
