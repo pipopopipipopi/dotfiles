@@ -70,119 +70,42 @@ in
   "ui.linenr.selected" = { fg = "${p.accent-3}" }
   "ui.cursorline" = { bg = "${p.bg-hl-line}" }
 
-  "ui.statusline" = {
-    fg = "${p.fg-main}",
-    bg = "${p.bg-active}"
-  }
+  "ui.statusline" = { fg = "${p.fg-main}", bg = "${p.bg-active}" }
 
-  "ui.statusline.inactive" = {
-    fg = "${p.fg-dim}",
-    bg = "${p.bg-inactive}"
-  }
-
-  "ui.statusline.normal" = {
-    fg = "${p.fg-main}",
-    bg = "${p.accent-0}"
-  }
-
-  "ui.statusline.insert" = {
-    fg = "${p.fg-main}",
-    bg = "${p.accent-2}"
-  }
-
-  "ui.statusline.select" = {
-    fg = "${p.fg-main}",
-    bg = "${p.accent-1}"
-  }
+  "ui.statusline.inactive" = { fg = "${p.fg-dim}", bg = "${p.bg-inactive}" }
+  "ui.statusline.normal" = { fg = "${p.fg-main}", bg = "${p.accent-0}" }
+  "ui.statusline.insert" = { fg = "${p.fg-main}", bg = "${p.accent-2}" }
+  "ui.statusline.select" = { fg = "${p.fg-main}", bg = "${p.accent-1}" }
 
   "ui.popup" = { bg = "${p.bg-popup}" }
   "ui.window" = { bg = "${p.bg-alt}" }
 
-  "ui.help" = {
-    bg = "${p.bg-popup}",
-    fg = "${p.fg-main}"
-  }
+  "ui.help" = { bg = "${p.bg-popup}", fg = "${p.fg-main}" }
 
   "ui.text" = { fg = "${p.fg-main}" }
-  "ui.text.focus" = {
-    fg = "${p.fg-main}",
-    modifiers = ["bold"]
-  }
+  "ui.text.focus" = { fg = "${p.fg-main}", modifiers = ["bold"] }
 
-  "ui.text.directory" = {
-    fg = "${p.fg-link}"
-  }
+  "ui.text.directory" = { fg = "${p.fg-link}" }
 
-  "ui.selection" = {
-    bg = "${p.bg-region}"
-  }
+  "ui.selection" = { bg = "${p.bg-region}" }
+  "ui.selection.primary" = { bg = "${p.bg-region}" }
 
-  "ui.selection.primary" = {
-    bg = "${p.bg-region}"
-  }
+  "ui.cursor.primary" = { modifiers = ["reversed"] }
+  "ui.cursor.match" = { bg = "${p.bg-paren-match}" }
 
-  "ui.cursor.primary" = {
-    modifiers = ["reversed"]
-  }
+  "ui.cursorline.primary" = { bg = "${p.bg-hl-line}" }
 
-  "ui.cursor.match" = {
-    bg = "${p.bg-paren-match}"
-  }
-
-  "ui.cursorline.primary" = {
-    bg = "${p.bg-hl-line}"
-  }
-
-  "ui.menu" = {
-    fg = "${p.fg-main}",
-    bg = "${p.bg-popup}"
-  }
-
-  "ui.menu.selected" = {
-    fg = "${p.fg-main}",
-    bg = "${p.bg-hover}",
-    modifiers = ["bold"]
-  }
+  "ui.menu" = { fg = "${p.fg-main}", bg = "${p.bg-popup}" }
+  "ui.menu.selected" = { fg = "${p.fg-main}", bg = "${p.bg-hover}", modifiers = ["bold"] }
 
   "ui.virtual" = "${p.fg-dim}"
+  "ui.virtual.ruler" = { bg = "${p.bg-alt}" }
 
-  "ui.virtual.ruler" = {
-    bg = "${p.bg-alt}"
-  }
+  "diagnostic.warning" = { underline = { style = "curl", color = "${p.warning}" } }
+  "diagnostic.error" = { underline = { style = "curl", color = "${p.err}" } }
+  "diagnostic.info" = { underline = { style = "curl", color = "${p.info}" } }
+  "diagnostic.hint" = { underline = { style = "curl", color = "${p.fg-dim}" } }
 
-  "diagnostic.warning" = {
-    underline = {
-      style = "curl",
-      color = "${p.warning}"
-    }
-  }
-
-  "diagnostic.error" = {
-    underline = {
-      style = "curl",
-      color = "${p.err}"
-    }
-  }
-
-  "diagnostic.info" = {
-    underline = {
-      style = "curl",
-      color = "${p.info}"
-    }
-  }
-
-  "diagnostic.hint" = {
-    underline = {
-      style = "curl",
-      color = "${p.fg-dim}"
-    }
-  }
-
-  "diagnostic.unnecessary" = {
-    modifiers = ["dim"]
-  }
-
-  "diagnostic.deprecated" = {
-    modifiers = ["crossed_out"]
-  }
+  "diagnostic.unnecessary" = { modifiers = ["dim"] }
+  "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 ''
