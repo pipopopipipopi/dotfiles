@@ -1,5 +1,6 @@
 {
   imports = [
+    ./alacritty
     ./browser
     ./wezterm
     ./tools.nix
