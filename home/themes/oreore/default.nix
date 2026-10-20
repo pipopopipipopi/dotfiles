@@ -9,6 +9,10 @@
     };
 
   apps = {
+    alacritty = {
+      path = "alacritty/themes/theme.toml";
+      text = import ./generators/alacritty.nix { inherit theme; };
+    };
     fish = {
       path = "fish/themes/oreore.theme";
       text = import ./generators/fish.nix { inherit theme; };
