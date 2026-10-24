@@ -4,7 +4,6 @@
       (with pkgs; [
         nerd-fonts.jetbrains-mono
         hackgen-nf-font
-        udev-gothic-nf
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
