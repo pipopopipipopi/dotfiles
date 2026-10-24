@@ -7,14 +7,10 @@
     fd
     fzf
     gnumake
-    gnutar
-    httpie
-    jq
     lazydocker
     nh
     ripgrep
     unar
-    unzip
     usbtree
     wallust
     zip
