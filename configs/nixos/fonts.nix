@@ -16,18 +16,18 @@
       defaultFonts = {
         serif = [
           "Noto Serif CJK JP"
-          "Noto Color Emoji"
+          "Twitter Color Emoji"
         ];
         sansSerif = [
           "Noto Sans CJK JP"
-          "Noto Color Emoji"
+          "Twitter Color Emoji"
         ];
         monospace = [
           "JetBrainsMono Nerd Font"
           "HackGen Console NF"
-          "Noto Color Emoji"
+          "Twitter Color Emoji"
         ];
-        emoji = [ "Noto Color Emoji" ];
+        emoji = [ "Twitter Color Emoji" ];
       };
     };
   };

@@ -27,7 +27,8 @@ binds {
     Mod+Space { spawn "fuzzel"; }
     // Mod+B { spawn "firefox"; }
     Mod+B { spawn "zen-twilight"; }
-    Mod+Return { spawn "wezterm"; }
+    // Mod+Return { spawn "wezterm"; }
+    Mod+Return { spawn "alacritty"; }
 
     Mod+Shift+Q { quit; }
 
