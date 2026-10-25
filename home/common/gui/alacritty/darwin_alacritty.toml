@@ -11,6 +11,7 @@ decorations = "None"
 
 [font]
 size = 16
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 
 [mouse]
 hide_when_typing = true
