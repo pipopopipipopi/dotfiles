@@ -24,6 +24,7 @@
         ];
         monospace = [
           "JetBrainsMono Nerd Font"
+          "HackGen Console NF"
           "Noto Color Emoji"
         ];
         emoji = [ "Noto Color Emoji" ];
