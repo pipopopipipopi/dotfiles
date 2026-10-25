@@ -1,0 +1,16 @@
+[general]
+import = [
+  "~/.config/alacritty/themes/theme.toml",
+]
+
+[window]
+opacity = 0.9
+padding = { x = 0, y = 0 }
+dynamic_padding = true
+decorations = "None"
+
+[font]
+size = 16
+
+[mouse]
+hide_when_typing = true
