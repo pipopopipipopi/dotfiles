@@ -14,20 +14,11 @@
       washi = (builtins.fromTOML (builtins.readFile ./themes/washi.toml));
     };
     extraPackages = with pkgs; [
-      # latex
-      # texlab
-
       # markdown
       marksman
 
       # nix
       nil
-
-      # python
-      ty
-
-      # rust
-      rust-analyzer
 
       # typst
       tinymist
