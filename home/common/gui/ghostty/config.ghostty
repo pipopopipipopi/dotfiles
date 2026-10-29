@@ -1,3 +1,5 @@
+theme = oreore.conf
+
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig

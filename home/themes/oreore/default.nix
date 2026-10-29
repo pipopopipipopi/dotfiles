@@ -17,6 +17,10 @@
       path = "fish/themes/oreore.theme";
       text = import ./generators/fish.nix { inherit theme; };
     };
+    ghostty = {
+      path = "ghostty/themes/oreore.conf";
+      text = import ./generators/ghostty.nix { inherit theme; };
+    };
     helix = {
       path = "helix/themes/oreore.toml";
       text = import ./generators/helix.nix { inherit theme; };
