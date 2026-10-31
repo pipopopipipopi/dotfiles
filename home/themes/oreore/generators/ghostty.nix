@@ -2,21 +2,21 @@
   p = theme.palette-mapping;
 in
 ''
-  palette = 0=${p.bg-alt}
+  palette = 0=${p.fg-main}
   palette = 1=${p.red}
   palette = 2=${p.green}
   palette = 3=${p.yellow}
   palette = 4=${p.blue}
   palette = 5=${p.magenta}
   palette = 6=${p.cyan}
-  palette = 7=${p.fg-alt}
-  palette = 8=${p.bg-inactive}
-  palette = 9=${p.red}
-  palette = 10=${p.green}
-  palette = 11=${p.yellow}
-  palette = 12=${p.blue}
-  palette = 13=${p.magenta}
-  palette = 14=${p.cyan}
+  palette = 7=${p.fg-dim}
+  palette = 8=${p.fg-dim}
+  palette = 9=${p.red-warmer}
+  palette = 10=${p.green-warmer}
+  palette = 11=${p.yellow-warmer}
+  palette = 12=${p.blue-warmer}
+  palette = 13=${p.magenta-warmer}
+  palette = 14=${p.cyan-warmer}
   palette = 15=${p.fg-main}
 
   background = ${p.bg-main}
