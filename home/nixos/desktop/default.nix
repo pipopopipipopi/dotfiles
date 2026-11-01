@@ -1,11 +1,9 @@
 { inputs, pkgs, ... }: {
   imports = [
-    # ./eww
     ./fuzzel
     ./niri
     ./fcitx5.nix
     ./mako.nix
-    ./waybar.nix
     ./xdg.nix
   ];
 
@@ -13,7 +11,6 @@
     with pkgs;
     [
       wl-clipboard # clipboard manager
-      waybar
       grim
       slurp
     ]

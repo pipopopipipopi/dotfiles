@@ -20,7 +20,6 @@
     ../../configs/nixos/shell.nix
     ../../configs/nixos/shojiwm.nix
     ../../configs/nixos/sound.nix
-    # ../../configs/nixos/virtualisation.nix
     ../../configs/nixos/xdg.nix
   ];
 
@@ -58,13 +57,11 @@
         hotkey-overlay {
           skip-at-startup
         }
-        // https://github.com/rharish101/ReGreet?tab=readme-ov-file#startup-delays
         environment {
           GTK_USE_PORTAL "0"
           GDK_DEBUG "no-portals"
         }
         spawn-sh-at-startup "${lib.getExe config.services.displayManager.regreet.package}; niri msg action quit --skip-confirmation"
-        // spawn-sh-at-startup "${lib.getExe config.services.displayManager.regreet.package} 2>/tmp/regreet.log"
       '';
     in
     {

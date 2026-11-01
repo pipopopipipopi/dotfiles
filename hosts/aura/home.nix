@@ -1,6 +1,5 @@
 {
   imports = [
-    # ../../home/themes/my_theme
     ../../home/themes/oreore
     ../../home/themes/matugen
     ../../home/common/cli
@@ -8,6 +7,5 @@
     ../../home/darwin/cli
     ../../home/darwin/gui
     ../../home/darwin/desktop/rift
-    # ../../home/darwin/desktop/aerospace.nix
   ];
 }

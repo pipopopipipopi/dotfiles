@@ -1,6 +1,5 @@
 {
   imports = [
-    # ../../home/themes/my_theme
     ../../home/themes/oreore
     ../../home/themes/matugen
     ../../home/common/cli
