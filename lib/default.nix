@@ -9,7 +9,7 @@ inputs: {
     inputs.nixpkgs.lib.nixosSystem {
       inherit system modules;
       specialArgs = {
-        inherit inputs hostname username; 
+        inherit inputs hostname username;
       };
     };
 
@@ -23,7 +23,7 @@ inputs: {
     inputs.nix-darwin.lib.darwinSystem {
       inherit system modules;
       specialArgs = {
-        inherit inputs hostname username; 
+        inherit inputs hostname username;
       };
     };
 
@@ -40,25 +40,22 @@ inputs: {
         config.allowUnfree = true;
       };
       extraSpecialArgs = {
-        inherit inputs username; 
+        inherit inputs username;
       };
-      modules =
-        [
-          (
-            { pkgs, ... }: {
-              home = {
-                inherit username;
-                homeDirectory = if pkgs.stdenv.hostPlatform.isLinux then "/home/${username}" else "/Users/${username}";
-                stateVersion = "26.05";
-              };
-              programs = {
-                home-manager.enable = true;
-                git.enable = true;
-              };
-            }
-          )
-        ]
-        ++ modules;
+      modules = [
+        ({ pkgs, ... }: {
+          home = {
+            inherit username;
+            homeDirectory =
+              if pkgs.stdenv.hostPlatform.isLinux then "/home/${username}" else "/Users/${username}";
+            stateVersion = "26.05";
+          };
+          programs = {
+            home-manager.enable = true;
+            git.enable = true;
+          };
+        })
+      ]
+      ++ modules;
     };
 }
-
