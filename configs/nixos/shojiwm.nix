@@ -1,4 +1,4 @@
-{ inputs, username, ... } : {
+{ inputs, username, ... }: {
   imports = [ inputs.shojiwm.nixosModules.default ];
 
   programs.shojiwm = {

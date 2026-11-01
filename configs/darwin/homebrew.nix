@@ -7,8 +7,8 @@
       upgrade = true;
       cleanup = "zap";
     };
-    
-    taps = [];
+
+    taps = [ ];
 
     brews = [
       "wxmaxima"

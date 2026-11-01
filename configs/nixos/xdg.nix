@@ -9,7 +9,10 @@
     ];
     config = {
       common = {
-        default = [ "kde" "gtk" ];
+        default = [
+          "kde"
+          "gtk"
+        ];
         "org.freedesktop.impl.portal.FileChooser" = "kde";
       };
     };

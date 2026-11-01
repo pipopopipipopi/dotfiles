@@ -1,7 +1,8 @@
 { pkgs, ... }: {
   fonts = {
-    packages =
-      (with pkgs; [
+    packages = (
+      with pkgs;
+      [
         nerd-fonts.jetbrains-mono
         hackgen-nf-font
         noto-fonts
@@ -10,7 +11,8 @@
         noto-fonts-color-emoji
         twitter-color-emoji
         takao
-      ]);
+      ]
+    );
     fontDir.enable = true;
     fontconfig = {
       defaultFonts = {
