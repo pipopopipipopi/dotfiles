@@ -1,8 +1,9 @@
 {
   description = "configuration of pipopopipipopi";
 
-  outputs = inputs:
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+  outputs =
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "aarch64-linux"
         "x86_64-linux"
@@ -11,10 +12,10 @@
 
       imports = [ ./hosts ];
 
-      # perSystem = { pkgs, ... }: {
-      # };
+      perSystem = { pkgs, ... }: {
+        formatter = pkgs.nixfmt;
+      };
     };
-
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
