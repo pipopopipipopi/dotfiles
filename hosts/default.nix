@@ -24,7 +24,7 @@
       "pipopo@lawine" = self.lib.makeHomeManagerConfig {
         system = "x86_64-linux";
         username = "pipopo";
-        overlays = [];
+        overlays = [ ];
         modules = [ ./lawine/home.nix ];
       };
       "pipopo@aura" = self.lib.makeHomeManagerConfig {

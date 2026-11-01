@@ -1,4 +1,11 @@
-{ pkgs, lib, username, config, ... }: {
+{
+  pkgs,
+  lib,
+  username,
+  config,
+  ...
+}:
+{
   imports = [
     ./hardware-configuration.nix
 
@@ -46,30 +53,30 @@
 
   services.accounts-daemon.enable = true;
   services.greetd =
-  let
-    minimumConfig = pkgs.writeText "minimum-config.kdl" ''
-      hotkey-overlay {
-        skip-at-startup
-      }
-      // https://github.com/rharish101/ReGreet?tab=readme-ov-file#startup-delays
-      environment {
-        GTK_USE_PORTAL "0"
-        GDK_DEBUG "no-portals"
-      }
-      spawn-sh-at-startup "${lib.getExe config.services.displayManager.regreet.package}; niri msg action quit --skip-confirmation"
-      // spawn-sh-at-startup "${lib.getExe config.services.displayManager.regreet.package} 2>/tmp/regreet.log"
-    '';
-  in
-  {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "dbus-run-session ${lib.getExe config.programs.niri.package} --config ${minimumConfig}";
-        user = "greeter";
+    let
+      minimumConfig = pkgs.writeText "minimum-config.kdl" ''
+        hotkey-overlay {
+          skip-at-startup
+        }
+        // https://github.com/rharish101/ReGreet?tab=readme-ov-file#startup-delays
+        environment {
+          GTK_USE_PORTAL "0"
+          GDK_DEBUG "no-portals"
+        }
+        spawn-sh-at-startup "${lib.getExe config.services.displayManager.regreet.package}; niri msg action quit --skip-confirmation"
+        // spawn-sh-at-startup "${lib.getExe config.services.displayManager.regreet.package} 2>/tmp/regreet.log"
+      '';
+    in
+    {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "dbus-run-session ${lib.getExe config.programs.niri.package} --config ${minimumConfig}";
+          user = "greeter";
+        };
       };
     };
-  };
-  
+
   # services.greetd = {
   #   enable = true;
   #   settings = {
