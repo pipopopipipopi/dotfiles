@@ -1,4 +1,10 @@
-{ lib, pkgs, colors, ... }: lib.mkIf pkgs.stdenv.hostPlatform.isLinux {
+{
+  lib,
+  pkgs,
+  colors,
+  ...
+}:
+lib.mkIf pkgs.stdenv.hostPlatform.isLinux {
   xdg.configFile."mako/colors".text = ''
     background-color=${colors.bg}
     text-color=${colors.fg}

@@ -3,23 +3,23 @@
     enable = true;
     launchd.enable = true;
     settings = {
-      after-login-command = [];
-      after-startup-command = [];
+      after-login-command = [ ];
+      after-startup-command = [ ];
       start-at-login = true;
       enable-normalization-flatten-containers = true;
       enable-normalization-opposite-orientation-for-nested-containers = true;
       accordion-padding = 30;
       default-root-container-layout = "tiles";
       default-root-container-orientation = "auto";
-      on-focused-monitor-changed = ["move-mouse monitor-lazy-center"];
+      on-focused-monitor-changed = [ "move-mouse monitor-lazy-center" ];
       automatically-unhide-macos-hidden-apps = true;
       gaps = {
         inner.horizontal = 10;
-        inner.vertical =   10;
-        outer.left =       10;
-        outer.bottom =     10;
-        outer.top =        10;
-        outer.right =      10;
+        inner.vertical = 10;
+        outer.left = 10;
+        outer.bottom = 10;
+        outer.top = 10;
+        outer.right = 10;
       };
       mode.main.binding = {
         alt-q = "close";
@@ -63,7 +63,7 @@
         {
           "if".app-id = "app.zen-browser.zen";
           "if".window-title-regex-substring = "Picture-in-Picture";
-          run = ["layout floating"];
+          run = [ "layout floating" ];
         }
       ];
     };

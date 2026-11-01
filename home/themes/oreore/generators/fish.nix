@@ -1,4 +1,5 @@
-{ theme }: let
+{ theme }:
+let
   p = theme.palette-mapping;
 
   format = c: builtins.replaceStrings [ "#" ] [ "" ] c;

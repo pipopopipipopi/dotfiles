@@ -1,7 +1,8 @@
 { colors, ... }:
 let
-  format = c: builtins.replaceStrings ["#"] [""] c;
-in {
+  format = c: builtins.replaceStrings [ "#" ] [ "" ] c;
+in
+{
   xdg.configFile."fish/themes/my_theme.theme".text = ''
     fish_color_normal ${format colors.fg}
     fish_color_command ${format colors.bright_blue}

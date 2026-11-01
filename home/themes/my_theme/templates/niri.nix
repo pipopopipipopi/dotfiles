@@ -1,4 +1,10 @@
-{ lib, pkgs, colors, ... }: lib.mkIf pkgs.stdenv.hostPlatform.isLinux {
+{
+  lib,
+  pkgs,
+  colors,
+  ...
+}:
+lib.mkIf pkgs.stdenv.hostPlatform.isLinux {
   xdg.configFile."niri/colors.kdl".text = ''
     layout {
         border {

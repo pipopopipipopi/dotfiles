@@ -9,15 +9,17 @@
     ./xdg.nix
   ];
 
-  home.packages = with pkgs; [
-    wl-clipboard # clipboard manager
-    waybar
-    grim
-    slurp
-  ]
-  ++ (with inputs; [
-    awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
-  ]);
+  home.packages =
+    with pkgs;
+    [
+      wl-clipboard # clipboard manager
+      waybar
+      grim
+      slurp
+    ]
+    ++ (with inputs; [
+      awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
+    ]);
 
   home.pointerCursor = {
     enable = true;

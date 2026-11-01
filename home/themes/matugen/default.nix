@@ -1,4 +1,9 @@
-{ pkgs, inputs, lib, ... }:
+{
+  pkgs,
+  inputs,
+  lib,
+  ...
+}:
 let
   templates = ./templates;
 
@@ -60,8 +65,13 @@ let
     set = true
     command = "desktoppr {{ image }}"
   '';
-in {
-  home.packages =  if pkgs.stdenv.hostPlatform.isLinux then [ inputs.matugen.packages.${pkgs.stdenv.hostPlatform.system}.default ] else [ pkgs.matugen ];
+in
+{
+  home.packages =
+    if pkgs.stdenv.hostPlatform.isLinux then
+      [ inputs.matugen.packages.${pkgs.stdenv.hostPlatform.system}.default ]
+    else
+      [ pkgs.matugen ];
 
   xdg.configFile."matugen/config.toml".text =
     common

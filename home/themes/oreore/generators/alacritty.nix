@@ -1,4 +1,5 @@
-{ theme }: let
+{ theme }:
+let
   p = theme.palette-mapping;
 in
 ''

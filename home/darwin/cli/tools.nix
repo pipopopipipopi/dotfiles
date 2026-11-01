@@ -6,7 +6,8 @@ let
       cp ./usr/local/bin/desktoppr $out/bin/
     '';
   });
-in {
+in
+{
   home.packages = with pkgs; [
     colima
     desktoppr

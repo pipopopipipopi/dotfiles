@@ -3,12 +3,13 @@ let
   # palette = "halloween";
   # palette = "uitopia";
   # palette = "arcana_shadow_dark";
-   
+
   ## light
   # palette = "coffee";
   # palette = "arcana_shadow_light";
   palette = "washi";
-in {
+in
+{
   _module.args.colors = import ./palettes/${palette}.nix;
 
   imports = [

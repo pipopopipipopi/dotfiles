@@ -8,8 +8,8 @@
     themes = {
       rose_pine_moon_transparent = {
         "inherits" = "rose_pine_moon";
-        "ui.background" = {};
-        "ui.background.separator" = {};
+        "ui.background" = { };
+        "ui.background.separator" = { };
       };
       washi = (builtins.fromTOML (builtins.readFile ./themes/washi.toml));
     };

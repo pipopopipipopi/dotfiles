@@ -1,4 +1,6 @@
-{ palette }: palette // {
+{ palette }:
+palette
+// {
   err = palette.red-warmer;
   warning = palette.yellow-warmer;
   info = palette.green;

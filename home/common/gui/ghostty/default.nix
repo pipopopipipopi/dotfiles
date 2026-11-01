@@ -1,9 +1,15 @@
-{ inputs, pkgs, lib, ... }:
+{
+  inputs,
+  pkgs,
+  lib,
+  ...
+}:
 let
   common = builtins.readFile ./config.ghostty;
   linux = builtins.readFile ./config_linux.ghostty;
   darwin = builtins.readFile ./config_mac.ghostty;
-in {
+in
+{
   programs.ghostty = {
     enable = true;
     package =

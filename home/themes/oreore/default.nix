@@ -1,10 +1,12 @@
-{ lib, ... }: let
+{ lib, ... }:
+let
   themeName = "yuyake";
 
   theme =
     let
       palette = import ./themes/${themeName}/palette.nix;
-    in {
+    in
+    {
       palette-mapping = import ./themes/${themeName}/palette-mapping.nix { inherit palette; };
     };
 
@@ -34,7 +36,8 @@
       text = import ./generators/yazi.nix { inherit theme; };
     };
   };
-in {
+in
+{
   # xdg.configFile.${apps.wezterm.path}.text = apps.wezterm.text;
-  xdg.configFile = lib.mapAttrs'(_: app: lib.nameValuePair app.path { text = app.text; }) apps;
+  xdg.configFile = lib.mapAttrs' (_: app: lib.nameValuePair app.path { text = app.text; }) apps;
 }

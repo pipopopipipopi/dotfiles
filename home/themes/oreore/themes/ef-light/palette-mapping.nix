@@ -1,4 +1,6 @@
-{ palette }: palette // {
+{ palette }:
+palette
+// {
   err = palette.red-warmer;
   warning = palette.yellow-warmer;
   info = palette.green;
@@ -40,7 +42,6 @@
   prose-tag = palette.green-faint;
   prose-todo = palette.red-warmer;
   fg-prose-verbatim = palette.blue-warmer;
-
 
   bg-search-static = palette.bg-warning;
   bg-search-current = palette.bg-yellow-intense;
