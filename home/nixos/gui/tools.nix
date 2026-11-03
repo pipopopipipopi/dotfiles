@@ -8,7 +8,6 @@
     # amberol
     # eyedropper
     kicad
-    signal-desktop
 
     kdePackages.dolphin
     kdePackages.okular
