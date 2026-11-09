@@ -10,6 +10,6 @@ in
 {
   home.packages = with pkgs; [
     colima
-    desktoppr
+    # desktoppr
   ];
 }
