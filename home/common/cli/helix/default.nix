@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: {
   programs.helix = {
     enable = true;
+    # package = inputs.helix.packages.${pkgs.stdenv.hostPlatform.system}.default;
     package =
       if pkgs.stdenv.hostPlatform.isDarwin then
         inputs.helix.packages.${pkgs.stdenv.hostPlatform.system}.default
